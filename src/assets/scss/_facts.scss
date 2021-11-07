@@ -1,0 +1,39 @@
+.facts {
+
+    margin-bottom: 18.2rem;
+
+    &__subtitle {
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-transform: uppercase;
+
+        margin-bottom: 1.5rem;
+    }
+
+    &__title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        margin-bottom: 6.9rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+
+       
+    }
+
+    &__content-box {
+        display: flex;
+
+        &:nth-child(n+4) {
+            flex-direction: row-reverse;
+        }
+    }
+}

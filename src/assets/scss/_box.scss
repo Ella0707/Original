@@ -1,0 +1,40 @@
+.box {
+    &__img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    &__text {
+        width: 25rem;
+        padding: 3.0rem;
+
+        background-color: #ffffff;
+
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 5rem;
+            height: 1.5rem;
+
+            background-image: url(./../images/facts_img/line.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            position: absolute;
+            bottom: 8%;
+        }
+    }
+
+    &__title {
+        font-size: 4.0rem;
+        font-weight: 600;
+
+        margin-bottom: 1.5rem;
+    }
+
+    &__subtitle {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+}

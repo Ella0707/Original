@@ -1,0 +1,129 @@
+.about-us {
+    margin-bottom: 28rem;
+    position: relative;
+
+    &__inner {
+        padding-top: 15.4rem;
+    }
+
+    &__left-img {
+            width: 80rem;
+            height: 65rem;
+            object-fit: cover;
+            position: absolute;
+            
+            left: 0;
+            top: 19%;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__content {
+        width: 74.5rem;
+
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 6.1rem;
+            height: 4.6rem;
+
+            background-image: url(./../images/quotes.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            position: absolute;
+            top: 1%;
+            left: -18%;
+        }
+    }
+
+    &__heading {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        width: 59.6rem;
+        margin-bottom: 5rem;
+    }
+
+    &__text-block {
+        width: 64rem;
+        padding-right: 1rem;
+        margin-bottom: 6.5rem;
+    }
+
+    &__par {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 3.1rem;
+        
+        &:last-child {
+            width: 49.9rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    // &__par-last {
+    //     font-size: 1.8rem;
+    //     font-weight: 400;
+    //     margin-bottom: 8.8rem;
+    // }
+
+
+    &__link {
+        margin-left: 10rem;
+        position: relative;
+
+        &.btn {
+        
+            &::before {
+                background: url(./../images/arrow-download.svg), #CA342E;
+                background-repeat: no-repeat;
+                background-size: 2rem;
+                background-position: center;
+
+                position: absolute;
+            }
+        }
+    }
+
+    &__photo-block {
+        width: 40.5rem;
+        
+        position: absolute;
+        right: 0;
+        bottom: -9.5rem;
+    }
+
+    &__photo-block-top {
+        display: flex;
+        width: 41rem;
+
+        background-color: #ffffff;
+    }
+
+    &__img-top {
+        width: 20rem;
+        height: 20rem;
+
+        object-fit: cover;
+    }
+
+    &__photo-block-down {
+        display: flex;
+        justify-content: flex-end;
+        width: 41rem;
+    }
+
+    &__img-down {
+        width: 21rem;
+        height: 10.6rem;
+
+        object-fit: cover;
+
+    }
+}

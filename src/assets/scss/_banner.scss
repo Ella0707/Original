@@ -1,0 +1,14 @@
+.banner {
+
+    height: 35rem;
+
+    &__img {
+        height: 45rem;
+        object-fit: cover;
+
+        position: relative;
+        z-index: -1;
+
+        transform: translate(0, -10rem);
+    }
+}

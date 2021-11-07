@@ -1,0 +1,25 @@
+.btn {
+    font-size: 1.6rem;
+        font-weight: 600;
+
+        position: relative;
+
+        &::before {
+            content: "";
+
+            width: 6.4rem;
+            height: 6.4rem;
+
+            background: url(./../images/arrow-btn.svg), #CA342E;
+            background-repeat: no-repeat;
+            background-size: 1.5rem;
+            background-position: center;
+            border-radius: 50%;
+            border: 0.8rem solid #f4d6d5;
+
+            position: absolute;
+            top: -100%;
+            left: -50%;
+            transform: translate(-30%, -10%);
+        }
+} 

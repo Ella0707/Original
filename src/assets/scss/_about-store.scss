@@ -1,0 +1,230 @@
+.about-store {
+    background-color: #ffffff;
+
+    &__inner {
+        position: relative;
+        padding-top: 3.2rem;
+
+        margin-bottom: 4.4rem;
+    }
+
+
+    // LEFT-BLOCK
+
+    &__top {
+        display: flex;
+
+        margin-bottom: 3.8rem;
+    }
+
+    &__left-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 66.5rem;
+    }
+
+
+    &__title {
+        font-size: 4.1rem;
+        font-weight: 600;
+        line-height: 5rem;
+
+        margin-bottom: 1.4rem;
+    }
+
+    &__subtitle {
+        font-size: 1.9rem;
+        font-weight: 300;
+        line-height: 1.4;
+
+        width: 49.7rem;
+    }
+
+
+    // SLIDER
+
+    &__right-block {
+        display: flex;
+
+        background-color: #F4F4F4;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(22%, 0px);
+    }
+
+
+    &__presentation {
+        width: 25.5rem;
+        height: 23.5rem;
+
+        margin-right: 3.7rem;
+
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: inherit;
+            background: rgba(21, 27, 35, 0.43);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__presentation-link {
+
+        &::before {
+            content: "";
+            width: 4.8rem;
+            height: 4.8rem;
+            background: url(./../images/arrow-white.svg), rgba(25, 28, 32, 0.2);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1.5rem;
+
+            border-radius: 50%;
+            border: 0.15rem solid #ffffff;
+            outline: 0.8rem solid rgba(25, 28, 32, 0.2);
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -80%);
+            z-index: 2;
+        }
+
+        &::after {
+            content: "Презентация";
+            color: #ffffff;
+            font-size: 2.0rem;
+            position: absolute;
+            bottom: 29%;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 2;
+        }
+
+    }
+
+    &__right-block {
+        width: 95rem;
+        display: flex;
+    }
+
+    &__slider-box {
+        display: flex;
+    }
+
+    &__presentation-img {
+        width: 25.5rem;
+        height: 23.5rem;
+    }
+
+    &__slider-content {
+        display: flex;
+        flex-direction: column;
+
+        padding: 4.5rem 3.8rem 2rem 0;
+
+        // width: 70.1rem;
+    }
+
+    &__slider-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 6rem;
+    }
+
+
+    &__slider-title {
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+    }
+
+    &__slider-count {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #CCCCCC;
+    }
+
+    &__slider-subtitle {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.4;
+
+        width: 41.9rem;
+    }
+
+
+
+// ABOUT-STORY__DOWN 
+
+    &__down {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-bottom: 4.4rem;
+    }
+
+    &__advantage-wrap {
+        display: flex;
+
+        border-top: 0.15rem solid #CCCCCC;
+        padding-top: 4rem;
+    }
+
+    &__advantage-content {
+        display: flex;
+
+        &:nth-child(1) {
+            margin-right: 14rem;
+        }
+
+        &:nth-child(2) {
+            margin-right: 9rem;
+        }
+    }
+
+    &__advantage-icon {
+        width: 3rem;
+        height: 3rem;
+
+        margin-right: 1.7rem;
+    }
+
+    &__advantage-item {
+        width: 21.5rem;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__advantage-title {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+
+    &__advantage-item-span {
+        font-size: 2.5rem;
+        font-weight: 600;
+
+        margin-top: 0.5rem;
+    }
+
+    &__application {
+        display: flex;
+        align-items: center;
+    }
+
+}
