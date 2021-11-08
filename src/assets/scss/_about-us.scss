@@ -67,13 +67,7 @@
         }
     }
 
-    // &__par-last {
-    //     font-size: 1.8rem;
-    //     font-weight: 400;
-    //     margin-bottom: 8.8rem;
-    // }
-
-
+   
     &__link {
         margin-left: 10rem;
         position: relative;
@@ -87,6 +81,7 @@
                 background-position: center;
 
                 position: absolute;
+                transform: translate(35%, -10%);
             }
         }
     }

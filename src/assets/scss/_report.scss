@@ -14,6 +14,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        margin-bottom: 7rem;
     }
 
     &__title {
@@ -22,18 +24,17 @@
         line-height: 1.2;
 
         width: 82.1rem;
-
-        margin-bottom: 7rem;
     }
+&__table {
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+        
 
-    &__table {
-display: flex;
-justify-content: center;
-    }
+}
 
-    &__table-col {
+    &__table-header {
 
-        &.header {
         height: 4.6rem;
         background-color: #CA342E;
 
@@ -42,19 +43,27 @@ justify-content: center;
         line-height: 1.4;
         color: #ffffff;
     }
-}
-    &__table-col {
-    & .value {
+
+    &__table-value {
+        height: 4.626rem;
+
         font-size: 1.5rem;
         font-weight: 400;
         line-height: 1.4;
         color: #3B3B3B;
+
+        &:nth-child(2n){
+            background-color: #ffffff;
+        }
         
     }
-    }
+   
 
     &__header-item {
 
+        padding-left: 2rem;
+
+        text-align: start;
         &:not(:first-child) {
             width: 22.7rem;
         }
@@ -62,5 +71,13 @@ justify-content: center;
         &:first-child {
             width: 60.1rem;
         }
+
+        &:last-child {
+            text-align: center;
+        }
+    }
+
+    &__table-row {
+        padding-left: 2rem;
     }
 }

@@ -624,6 +624,8 @@ input[type="number"] {
     background-size: 2rem;
     background-position: center;
     position: absolute;
+    -webkit-transform: translate(35%, -10%);
+    transform: translate(35%, -10%);
 }
 
 .about-us__photo-block {
@@ -995,12 +997,373 @@ input[type="number"] {
 
 .geography {
     position: relative;
+    margin-bottom: 17.15rem;
+}
+
+.geography__text-block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.geography__text-left {
+    width: 55.9rem;
+    margin-bottom: 3.2rem;
+}
+
+.geography__subtitle-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid #BBBBBB;
+    padding-top: 2rem;
+    margin-bottom: 3.6rem;
+}
+
+.geography__subtitle-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.geography__subtitle-img {
+    width: 2.4rem;
+    margin-right: 1.34rem;
 }
 
 .geography__subtitle {
     font-size: 1.95rem;
     font-weight: 300;
-    color: #191C20;
     line-height: 1.4;
     text-transform: uppercase;
+}
+
+.geography__number {
+    font-size: 1.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.geography__title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.geography__text-right {
+    width: 75rem;
+    padding-right: 6rem;
+}
+
+.geography__location {
+    font-size: 1.95rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+}
+
+.geography__location-soon-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.geography__location-soon-img {
+    width: 1.3rem;
+    margin-right: 1rem;
+}
+
+.geography__location-soon-text {
+    font-size: 1.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.geography__location-soon-text span {
+    font-weight: 300;
+}
+
+.geography__content {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.geography__img {
+    width: 101.7rem;
+    height: 67.37rem;
+    margin-right: 7.23rem;
+}
+
+.geography__shops {
+    padding-top: 7rem;
+}
+
+.geography__shops-box:not(:last-child) {
+    margin-bottom: 6.5rem;
+}
+
+.geography__shops-number {
+    font-size: 7.2rem;
+    font-weight: 500;
+    color: #CA342E;
+    margin-bottom: 1rem;
+}
+
+.geography__shops-type {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.geography__shops-type-img {
+    width: 2.4rem;
+    margin-right: 1rem;
+}
+
+.geography__shops-text {
+    font-size: 1.95rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.geography__img-right-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.geography__img-right {
+    width: 21.2rem;
+    height: 21.4rem;
+}
+
+.examples {
+    margin-bottom: 20rem;
+}
+
+.examples__title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8rem;
+}
+
+.examples__slide {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+}
+
+.examples__slide-num {
+    font-size: 2.0rem;
+    font-weight: 400;
+    margin-bottom: 5.2rem;
+}
+
+.examples__slide-left-block {
+    width: 69rem;
+    padding-right: 1.5rem;
+}
+
+.examples__slide-title {
+    font-size: 4.1rem;
+    font-weight: 700;
+}
+
+.examples__slide-place {
+    font-size: 4.1rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.examples__slide-list {
+    list-style-type: circle;
+}
+
+.examples__slide-item {
+    font-size: 1.8rem;
+    font-weight: 400;
+    list-style-type: circle;
+    text-align: start;
+    margin-left: 2rem;
+}
+
+.examples__slide-item span {
+    font-weight: 600;
+    padding-left: 0.5rem;
+}
+
+.examples__slide-item:not(:last-child) {
+    margin-bottom: 2.3rem;
+}
+
+.examples__slide-img {
+    width: 75rem;
+    height: 50.49rem;
+}
+
+.examples__slide-down {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #304981;
+    width: 87.5rem;
+    height: 10rem;
+    padding: 3.8rem 2rem 3.7rem 7.7rem;
+    position: absolute;
+    left: 0;
+    bottom: -2rem;
+}
+
+.examples__sity-place {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.71);
+}
+
+.examples__sity-place span {
+    color: #ffffff;
+    margin-left: 2.6rem;
+}
+
+.examples__sity-place:not(:last-child) {
+    padding-right: 3.8rem;
+    border-right: 1px solid rgba(187, 187, 187, 0.53);
+}
+
+.examples__sity-place:not(:first-child) {
+    padding-left: 3.8rem;
+}
+
+.plan {
+    margin-bottom: 27.2rem;
+}
+
+.plan__title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 5.9rem;
+}
+
+.plan__slide-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    width: 14.99rem;
+}
+
+.plan__stage-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding-bottom: 4.2rem;
+    border-bottom: 1px dashed #BBBBBB;
+    margin-bottom: 4.2rem;
+    position: relative;
+}
+
+.plan__stage-wrap::after {
+    content: "";
+    width: 0.865rem;
+    height: 0.865rem;
+    background-color: #FC281F;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5%;
+    left: -1%;
+}
+
+.plan__stage-num {
+    font-size: 4.0rem;
+    font-weight: 500;
+    margin-right: 1.2rem;
+}
+
+.plan__stage {
+    font-size: 2.0rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+}
+
+.plan__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 34.7rem;
+    height: 14.7rem;
+}
+
+.plan__text:not(:last-child) {
+    margin-right: 4.1rem;
+}
+
+.plan__photo {
+    width: 34.5rem;
+    height: 51.17rem;
+}
+
+.report__subtitle {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #777777;
+    margin-bottom: 1.7rem;
+}
+
+.report__title-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.report__title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 82.1rem;
+}
+
+.report__table {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.report__table-col.header {
+    height: 4.6rem;
+    background-color: #CA342E;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.report__table-col .value {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #3B3B3B;
+}
+
+.report__header-item:not(:first-child) {
+    width: 22.7rem;
+}
+
+.report__header-item:first-child {
+    width: 60.1rem;
 }

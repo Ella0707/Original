@@ -23,7 +23,7 @@
         border-top: 1px solid #BBBBBB;
         padding-top: 2rem;
 
-        margin-bottom: 3.9rem;
+        margin-bottom: 3.6rem;
     }
 
     &__subtitle-text {
@@ -57,7 +57,8 @@
 
 
     &__text-right {
-        width: 67.8rem;
+        width: 75rem;
+        padding-right: 6rem;
     }
 
     &__location {
@@ -84,7 +85,7 @@
         line-height: 1.4;
 
         & span {
-        font-weight: 300;
+            font-weight: 300;
         }
     }
 
@@ -93,26 +94,28 @@
     }
 
     &__img {
-        width: 104.7rem;
+        width: 101.7rem;
         height: 67.37rem;
 
         margin-right: 7.23rem;
     }
 
     &__shops {
-
+        padding-top: 7rem;
     }
 
     &__shops-box {
-&:not(:last-child) {
-    margin-bottom: 6rem;
-}
+        &:not(:last-child) {
+            margin-bottom: 6.5rem;
+        }
     }
 
     &__shops-number {
         font-size: 7.2rem;
         font-weight: 500;
         color: #CA342E;
+
+        margin-bottom: 1rem;
     }
 
     &__shops-type {
