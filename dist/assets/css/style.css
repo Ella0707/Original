@@ -992,3 +992,15 @@ input[type="number"] {
     top: 9rem;
     right: 0;
 }
+
+.geography {
+    position: relative;
+}
+
+.geography__subtitle {
+    font-size: 1.95rem;
+    font-weight: 300;
+    color: #191C20;
+    line-height: 1.4;
+    text-transform: uppercase;
+}

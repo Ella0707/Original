@@ -1,0 +1,115 @@
+.examples {
+
+    margin-bottom: 18rem;
+
+    &__title {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        margin-bottom: 7rem;
+    }
+
+    &__wrapper {
+
+    }
+
+    &__slide {
+        display: flex;
+
+        position: relative;
+    }
+
+    &__slide-num {
+        font-size: 2.0rem;
+        font-weight: 400;
+
+        margin-bottom: 4.4rem;
+    }
+
+    &__slide-left-block {
+width: 69rem;
+padding-right: 1.5rem;
+    }
+
+    &__slide-title {
+        font-size: 4.1rem;
+        font-weight: 700;
+    }
+
+    &__slide-place {
+        font-size: 4.1rem;
+        font-weight: 700;
+
+        margin-bottom: 3rem;
+    }
+
+    &__slide-list {
+        list-style-type: circle;
+
+    }
+
+    &__slide-item {
+        font-size: 1.8rem;
+        font-weight: 400;
+        list-style-type: circle;
+
+        text-align: start;
+
+        margin-left: 3rem;
+
+
+        & span {
+            font-weight: 600;
+            padding-left: 1.2rem;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__slide-img {
+        width: 75rem;
+        height: 50.49rem;
+    }
+
+    &__slide-down {
+        display: flex;
+        align-items: center;
+
+        background-color: #304981;
+        width: 87.5rem;
+        height: 10rem;
+
+        padding: 3.8rem 2rem 3.7rem 7.7rem;
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+    }
+
+    &__sity-place {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.4;
+        color: rgba(255, 255, 255, 0.71);
+
+        & span {
+            color: #ffffff;
+            margin-left: 2.6rem;
+        }
+
+        &:not(:last-child) {
+            padding-right: 3.8rem;
+            border-right: 1px solid rgba(187, 187, 187, 0.53);
+        }
+
+        &:not(:first-child) {
+            padding-left: 3.8rem;
+        }
+    }
+
+
+}

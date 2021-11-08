@@ -1,0 +1,80 @@
+.plan {
+
+    margin-bottom: 26.7rem;
+
+
+    &__title {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        margin-bottom: 5.4rem;
+    }
+
+    &__slide-wrapper {
+        display: flex;
+
+        width: 14.99rem;
+    }
+
+    &__box {
+
+    }
+
+    &__stage-wrap {
+        display: flex;
+        align-items: flex-end;
+
+        padding-bottom: 3.2rem;
+        border-bottom: 1px dashed red;
+
+        margin-bottom: 3.88rem;
+
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 0.865rem;
+            height: 0.865rem;
+            background-color: #FC281F;
+            border-radius: 50%;
+
+            position: absolute;
+            bottom: -5%;
+            left: -1%;
+        }
+    }
+
+    &__stage-num {
+        font-size: 4.0rem;
+        font-weight: 500;
+
+        margin-right: 1.2rem;
+    }
+
+    &__stage {
+        font-size: 2.0rem;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.5;
+
+        width: 34.7rem;
+        height: 14.7rem;
+
+        &:not(:last-child) {
+            margin-right: 4.1rem;
+        }
+    }
+
+    &__photo {
+        width: 34.5rem;
+        height: 51.17rem;
+
+    
+    }
+}

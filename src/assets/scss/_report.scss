@@ -1,0 +1,66 @@
+.report {
+
+
+    &__subtitle {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #777777;
+
+        margin-bottom: 1.7rem;
+    }
+
+    &__title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        width: 82.1rem;
+
+        margin-bottom: 7rem;
+    }
+
+    &__table {
+display: flex;
+justify-content: center;
+    }
+
+    &__table-col {
+
+        &.header {
+        height: 4.6rem;
+        background-color: #CA342E;
+
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.4;
+        color: #ffffff;
+    }
+}
+    &__table-col {
+    & .value {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.4;
+        color: #3B3B3B;
+        
+    }
+    }
+
+    &__header-item {
+
+        &:not(:first-child) {
+            width: 22.7rem;
+        }
+
+        &:first-child {
+            width: 60.1rem;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.geography {
+
+    position: relative;
+    margin-bottom: 17.15rem;
+
+
+    &__text-block {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__text-left {
+        width: 55.9rem;
+
+        margin-bottom: 3.2rem;
+    }
+
+    &__subtitle-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        border-top: 1px solid #BBBBBB;
+        padding-top: 2rem;
+
+        margin-bottom: 3.9rem;
+    }
+
+    &__subtitle-text {
+        display: flex;
+        align-items: center;
+    }
+
+    &__subtitle-img {
+        width: 2.4rem;
+        margin-right: 1.34rem;
+    }
+
+    &__subtitle {
+        font-size: 1.95rem;
+        font-weight: 300;
+        line-height: 1.4;
+        text-transform: uppercase;
+    }
+
+    &__number {
+        font-size: 1.95rem;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    &__title {
+        font-size: 4.5rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+
+    &__text-right {
+        width: 67.8rem;
+    }
+
+    &__location {
+        font-size: 1.95rem;
+        font-weight: 300;
+        line-height: 1.4;
+
+        margin-bottom: 3rem;
+    }
+
+    &__location-soon-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__location-soon-img {
+        width: 1.3rem;
+        margin-right: 1rem;
+    }
+
+    &__location-soon-text {
+        font-size: 1.95rem;
+        font-weight: 600;
+        line-height: 1.4;
+
+        & span {
+        font-weight: 300;
+        }
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__img {
+        width: 104.7rem;
+        height: 67.37rem;
+
+        margin-right: 7.23rem;
+    }
+
+    &__shops {
+
+    }
+
+    &__shops-box {
+&:not(:last-child) {
+    margin-bottom: 6rem;
+}
+    }
+
+    &__shops-number {
+        font-size: 7.2rem;
+        font-weight: 500;
+        color: #CA342E;
+    }
+
+    &__shops-type {
+        display: flex;
+        align-items: center;
+    }
+
+    &__shops-type-img {
+        width: 2.4rem;
+        margin-right: 1rem;
+    }
+
+    &__shops-text {
+        font-size: 1.95rem;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+
+
+    &__img-right-wrap {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__img-right {
+        width: 21.2rem;
+        height: 21.4rem;
+    }
+}
