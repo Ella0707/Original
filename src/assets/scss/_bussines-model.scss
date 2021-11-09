@@ -1,0 +1,81 @@
+.bussines-model {
+    
+    // margin-bottom: 18.1rem;
+
+    
+    &__subtitle {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #777777;
+
+        margin-bottom: 1.5rem;
+    }
+
+    &__title {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        width: 74.7rem;
+
+        margin-bottom: 7rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 18.1rem;
+    }
+
+    &__box {
+        width: 37.5rem;
+        height: 36.8rem;
+
+        position: relative;
+
+        &:not(:last-child) {
+            padding: 7.0rem 2.8rem 3.5rem 3.9rem;
+
+            &::after {
+                content: "";
+                width: 14.362rem;
+                height: 0.5rem;
+
+                background-image: url(./../images/bussines-model-line.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+
+                position: absolute;
+                bottom: 3.4rem;
+                left: 3.9rem;
+            }
+        }
+
+        &:last-child {
+            background-color: #CA342E;
+            color: #ffffff;
+
+            padding: 3.0rem 2.8rem 3.5rem 3.9rem;
+        }
+
+        border-top: 1px solid #C4C4C4;
+        border-bottom: 1px solid #C4C4C4;
+        border-right: 1px solid #C4C4C4;
+
+        &:first-child {
+            border-left: 1px solid #C4C4C4;
+        }
+    }
+
+    &__box-title {
+        font-size: 4rem;
+        font-weight: 600;
+
+        margin-bottom: 1.5rem;
+    }
+
+    &__box-subtitle {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+}

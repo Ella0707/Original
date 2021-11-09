@@ -1,0 +1,51 @@
+.company-founder {
+
+    margin-bottom: 18rem;
+
+    &__subtitle {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #777777;
+
+        margin-bottom: 1.5rem;
+    }
+    &__title {
+        font-size: 4.5rem;
+        font-weight: 700;
+
+        margin-bottom: 5.6rem;
+    }
+    &__content {
+        display: flex;
+    }
+    &__left-block {
+        margin-right: 3.857rem;
+
+    }
+    &__img {
+        width: 23.2rem;
+        height: 31.5rem;
+
+        margin-bottom: 1.5rem;
+
+        
+    }
+    &__founder-name {
+        font-size: 2.0rem;
+        font-weight: 700;
+        line-height: 1.4;
+
+        margin-bottom: 0.6rem;
+    }
+    &__founder-about {
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+   
+    &__video {
+        width: 123.493rem;
+        height: 69.487rem;
+    }
+}

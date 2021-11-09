@@ -8,22 +8,27 @@
         font-weight: 700;
         line-height: 1.2;
 
-        margin-bottom: 5.9rem;
+        margin-bottom: 6rem;
     }
 
-    &__slide-wrapper {
+    
+    &__slide {
         display: flex;
+        margin-right: 3rem;
+        justify-content: space-between;
 
-        width: 14.99rem;
+        // &:not(:last-child) {
+        // margin-right: 4rem;
+        // }
     }
 
-    &__box {
 
-    }
 
     &__stage-wrap {
         display: flex;
         align-items: flex-end;
+
+        width: 37rem;
 
         padding-bottom: 4.2rem;
         border-bottom: 1px dashed #BBBBBB;
@@ -41,7 +46,7 @@
 
             position: absolute;
             bottom: -5%;
-            left: -1%;
+            left: 0%;
         }
     }
 
@@ -66,15 +71,11 @@
         width: 34.7rem;
         height: 14.7rem;
 
-        &:not(:last-child) {
-            margin-right: 4.1rem;
-        }
+        // margin-right: 4.1rem;
     }
 
     &__photo {
         width: 34.5rem;
         height: 51.17rem;
-
-    
     }
 }

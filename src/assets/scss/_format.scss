@@ -7,12 +7,47 @@
         display: flex;
     }
 
+    &__img-wrap {
+        position: relative;
+    }
+
 
     &__img {
         width: 74.6rem;
         height: 74.9rem;
 
         margin-right: 21.5rem;
+    }
+
+    &__mini-wrap {
+        display: flex;
+        width: 51.6rem;
+
+        position: absolute;
+        bottom: 8.4rem;
+        right: 9rem;
+
+    }
+
+    &__img-mini {
+        width: 25.8rem;
+        height: 18.8rem;
+    }
+
+    &__color-block {
+        width: 25.8rem;
+        background-color: #CA342E;
+
+        display: flex;
+        align-items: flex-end;
+
+        padding: 3rem;
+    }
+
+    &__color-block-title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #ffffff;
     }
 
     &__right-block {
