@@ -14,4 +14,8 @@
  //# sourceMappingURL=swiper-bundle.min.js.map
 new Swiper ('.about-store__right-block');
 
+
+
+new Swiper ('.format__slide');
+
 //# sourceMappingURL=script.js.map

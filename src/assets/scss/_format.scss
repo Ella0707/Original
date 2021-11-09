@@ -1,0 +1,74 @@
+.format {
+
+    margin-bottom: 18rem;
+
+
+    &__slide-content {
+        display: flex;
+    }
+
+
+    &__img {
+        width: 74.6rem;
+        height: 74.9rem;
+
+        margin-right: 21.5rem;
+    }
+
+    &__right-block {
+        padding-top: 11.2rem;
+        padding-right: 1.5rem;
+    }
+
+    &__subtitle {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #777777;
+        line-height: 1.2;
+
+        padding-left: 8rem;
+        margin-bottom: 1.5rem;
+
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 5.6rem;
+            height: 1rem;
+
+            background-image: url(./../images/format/line.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+
+            position: absolute;
+            top: 25%;
+            left: 0;
+        }
+    }
+
+    &__title {
+        font-size: 4.5rem;
+        font-weight: 700;
+
+        margin-bottom: 5rem;
+    }
+
+    &__text-wrap {
+        margin-bottom: 7rem;
+    }
+
+    &__par {
+        font-size: 1.8rem;
+        font-weight: 400;
+
+        padding-left: 8rem;
+
+        &:not(:last-child) {
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    &__link {
+        margin-left: 16rem;
+    }
+}
