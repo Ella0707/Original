@@ -1252,13 +1252,15 @@ input[type="number"] {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 5.9rem;
+    margin-bottom: 6rem;
 }
 
-.plan__slide-wrapper {
+.plan__slide {
     display: -ms-flexbox;
     display: flex;
-    width: 14.99rem;
+    margin-right: 3rem;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .plan__stage-wrap {
@@ -1266,6 +1268,7 @@ input[type="number"] {
     display: flex;
     -ms-flex-align: end;
     align-items: flex-end;
+    width: 37rem;
     padding-bottom: 4.2rem;
     border-bottom: 1px dashed #BBBBBB;
     margin-bottom: 4.2rem;
@@ -1280,7 +1283,7 @@ input[type="number"] {
     border-radius: 50%;
     position: absolute;
     bottom: -5%;
-    left: -1%;
+    left: 0%;
 }
 
 .plan__stage-num {
@@ -1301,10 +1304,6 @@ input[type="number"] {
     line-height: 1.5;
     width: 34.7rem;
     height: 14.7rem;
-}
-
-.plan__text:not(:last-child) {
-    margin-right: 4.1rem;
 }
 
 .plan__photo {
@@ -1701,6 +1700,7 @@ input[type="number"] {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-right: 4.2rem;
 }
 
 .step__slide-box {
