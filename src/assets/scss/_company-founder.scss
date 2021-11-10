@@ -24,14 +24,19 @@
         margin-right: 3.857rem;
 
     }
-    &__img {
+
+    &__img-wrap {
         width: 23.2rem;
         height: 31.5rem;
 
         margin-bottom: 1.5rem;
-
-        
     }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
     &__founder-name {
         font-size: 2.0rem;
         font-weight: 700;

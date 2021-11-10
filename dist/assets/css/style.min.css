@@ -794,10 +794,8 @@ input[type="number"] {
     padding-right: 1.5rem; }
   .examples__slide-title {
     font-size: 4.1rem;
-    font-weight: 700; }
-  .examples__slide-place {
-    font-size: 4.1rem;
     font-weight: 700;
+    width: 42.3rem;
     margin-bottom: 3rem; }
   .examples__slide-list {
     list-style-type: circle; }
@@ -1113,10 +1111,13 @@ input[type="number"] {
     display: flex; }
   .company-founder__left-block {
     margin-right: 3.857rem; }
-  .company-founder__img {
+  .company-founder__img-wrap {
     width: 23.2rem;
     height: 31.5rem;
     margin-bottom: 1.5rem; }
+  .company-founder__img {
+    width: 100%;
+    object-fit: cover; }
   .company-founder__founder-name {
     font-size: 2.0rem;
     font-weight: 700;
@@ -1162,5 +1163,55 @@ input[type="number"] {
   .step__box-img {
     width: 34.5rem;
     height: 25.5rem; }
+
+.footer {
+  padding: 9.0rem; }
+  .footer__inner {
+    display: flex;
+    justify-content: space-between; }
+  .footer__left-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .footer__list-left {
+    display: flex; }
+  .footer__item-left:not(:last-child) {
+    margin-right: 4.5rem; }
+  .footer__link-left {
+    font-size: 1.6rem;
+    font-weight: 500; }
+  .footer__privacy-policy {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase; }
+  .footer__logo {
+    width: 9.4rem;
+    height: 9rem; }
+  .footer__logo-img {
+    width: 100%;
+    object-fit: cover; }
+  .footer__right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .footer__nav-right {
+    display: flex; }
+  .footer__list-right {
+    display: flex; }
+  .footer__item-right:not(:last-child) {
+    margin-right: 4.5rem; }
+  .footer__link-right {
+    font-size: 1.6rem;
+    font-weight: 500; }
+  .footer__social {
+    display: flex; }
+  .footer__social-item {
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase; }
+    .footer__social-item:not(:last-child) {
+      margin-right: 3rem; }
 
 /*# sourceMappingURL=style.min.css.map */
