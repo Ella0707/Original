@@ -11,56 +11,64 @@
     }
 
     &__content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        width: 157.1rem;
+        height: 83.7rem;
+
+
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
     }
 
-    &__num {
-        font-size: 6.0rem;
-        font-weight: 500;
-        line-height: 1.2;
-
-        border-bottom: 1px dashed red;
-        width: 39rem;
-
-        padding-bottom: 5.1rem;
-
+    &__img {
+        object-fit: cover;
     }
 
-    &__box {
-        width: 35rem;
-        padding: 2rem 1.5rem 1.5rem 1.5rem;
-    }
+    // &__num {
+    //     font-size: 6.0rem;
+    //     font-weight: 500;
+    //     line-height: 1.2;
 
-    &__box-inner {            
-        border-right: 1px dashed red;
-        width: 35rem;
+    //     border-bottom: 1px dashed red;
+    //     width: 39rem;
+
+    //     padding-bottom: 5.1rem;
+
+    // }
+
+    // &__box {
+    //     width: 35rem;
+    //     padding: 2rem 1.5rem 1.5rem 1.5rem;
+    // }
+
+    // &__box-inner {            
+    //     border-right: 1px dashed red;
+    //     width: 35rem;
         
-    }
+    // }
 
 
-    &__box-img-wrap {
-        width: 5.5rem;
+    // &__box-img-wrap {
+    //     width: 5.5rem;
         
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    // }
 
-    &__box-img {
-        object-fit: contain;
-    }
+    // &__box-img {
+    //     object-fit: contain;
+    // }
 
-    &__box-title {
-        font-size: 1.95rem;
-        font-weight: 400;
-        line-height: 1.4;
-    }
+    // &__box-title {
+    //     font-size: 1.95rem;
+    //     font-weight: 400;
+    //     line-height: 1.4;
+    // }
 
-    &__box-subtitle {
-        font-size: 1.8rem;
-        font-weight: 300;
-        line-height: 1.4;
-    }
+    // &__box-subtitle {
+    //     font-size: 1.8rem;
+    //     font-weight: 300;
+    //     line-height: 1.4;
+    // }
 }

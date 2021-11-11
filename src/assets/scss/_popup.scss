@@ -1,0 +1,131 @@
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.4);
+    top: 0;
+    left: 0;
+    
+ 
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+
+   
+   & .open {
+    opacity: 1;
+    visibility: visible;
+   }
+
+    &__body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__content {
+        width: 166.4rem;
+        background-color: #ffffff;
+
+        position: relative;
+
+      
+
+        // transition: all 0.8s ease 0s;
+        // opacity: 0;
+        // transform: translate(0px, -100%);
+
+    }
+
+    &__close {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background-color: #ffffff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(50%, -50%);
+    }
+
+    &__close-img {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+
+
+    &__content-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content-wrap-left {
+        display: flex;
+        flex-direction: column;
+       
+        padding: 5.25rem 13.0rem 10rem 8.2rem;
+
+    }
+
+    &__logo {
+        width: 7.9rem;
+        height: 7.56rem;
+
+        margin-bottom: 5.44rem;
+    }
+
+    &__logo-img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        margin-bottom: 5.1rem;
+    }
+
+    &__name {}
+
+    &__email {}
+
+    &__phone {}
+
+    &__info {}
+
+    &__link {}
+
+    &__content-wrap-right {
+        width: 82.8rem;
+        height: 94.3rem;
+    }
+
+    &__img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+
+.btn {}
+
