@@ -1,6 +1,7 @@
 .about-us {
     margin-bottom: 28rem;
     position: relative;
+ 
 
     &__inner {
         padding-top: 15.4rem;
@@ -87,7 +88,7 @@
     }
 
     &__photo-block {
-        width: 40.5rem;
+        width: 40rem;
         
         position: absolute;
         right: 0;
@@ -96,7 +97,7 @@
 
     &__photo-block-top {
         display: flex;
-        width: 41rem;
+        width: 40rem;
 
         background-color: #ffffff;
     }
@@ -111,11 +112,11 @@
     &__photo-block-down {
         display: flex;
         justify-content: flex-end;
-        width: 41rem;
+        width: 40rem;
     }
 
     &__img-down {
-        width: 21rem;
+        width: 20rem;
         height: 10.6rem;
 
         object-fit: cover;

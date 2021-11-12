@@ -712,7 +712,7 @@
                 <div class="report__subtitle">2020 - 2021 год</div>
                 <div class="report__title-wrap">
                     <div class="report__title">Вы можете получить полную версию отчета магазина </div>
-                    <a href="#popup" class="report__link btn pupup-link">Получить расчёт</a>
+                    <a href="" class="report__link btn popup-link">Получить расчёт</a>
                 </div>
 
                 <table class="report__table">
@@ -1260,42 +1260,66 @@
 
 
     <!-- POPAP  -->
-    <div id="popup" class="popup">
-       
+    <div class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <a href="" class="popup__close close-popup">
-                    <img class="popup__close-img" src="./assets/images/popap-close.svg" alt="" >
+                <a href="##" class="popup__close close-popup">
+                    <img class="popup__close-img" src="./assets/images/popap-close.svg" alt="">
                 </a>
                 <div class="popup__content-wrap">
                     <div class="popup__content-wrap-left">
-                    <a href="" class="popup__logo">
-                        <img class="popup__logo-img" src="./assets/images/logo.svg" alt="" >
-                    </a>
-
-                    <form class="popup__form" action="">
-                        <div class="popup__title">Оставить заявку</div>
-                        <input class="popup__name" type="text" name="Введите имя*" id="">
-                        <input class="popup__email" type="email" name="" id="">
-                        <input class="popup__phone" type="tel" name="" id="">
-                        <input class="popup__info" type="text" name="" id="">
-
-                        <div></div>
-                        <input type="radio" name="" id="">
-
-                        <a href="" class="popup__link btn">Отправить запрос</a>
-                      
-                    </form>
-                </div>
-                <div class="popup__content-wrap-right">
-                    <img class="popup__img" src="./assets/images/popap__img.jpg" alt="">
-                </div>
-
+                        <a href="" class="popup__logo">
+                            <img class="popup__logo-img" src="./assets/images/logo.svg" alt="">
+                        </a>
+    
+                        <form class="popup__form" action="">
+                            <div class="popup__title">Оставить заявку</div>
+                            <input class="popup__name" type="text" placeholder="Введите имя*" name="" id="">
+                            <input class="popup__email" type="email" placeholder="Введите e-mail*" name="" id="">
+                            <input class="popup__phone" type="tel" placeholder="Введите телефон*" name="" id="">
+                            <input class="popup__info" type="text" placeholder="Дополнительная информация" name="" id="">
+    
+                            <div class="popup__select-title">Выберите наиболее удобный для Вас вариант связи:</div>
+                            <div class="popup__select" >
+                                <div class="popup__select-item">
+                                    <input class="popup__select-input" type="radio" name="" id="">
+                                    <label class="popup__select-label">Электронная почта</label>
+                                </div>
+                                <div class="popup__select-item">
+                                    <input class="popup__select-input" type="radio" name="" id="">
+                                    <label class="popup__select-label">Звонок</label>
+                                </div>
+                                <div class="popup__select-item">
+                                    <input class="popup__select-input" type="radio" name="" id="">
+                                    <label class="popup__select-label">WhatsApp</label>
+                                </div>
+                            </div>
+                            <a href="" class="popup__link btn popup-accepted">Отправить запрос</a>
+                        </form>
+                    </div>
+                    <div class="popup__content-wrap-right">
+                        <img class="popup__img" src="./assets/images/popap__img.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- POPAP-ACCEPTED ACCEPTED -->
+    <div class="accepted">
+        <div class="accepted__body">
+            <div class="accepted__content">
+                <a href="##" class="accepted__close close-popup">
+                    <img class="accepted__close-img" src="./assets/images/popap-close.svg" alt="">
+                </a>
+                <a href="" class="accepted__logo">
+                    <img class="accepted__logo-img" src="./assets/images/logo.svg" alt="">
+                </a>
+                <div class="accepted__title">Ваша заявка принята</div>
+                <div class="accepted__subtitle">Мы свяжемся с вами в ближайшее время</div>
+            </div>
+        </div>
+    </div>
 
 
 

@@ -1,6 +1,8 @@
 .about-store {
     background-color: #ffffff;
 
+    overflow-y: hidden;
+
     &__inner {
         position: relative;
         padding-top: 3.2rem;
@@ -42,10 +44,14 @@
     }
 
 
+
+
     // SLIDER
 
     &__right-block {
         display: flex;
+
+        width: 90rem;
 
         background-color: #F4F4F4;
 
@@ -109,11 +115,6 @@
             z-index: 2;
         }
 
-    }
-
-    &__right-block {
-        width: 95rem;
-        display: flex;
     }
 
     &__slider-box {

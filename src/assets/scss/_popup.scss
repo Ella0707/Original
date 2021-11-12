@@ -1,44 +1,30 @@
 .popup {
     position: fixed;
-    width: 100%;
+    z-index: 999999;
     height: 100%;
+    width: 100%;
     background-color: rgba(31, 31, 31, 0.4);
     top: 0;
     left: 0;
-    
- 
-    opacity: 0;
-    visibility: hidden;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transition: all 0.8s ease 0s;
 
-   
-   & .open {
-    opacity: 1;
-    visibility: visible;
-   }
+    display: none;
 
     &__body {
-        min-height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 3rem;
+        padding-top: 6rem;
     }
 
     &__content {
         width: 166.4rem;
+        height: 94.3rem;
+
         background-color: #ffffff;
 
         position: relative;
-
-      
-
-        // transition: all 0.8s ease 0s;
-        // opacity: 0;
-        // transform: translate(0px, -100%);
-
     }
 
     &__close {
@@ -72,7 +58,7 @@
     &__content-wrap-left {
         display: flex;
         flex-direction: column;
-       
+
         padding: 5.25rem 13.0rem 10rem 8.2rem;
 
     }
@@ -111,7 +97,36 @@
 
     &__info {}
 
-    &__link {}
+&__select-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    margin-bottom: 2.7rem;
+}
+
+    &__select {
+        display: flex;
+
+        margin-bottom: 4rem;
+    }
+
+    &__select-item {
+        display: flex;
+        align-items: center;
+
+        
+        &:not(:last-child) {
+            margin-right: 9.4rem;
+        }
+    }
+
+    &__select-input {
+        margin-right: 1rem;
+    }
+
+    &__link {
+        margin-left: 13rem;
+    }
 
     &__content-wrap-right {
         width: 82.8rem;
@@ -125,7 +140,9 @@
 }
 
 
+.no-scroll {
+    overflow-y: hidden;
+}
 
 
-.btn {}
 
