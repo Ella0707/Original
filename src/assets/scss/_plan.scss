@@ -11,17 +11,48 @@
         margin-bottom: 6rem;
     }
 
-    
-    &__slide {
-        display: flex;
-        margin-right: 3rem;
-        justify-content: space-between;
-
-        // &:not(:last-child) {
-        // margin-right: 4rem;
-        // }
+    &__slider {
+        height: 90rem;
+        position: relative;
     }
 
+    &__slider-wrapper {
+        height: 80rem;
+    }
+
+    &__pagination {
+        // font-size: 0;
+        // &.swiper-pagination {
+          
+
+           &.swiper-pagination-current {
+            font-size: 4rem;
+         }
+
+         &.swiper-pagination-total {
+            font-size: 2rem;
+         }
+        // }
+    } 
+
+  
+
+
+    &__arrow-next {
+    &.swiper-button-next {
+        right: 40%;
+        top: auto;
+        bottom: 0;
+    }
+}
+
+&__arrow-prev {
+    &.swiper-button-prev {
+        left: 40%;
+        top: auto;
+        bottom: 0;
+    }
+}
 
 
     &__stage-wrap {

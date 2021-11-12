@@ -530,9 +530,10 @@
         <section class="examples">
             <div class="container">
                 <div class="examples__title">Примеры наших магазинов</div>
-                <div class="examples__wrapper">
-                    <div class="examples__slide">
+                <div class="examples__slides swiper">
+                    <div class="examples__wrapper swiper-wrapper">
 
+                    <div class="examples__slide swiper-slide">
                         <div class="examples__slide-left-block">
                             <div class="examples__slide-num">01/02</div>
                             <div class="examples__slide-title">Original Marines, ТЦ Капитолий</div>
@@ -565,6 +566,43 @@
                             </div>
                         </div>
                     </div>
+
+                           
+                    <div class="examples__slide swiper-slide">
+                        <div class="examples__slide-left-block">
+                            <div class="examples__slide-num">01/02</div>
+                            <div class="examples__slide-title">Original Marines, ТЦ Капитолий</div>
+                            <ul class="examples__slide-list">
+                                <li class="examples__slide-item"> Торговая площадь:
+                                    <span class="examples__slide-item-num">133 м</span>
+                                </li>
+                                <li class="examples__slide-item"> Год открытия:
+                                    <span class="examples__slide-item-num">2020</span>
+                                </li>
+                                <li class="examples__slide-item"> Стоимость оборудования:
+                                    <span class="examples__slide-item-num">1 056 000 рублей</span>
+                                </li>
+                                <li class="examples__slide-item"> Среднегодовая выручка:
+                                    <span class="examples__slide-item-num">30 000 000 руб.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="examples__slide-right-block">
+                            <img class="examples__slide-img" src="./assets/images/examples/slide1.jpg" alt="">
+                        </div>
+
+                        <div class="examples__slide-down">
+                            <div class="examples__sity-place"> Город
+                                <span>Москва</span>
+                            </div>
+
+                            <div class="examples__sity-place"> Место
+                                <span>ТЦ Капитолий, Вернадского, 6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
                 </div>
             </div>
         </section>
@@ -577,9 +615,7 @@
 
                 <div class="plan__slider swiper">
 
-                    <class class="plan__slide-wrapper swiper-wrapper">
-
-                        <!-- слайд 1 -->
+                    <div class="plan__slider-wrapper swiper-wrapper">
 
                         <div class="plan__slide swiper-slide">
 
@@ -640,9 +676,6 @@
                             </div>
                         </div>
 
-
-                        <!-- слайд 2 -->
-
                         <div class="plan__slide swiper-slide">
                             <div class="plan__box">
                                 <div class="plan__stage-wrap">
@@ -697,9 +730,10 @@
                                 <img class="plan__photo" src="./assets/images/plane/img4.jpg" alt="">
                             </div>
                         </div>
-
-
                 </div>
+                <div class="plan__arrow-next swiper-button-next"></div>
+                <div class="plan__arrow-prev swiper-button-prev"></div>
+                <div class="plan__pagination swiper-pagination"></div> 
             </div>
         </section>
 
@@ -1092,6 +1126,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="step__arrow-next swiper-button-next"></div>
+                    <div class="step__arrow-prev swiper-button-prev"></div>
+                    <div class="step__pagination swiper-pagination"></div> 
                 </div>
             </div>
         </section>

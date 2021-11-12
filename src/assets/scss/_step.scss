@@ -16,13 +16,45 @@
     }
 
     
-    &__slide {
-        display: flex;
-        justify-content: space-between;
-
-        margin-right: 4.2rem;
+    &__slider {
+        height: 70rem;
+        position: relative;
     }
 
+    &__slider-wrapper {
+        height: 60rem;
+    }
+
+    &__pagination {
+        // font-size: 0;
+        // &.swiper-pagination {
+          
+
+           &.swiper-pagination-current {
+            font-size: 4rem;
+         }
+
+         &.swiper-pagination-total {
+            font-size: 2rem;
+         }
+        // }
+    } 
+
+    &__arrow-next {
+        &.swiper-button-next {
+            right: 40%;
+            top: auto;
+            bottom: 0;
+        }
+    }
+    
+    &__arrow-prev {
+        &.swiper-button-prev {
+            left: 40%;
+            top: auto;
+            bottom: 0;
+        }
+    }
 
     &__slide-box {
 

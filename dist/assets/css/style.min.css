@@ -254,7 +254,8 @@ input[type="number"] {
     background-size: 1.5rem;
     background-position: center;
     border-radius: 50%;
-    border: 0.8rem solid #f4d6d5;
+    border: 0.8rem solid;
+    border-color: rgba(202, 52, 46, 0.2);
     position: absolute;
     top: -100%;
     left: -50%;
@@ -849,10 +850,23 @@ input[type="number"] {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 6rem; }
-  .plan__slide {
-    display: flex;
-    margin-right: 3rem;
-    justify-content: space-between; }
+  .plan__slider {
+    height: 90rem;
+    position: relative; }
+  .plan__slider-wrapper {
+    height: 80rem; }
+  .plan__pagination.swiper-pagination-current {
+    font-size: 4rem; }
+  .plan__pagination.swiper-pagination-total {
+    font-size: 2rem; }
+  .plan__arrow-next.swiper-button-next {
+    right: 40%;
+    top: auto;
+    bottom: 0; }
+  .plan__arrow-prev.swiper-button-prev {
+    left: 40%;
+    top: auto;
+    bottom: 0; }
   .plan__stage-wrap {
     display: flex;
     align-items: flex-end;
@@ -1119,10 +1133,23 @@ input[type="number"] {
   .step__title {
     font-size: 4.5rem;
     font-weight: 700; }
-  .step__slide {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 4.2rem; }
+  .step__slider {
+    height: 70rem;
+    position: relative; }
+  .step__slider-wrapper {
+    height: 60rem; }
+  .step__pagination.swiper-pagination-current {
+    font-size: 4rem; }
+  .step__pagination.swiper-pagination-total {
+    font-size: 2rem; }
+  .step__arrow-next.swiper-button-next {
+    right: 40%;
+    top: auto;
+    bottom: 0; }
+  .step__arrow-prev.swiper-button-prev {
+    left: 40%;
+    top: auto;
+    bottom: 0; }
   .step__slide-box {
     width: 34.5rem;
     height: 60.4rem;
