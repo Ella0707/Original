@@ -15,7 +15,36 @@ new Swiper('.assortment__slider', {
 
 
 new Swiper('.format__slide');
-new Swiper('.examples__slides');
+
+
+new Swiper('.examples__slides',{
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: "fraction",
+
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
 new Swiper('.plan__slider', {
     slidesPerView: 4,

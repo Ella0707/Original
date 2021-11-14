@@ -823,7 +823,10 @@ input[type="number"] {
   .examples__slide {
     display: flex;
     justify-content: space-between;
+    height: 50.5rem;
     position: relative; }
+  .examples__wrapper {
+    height: 52rem; }
   .examples__slide-num {
     font-size: 2.0rem;
     font-weight: 400;
@@ -867,7 +870,37 @@ input[type="number"] {
     padding: 3.8rem 2rem 3.7rem 7.7rem;
     position: absolute;
     left: 0;
-    bottom: -2rem; }
+    bottom: 0;
+    transform: translateY(2rem); }
+  .examples__arrow-next.swiper-button-next {
+    right: -19rem;
+    top: auto;
+    bottom: 0;
+    width: 9.74rem;
+    height: 9.83rem;
+    background-color: #ffffff;
+    fill: #CA342E; }
+    .examples__arrow-next.swiper-button-next.swiper-button-disabled {
+      background-color: #ECECEC;
+      fill: black;
+      opacity: 1; }
+    .examples__arrow-next.swiper-button-next::after {
+      content: ''; }
+  .examples__arrow-prev.swiper-button-prev {
+    left: auto;
+    top: auto;
+    bottom: 0;
+    right: -9.5rem;
+    width: 9.74rem;
+    height: 9.83rem;
+    fill: #CA342E;
+    background-color: #ffffff; }
+    .examples__arrow-prev.swiper-button-prev.swiper-button-disabled {
+      background-color: #ECECEC;
+      fill: black;
+      opacity: 1; }
+    .examples__arrow-prev.swiper-button-prev::after {
+      content: ''; }
   .examples__sity-place {
     font-size: 1.6rem;
     font-weight: 700;
