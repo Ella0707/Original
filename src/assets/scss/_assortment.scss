@@ -5,6 +5,8 @@
 
     &__inner {
         display: flex;
+
+        position: relative;
     }
 
     &__left-block {
@@ -69,7 +71,7 @@
     &__img-block-down {
         display: flex;
     }
-    
+
     &__img-mini-down {
         width: 21.5rem;
         height: 22rem;
@@ -97,15 +99,11 @@
 
     &__left-block-link {
         margin-left: 10rem;
-
-        &::before {
-            transform: translate(-40%, -10%);
-        }
     }
 
     &__left-down-img-wrap {
         width: 43rem;
-        
+
         display: flex;
         flex-direction: row-reverse;
 
@@ -123,17 +121,78 @@
     }
 
 
+    &__slider {
+        height: 50.5rem;
+        width: 56.8rem;
+        position: relative;
+    }
+
+    &__slider-wrapper {
+        height: 43.4rem;
+        width: 56.8rem;
+    }
+
+    &__arrow-next {
+        &.swiper-button-next {
+            right: 0;
+            top: auto;
+            bottom: 0;
+            width: 7.1rem;
+            height: 7.1rem;
+            background-color: #ffffff;
+            fill: #CA342E;
+
+            &.swiper-button-disabled {
+                background-color: #ECECEC;
+                fill: black;
+                opacity: 1;
+            }
+
+            &::after {
+                content: '';
+            }
+        }
+    }
+
+    &__arrow-prev {
+        &.swiper-button-prev {
+            left: auto;
+            top: auto;
+            bottom: 0;
+            right: 7.1rem;
+            width: 7.1rem;
+            height: 7.1rem;
+            fill: #CA342E;
+            background-color: #ffffff;
+
+            &.swiper-button-disabled {
+                background-color: #ECECEC;
+                fill: black;
+                opacity: 1;
+            }
+
+            &::after {
+                content: '';
+            }
+        }
+    }
+
+
     &__slider-img {
         width: 56.8rem;
-        height: 43.4rem;
+        height: 100%;
+        object-fit: cover;
 
         position: relative;
         z-index: 1;
     }
 
     &__right-block-img-wrap {
-        width: 43.2rem;
+        width: 76.7rem;
         height: 43.2rem;
+
+        position: absolute;
+        bottom: 0;
     }
 
     &__right-block-img-top {
@@ -150,6 +209,8 @@
         width: 43.2rem;
         height: 21.4rem;
         background-color: #ECECEC;
+
+        position: relative;
     }
 
     &__img-right {

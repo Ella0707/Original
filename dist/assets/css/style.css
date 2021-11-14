@@ -308,7 +308,8 @@ input[type="number"] {
     background-size: 1.5rem;
     background-position: center;
     border-radius: 50%;
-    border: 0.8rem solid #f4d6d5;
+    border: 0.8rem solid;
+    border-color: rgba(202, 52, 46, 0.2);
     position: absolute;
     top: -100%;
     left: -50%;
@@ -1255,12 +1256,54 @@ input[type="number"] {
     margin-bottom: 6rem;
 }
 
-.plan__slide {
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 3rem;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+.plan__slider {
+    height: 90rem;
+    position: relative;
+}
+
+.plan__slider-wrapper {
+    height: 80rem;
+}
+
+.plan__pagination {
+    font-size: 0;
+}
+
+.plan__pagination .swiper-pagination-current {
+    font-size: 4rem;
+    margin-right: 1rem;
+}
+
+.plan__pagination .swiper-pagination-total {
+    font-size: 1.8rem;
+}
+
+.plan__arrow-next.swiper-button-next {
+    right: 40%;
+    top: auto;
+    bottom: 0;
+}
+
+.plan__arrow-next.swiper-button-next.swiper-button-disabled {
+    stroke: black;
+}
+
+.plan__arrow-next.swiper-button-next::after {
+    content: '';
+}
+
+.plan__arrow-prev.swiper-button-prev {
+    left: 40%;
+    top: auto;
+    bottom: 0;
+}
+
+.plan__arrow-prev.swiper-button-prev.swiper-button-disabled {
+    stroke: black;
+}
+
+.plan__arrow-prev.swiper-button-prev::after {
+    content: '';
 }
 
 .plan__stage-wrap {
@@ -1661,12 +1704,33 @@ input[type="number"] {
     font-weight: 700;
 }
 
-.step__slide {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-right: 4.2rem;
+.step__slider {
+    height: 70rem;
+    position: relative;
+}
+
+.step__slider-wrapper {
+    height: 60rem;
+}
+
+.step__pagination.swiper-pagination-current {
+    font-size: 4rem;
+}
+
+.step__pagination.swiper-pagination-total {
+    font-size: 2rem;
+}
+
+.step__arrow-next.swiper-button-next {
+    right: 40%;
+    top: auto;
+    bottom: 0;
+}
+
+.step__arrow-prev.swiper-button-prev {
+    left: 40%;
+    top: auto;
+    bottom: 0;
 }
 
 .step__slide-box {
@@ -1866,19 +1930,20 @@ input[type="number"] {
 }
 
 .popup__body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    padding: 3rem;
-    padding-top: 6rem;
+    min-height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 6rem;
 }
 
 .popup__content {
-    width: 166.4rem;
-    height: 94.3rem;
     background-color: #ffffff;
+    max-width: 166.4rem;
+    max-height: 94.3rem;
     position: relative;
 }
 
@@ -1908,8 +1973,6 @@ input[type="number"] {
 .popup__content-wrap {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 .popup__content-wrap-left {
@@ -1944,6 +2007,77 @@ input[type="number"] {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 5.1rem;
+}
+
+.popup__input-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 4.7rem;
+}
+
+.popup__input {
+    font-size: 2.5rem;
+    font-weight: 400;
+    height: 5rem;
+    max-width: 62.2rem;
+    border: none;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.popup__input::-webkit-input-placeholder {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #bbbbbb;
+}
+
+.popup__input::-moz-placeholder {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #bbbbbb;
+}
+
+.popup__input:-ms-input-placeholder {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #bbbbbb;
+}
+
+.popup__input::-ms-input-placeholder {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #bbbbbb;
+}
+
+.popup__input::placeholder {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #bbbbbb;
+}
+
+.popup__input:last-child {
+    height: 11rem;
+}
+
+.popup__input:last-child::-webkit-input-placeholder {
+    padding-top: 2rem;
+}
+
+.popup__input:last-child::-moz-placeholder {
+    padding-top: 2rem;
+}
+
+.popup__input:last-child:-ms-input-placeholder {
+    padding-top: 2rem;
+}
+
+.popup__input:last-child::-ms-input-placeholder {
+    padding-top: 2rem;
+}
+
+.popup__input:last-child::placeholder {
+    padding-top: 2rem;
 }
 
 .popup__select-title {

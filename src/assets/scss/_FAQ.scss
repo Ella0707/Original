@@ -7,6 +7,7 @@
         margin-bottom: 7rem;
 
         text-align: center;
+
     }
 
     &__wrapper-spollers {
@@ -23,6 +24,7 @@
         width: 108.8rem;
 
         border-bottom: 1px solid #cccccc;
+        
     }
 
     &__spoller-title {
@@ -31,6 +33,8 @@
         line-height: 1.4;
 
         margin-bottom: 3.3rem;
+
+        cursor: pointer;
 
         position: relative;
 
