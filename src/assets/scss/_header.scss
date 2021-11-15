@@ -11,6 +11,17 @@
     &__logo-img {
         width: 7.9rem;
         height: 7.56rem;
+
+        @media (max-width: 48em) {
+            width: 9.6rem;
+            height: 9.2rem;
+        }
+    }
+
+    &__nav {
+        @media (max-width: 48em) {
+            display: none;
+        }
     }
 
     &__nav-list {

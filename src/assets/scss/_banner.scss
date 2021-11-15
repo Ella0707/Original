@@ -10,5 +10,26 @@
         z-index: -1;
 
         transform: translate(0, -10rem);
+
+        @media (max-width: 48em) {
+            display: none;
+        }
+    }
+
+    &__img-mob {
+        display: none;
+
+        @media (max-width: 48em) {
+            display: block;
+            height: 58.8rem;
+            width: 75rem;
+
+            object-fit: contain;
+
+            position: relative;
+            z-index: -1;
+
+            transform: translate(0, -11.5rem);
+        }
     }
 }

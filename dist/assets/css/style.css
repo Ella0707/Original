@@ -442,6 +442,7 @@ input[type="number"] {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    position: relative;
     margin-bottom: 6rem;
 }
 
@@ -451,9 +452,58 @@ input[type="number"] {
     line-height: 2.2rem;
 }
 
-.about-store__slider-count {
+.about-store__arrow-next.swiper-button-next {
+    right: 25%;
+    top: auto;
+    bottom: 0;
+    -webkit-transform: translate(0px, 25%);
+    transform: translate(0px, 25%);
+    width: 4rem;
+    height: 4rem;
+    fill: #CA342E;
+}
+
+.about-store__arrow-next.swiper-button-next.swiper-button-disabled {
+    fill: black;
+}
+
+.about-store__arrow-next.swiper-button-next::after {
+    content: '';
+}
+
+.about-store__arrow-prev.swiper-button-prev {
+    right: 35%;
+    bottom: 0;
+    top: auto;
+    left: auto;
+    -webkit-transform: translate(0px, 25%);
+    transform: translate(0px, 25%);
+    width: 4rem;
+    height: 4rem;
+    fill: #CA342E;
+}
+
+.about-store__arrow-prev.swiper-button-prev.swiper-button-disabled {
+    fill: black;
+}
+
+.about-store__arrow-prev.swiper-button-prev::after {
+    content: '';
+}
+
+.about-store__pagination {
+    font-size: 0;
+    top: 50%;
+    left: auto;
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 5rem;
+    height: 2rem;
+}
+
+.about-store__pagination .swiper-pagination-current {
     font-size: 1.6rem;
-    font-weight: 400;
     color: #CCCCCC;
 }
 
@@ -462,6 +512,21 @@ input[type="number"] {
     font-weight: 400;
     line-height: 1.4;
     width: 41.9rem;
+}
+
+.about-store__progressbar {
+    position: relative;
+    background: #cccccc;
+}
+
+.about-store__progressbar .swiper-pagination-progressbar {
+    background: #cccccc;
+    height: 1px;
+}
+
+.about-store__progressbar .swiper-pagination-progressbar-fill {
+    width: 100%;
+    background: #BFBEBE;
 }
 
 .about-store__down {
@@ -1199,7 +1264,7 @@ input[type="number"] {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 8rem;
+    margin-bottom: 7.0rem;
 }
 
 .examples__slide {
@@ -1215,12 +1280,6 @@ input[type="number"] {
     height: 52rem;
 }
 
-.examples__slide-num {
-    font-size: 2.0rem;
-    font-weight: 400;
-    margin-bottom: 5.2rem;
-}
-
 .examples__slide-left-block {
     width: 69rem;
     padding-right: 1.5rem;
@@ -1231,6 +1290,26 @@ input[type="number"] {
     font-weight: 700;
     width: 42.3rem;
     margin-bottom: 3rem;
+}
+
+.examples__pagination {
+    position: static;
+    font-size: 0;
+    width: 10rem;
+    margin-bottom: 4.4rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.examples__pagination .swiper-pagination-current {
+    font-size: 4rem;
+    margin-right: 1rem;
+}
+
+.examples__pagination .swiper-pagination-total {
+    font-size: 2rem;
 }
 
 .examples__slide-list {
@@ -1367,6 +1446,11 @@ input[type="number"] {
 
 .plan__pagination {
     font-size: 0;
+    bottom: 2.5rem;
+    left: 50%;
+    -webkit-transform: translate(-4rem, 0rem);
+    transform: translate(-4rem, 0rem);
+    width: 10rem;
 }
 
 .plan__pagination .swiper-pagination-current {
@@ -1382,11 +1466,15 @@ input[type="number"] {
     right: 40%;
     top: auto;
     bottom: 0;
+    width: 8rem;
+    height: 8rem;
+    fill: #CA342E;
 }
 
 .plan__arrow-next.swiper-button-next.swiper-button-disabled {
-    stroke-width: 0.5px;
-    stroke: black;
+    background-color: #ECECEC;
+    fill: black;
+    opacity: 1;
 }
 
 .plan__arrow-next.swiper-button-next::after {
@@ -1397,11 +1485,16 @@ input[type="number"] {
     left: 40%;
     top: auto;
     bottom: 0;
+    right: -9.5rem;
+    width: 8rem;
+    height: 8rem;
+    fill: #CA342E;
 }
 
 .plan__arrow-prev.swiper-button-prev.swiper-button-disabled {
-    stroke: black;
-    stroke-width: 0.5px;
+    background-color: #ECECEC;
+    fill: black;
+    opacity: 1;
 }
 
 .plan__arrow-prev.swiper-button-prev::after {
@@ -1584,9 +1677,36 @@ input[type="number"] {
     right: 9rem;
 }
 
-.format__img-mini {
+.format__img-mini-wrap {
     width: 25.8rem;
     height: 18.8rem;
+    position: relative;
+}
+
+.format__arrow-prev.swiper-button-prev {
+    left: 0;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    width: 8rem;
+    height: 8rem;
+    background-color: #ECECEC;
+    fill: #CA342E;
+}
+
+.format__arrow-prev.swiper-button-prev.swiper-button-disabled {
+    fill: black;
+    opacity: 1;
+}
+
+.format__arrow-prev.swiper-button-prev::after {
+    content: '';
+}
+
+.format__img-mini {
+    height: 18.8rem;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .format__color-block {
@@ -1608,6 +1728,28 @@ input[type="number"] {
 .format__right-block {
     padding-top: 11.2rem;
     padding-right: 1.5rem;
+    width: 80rem;
+    position: relative;
+}
+
+.format__arrow-next.swiper-button-next {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 9rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: #CA342E;
+    fill: #ffffff;
+}
+
+.format__arrow-next.swiper-button-next.swiper-button-disabled {
+    fill: black;
+    opacity: 1;
+}
+
+.format__arrow-next.swiper-button-next::after {
+    content: '';
 }
 
 .format__subtitle {
@@ -1817,6 +1959,11 @@ input[type="number"] {
 
 .step__pagination {
     font-size: 0;
+    bottom: 2.5rem;
+    left: 50%;
+    -webkit-transform: translate(-4rem, 0rem);
+    transform: translate(-4rem, 0rem);
+    width: 10rem;
 }
 
 .step__pagination .swiper-pagination-current {
@@ -1832,11 +1979,15 @@ input[type="number"] {
     right: 40%;
     top: auto;
     bottom: 0;
+    width: 8rem;
+    height: 8rem;
+    fill: #CA342E;
 }
 
 .step__arrow-next.swiper-button-next.swiper-button-disabled {
-    stroke-width: 0.5px;
-    stroke: black;
+    background-color: #ECECEC;
+    fill: black;
+    opacity: 1;
 }
 
 .step__arrow-next.swiper-button-next::after {
@@ -1847,11 +1998,16 @@ input[type="number"] {
     left: 40%;
     top: auto;
     bottom: 0;
+    right: -9.5rem;
+    width: 8rem;
+    height: 8rem;
+    fill: #CA342E;
 }
 
 .step__arrow-prev.swiper-button-prev.swiper-button-disabled {
-    stroke: black;
-    stroke-width: 0.5px;
+    background-color: #ECECEC;
+    fill: black;
+    opacity: 1;
 }
 
 .step__arrow-prev.swiper-button-prev::after {

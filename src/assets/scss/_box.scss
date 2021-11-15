@@ -2,6 +2,11 @@
     &__img {
         width: 25rem;
         height: 25rem;
+
+        @media (max-width: 48em) {
+            width: 32.6rem;
+            height: 32.6rem;
+        }
     }
 
     &__text {
@@ -24,6 +29,11 @@
             position: absolute;
             bottom: 8%;
         }
+
+        @media (max-width: 48em) {
+            width: 32.6rem;
+            padding: 5rem 5rem 6rem 3rem;
+        }
     }
 
     &__title {
@@ -31,10 +41,18 @@
         font-weight: 600;
 
         margin-bottom: 1.5rem;
+
+        @media (max-width: 48em) {
+            font-size: 5.6rem;
+        }
     }
 
     &__subtitle {
         font-size: 1.8rem;
         font-weight: 400;
+
+        @media (max-width: 48em) {
+            font-size: 3rem;
+        }
     }
 }

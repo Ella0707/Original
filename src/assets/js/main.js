@@ -18,9 +18,6 @@ new Swiper('.about-store__right-block', {
             }
             return number;
         },
-        // formatFractionTotal: function (number) {
-        
-        // },
     },
 
     pagination: {
@@ -28,8 +25,6 @@ new Swiper('.about-store__right-block', {
         type: "progressbar",
     },
 }); 
-
-
 
 new Swiper('.assortment__slider', {
     slidesPerView: 1,

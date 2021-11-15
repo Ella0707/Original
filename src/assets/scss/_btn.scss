@@ -1,5 +1,5 @@
 .btn {
-    font-size: 1.6rem;
+        font-size: 1.6rem;
         font-weight: 600;
 
         padding-left: 10rem;
@@ -25,4 +25,19 @@
             left: 0;
             transform: translateY(-50%);
         }
+
+        @media (max-width: 48em) {
+            font-size: 3.2rem;
+
+            padding-left: 15rem;
+
+            &::before {
+                content: "";
+    
+                width: 9.6rem;
+                height: 9.6rem;
+                background-size: 3rem;
+                box-shadow: 0 0 0 1.6rem rgba(202, 52, 46, 0.2);
+            }
+         }
 } 
