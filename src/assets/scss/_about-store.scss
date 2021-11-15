@@ -2,6 +2,7 @@
     background-color: #ffffff;
 
     padding-bottom: 4.4rem;
+    margin-bottom: 17.8rem;
 
 
     &__inner {
@@ -74,7 +75,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(22%, 0px);
+        transform: translate(17%, 0px);
 
         @media (max-width: 48em) {
             position: static;
@@ -87,7 +88,7 @@
         width: 25.5rem;
         height: 23.5rem;
 
-        margin-right: 3.7rem;
+        margin-right: 3.4rem;
 
         position: relative;
 
@@ -121,7 +122,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -80%);
+            transform: translate(-50%, -4.2rem);
             z-index: 2;
         }
 
@@ -267,8 +268,6 @@
         justify-content: space-between;
         align-items: center;
 
-        padding-bottom: 4.4rem;
-
         @media (max-width: 48em) {
             flex-direction: column;
            align-items: flex-start;
@@ -294,7 +293,7 @@
         display: flex;
 
         &:nth-child(1) {
-            margin-right: 14rem;
+            margin-right: 13.6rem;
         }
 
         &:nth-child(2) {
@@ -362,6 +361,10 @@
     &__application {
         display: flex;
         align-items: center;
+    }
+
+    &__application-link {
+        margin-right: 0.5rem;
     }
 
 }

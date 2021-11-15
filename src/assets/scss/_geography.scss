@@ -1,7 +1,7 @@
 .geography {
 
     position: relative;
-    margin-bottom: 17.15rem;
+    margin-bottom: 14.8rem;
 
 
     &__text-block {
@@ -21,9 +21,9 @@
         justify-content: space-between;
 
         border-top: 1px solid #BBBBBB;
-        padding-top: 2rem;
+        padding-top: 1.8rem;
 
-        margin-bottom: 3.6rem;
+        margin-bottom: 3.8rem;
     }
 
     &__subtitle-text {
@@ -53,6 +53,7 @@
         font-size: 4.5rem;
         font-weight: 600;
         line-height: 1.2;
+        letter-spacing: 0.5px;
     }
 
 
@@ -91,17 +92,21 @@
 
     &__content {
         display: flex;
+        justify-content: space-between;
     }
 
-    &__img {
-        width: 101.7rem;
-        height: 67.37rem;
+    &__map-wrap {
+        width: 99.5rem;
+        height: 70rem;
+    }
 
-        margin-right: 7.23rem;
+    &__img-map {
+        height: 100%;
+        object-fit: cover;
     }
 
     &__shops {
-        padding-top: 7rem;
+        padding: 7rem 8rem;
     }
 
     &__shops-box {
