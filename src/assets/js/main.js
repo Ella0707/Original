@@ -1,4 +1,33 @@
-new Swiper('.about-store__right-block'); 
+new Swiper('.about-store__right-block', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: "fraction",
+
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        // formatFractionTotal: function (number) {
+        
+        // },
+    },
+
+    pagination: {
+        el: '.swiper-progressbar',
+        type: "progressbar",
+    },
+}); 
 
 
 
@@ -14,7 +43,18 @@ new Swiper('.assortment__slider', {
 });
 
 
-new Swiper('.format__slide');
+new Swiper('.format__slide', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+
 
 
 new Swiper('.examples__slides',{
@@ -45,6 +85,8 @@ new Swiper('.examples__slides',{
         prevEl: '.swiper-button-prev',
     },
 });
+
+
 
 new Swiper('.plan__slider', {
     slidesPerView: 4,

@@ -7,7 +7,7 @@
         font-weight: 700;
         line-height: 1.2;
 
-        margin-bottom: 8rem;
+        margin-bottom: 7.0rem;
     }
 
     &__slide {
@@ -22,15 +22,6 @@
         height: 52rem;
     }
 
- 
-
-    &__slide-num {
-        font-size: 2.0rem;
-        font-weight: 400;
-
-        margin-bottom: 5.2rem;
-    }
-
     &__slide-left-block {
         width: 69rem;
         padding-right: 1.5rem;
@@ -42,6 +33,25 @@
 
         width: 42.3rem;
         margin-bottom: 3rem;
+    }
+
+    &__pagination {
+        position: static;
+        font-size: 0;
+        width: 10rem;
+        margin-bottom: 4.4rem;
+
+        display: flex;
+        align-items: center;
+    } 
+
+    &__pagination .swiper-pagination-current {
+        font-size: 4rem;
+        margin-right: 1rem;
+    }
+
+    &__pagination .swiper-pagination-total {
+        font-size: 2rem;
     }
 
 
