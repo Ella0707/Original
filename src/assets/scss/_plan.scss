@@ -1,6 +1,6 @@
 .plan {
 
-    margin-bottom: 27.2rem;
+    margin-bottom: 16rem;
 
 
     &__title {
@@ -31,10 +31,13 @@
     &__pagination {
         font-size: 0;
         bottom: 2.5rem;
-            left: 50%;
-            transform: translate(-4rem, 0rem);
-            width: 10rem;
-    } 
+        left: 50%;
+        transform: translate(-50%, 10%);
+        width: 6rem;
+
+        display: flex;
+        align-items: center;
+    }
 
     &__pagination .swiper-pagination-current {
         font-size: 4rem;
@@ -42,12 +45,12 @@
     }
 
     &__pagination .swiper-pagination-total {
-        font-size: 1.8rem;
+        font-size: 1.1rem;
     }
 
     &__arrow-next {
-        &.swiper-button-next-plan {
-            right: 40%;
+        &.swiper-button-next {
+            right: 41.5%;
             top: auto;
             bottom: 0;
             width: 8rem;
@@ -66,11 +69,11 @@
     }
 
     &__arrow-prev {
-        &.swiper-button-prev-plan {
-            left: 40%;
+        &.swiper-button-prev {
+            left: 42%;
             top: auto;
             bottom: 0;
-            right: -9.5rem;
+            right: auto;
             width: 8rem;
             height: 8rem;
             fill: #CA342E;

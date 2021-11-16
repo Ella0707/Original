@@ -285,6 +285,39 @@ input[type="number"] {
     }
 }
 
+.header__btn {
+    display: none;
+}
+
+@media (max-width: 48em) {
+    .header__btn {
+        display: block;
+        -webkit-transform: translateY(-1rem);
+        transform: translateY(-1rem);
+    }
+}
+
+@media (max-width: 48em) {
+    .header__burger {
+        display: -ms-flexbox;
+        display: flex;
+        width: 6rem;
+        height: 0.4rem;
+        background-color: #191C20;
+        position: relative;
+    }
+
+    .header__burger::after {
+        content: "";
+        width: 4rem;
+        height: 0.4rem;
+        background-color: #191C20;
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+    }
+}
+
 @media (max-width: 48em) {
     .header__nav {
         display: none;
@@ -919,7 +952,7 @@ input[type="number"] {
 }
 
 .about-us__img-down {
-    width: 20rem;
+    width: 20.3rem;
     height: 10.6rem;
     -o-object-fit: cover;
     object-fit: cover;
@@ -1891,7 +1924,7 @@ input[type="number"] {
 }
 
 .examples {
-    margin-bottom: 20rem;
+    margin-bottom: 18.5rem;
 }
 
 .examples__title {
@@ -1921,7 +1954,7 @@ input[type="number"] {
 }
 
 .examples__wrapper {
-    height: 52rem;
+    height: 53rem;
 }
 
 @media (max-width: 48em) {
@@ -1981,14 +2014,14 @@ input[type="number"] {
     font-size: 4.1rem;
     font-weight: 700;
     width: 42.3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.3rem;
 }
 
 .examples__pagination {
     position: static;
     font-size: 0;
     width: 10rem;
-    margin-bottom: 4.4rem;
+    margin-bottom: 4.5rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -2002,12 +2035,12 @@ input[type="number"] {
 }
 
 .examples__pagination .swiper-pagination-current {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-right: 1rem;
 }
 
 .examples__pagination .swiper-pagination-total {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .examples__slide-list {
@@ -2045,9 +2078,22 @@ input[type="number"] {
     margin-bottom: 2.3rem;
 }
 
-.examples__slide-img {
+.examples__slide-right-block {
     width: 75rem;
-    height: 50.49rem;
+    height: 61rem;
+    padding-top: 0.7rem;
+}
+
+@media (max-width: 48em) {
+    .examples__slide-right-block {
+        width: 69rem;
+        height: 61rem;
+    }
+}
+
+.examples__slide-img {
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 @media (max-width: 48em) {
@@ -2063,8 +2109,9 @@ input[type="number"] {
 @media (max-width: 48em) {
     .examples__slide-img-mob {
         display: block;
-        width: 75rem;
-        height: 66.2rem;
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 100%;
     }
 }
 
@@ -2080,8 +2127,8 @@ input[type="number"] {
     position: absolute;
     left: 0;
     bottom: 0;
-    -webkit-transform: translateY(2rem);
-    transform: translateY(2rem);
+    -webkit-transform: translateY(3rem);
+    transform: translateY(3rem);
 }
 
 @media (max-width: 48em) {
@@ -2113,7 +2160,7 @@ input[type="number"] {
 
 .examples__sity-place span {
     color: #ffffff;
-    margin-left: 2.6rem;
+    margin-left: 3rem;
 }
 
 @media (max-width: 48em) {
@@ -2175,7 +2222,7 @@ input[type="number"] {
     left: auto;
     top: auto;
     bottom: 0;
-    right: -9.5rem;
+    right: -9.74rem;
     width: 9.74rem;
     height: 9.83rem;
     fill: #CA342E;
@@ -2205,7 +2252,7 @@ input[type="number"] {
         left: 40%;
         top: auto;
         bottom: 0;
-        right: -9.5rem;
+        right: -9.74rem;
         width: 8rem;
         height: 8rem;
         fill: #CA342E;
@@ -2275,7 +2322,7 @@ input[type="number"] {
 }
 
 .plan {
-    margin-bottom: 27.2rem;
+    margin-bottom: 16rem;
 }
 
 .plan__title {
@@ -2290,17 +2337,33 @@ input[type="number"] {
     position: relative;
 }
 
+@media (max-width: 48em) {
+    .plan__slider {
+        height: 130rem;
+    }
+}
+
 .plan__slider-wrapper {
     height: 80rem;
+}
+
+@media (max-width: 48em) {
+    .plan__slider-wrapper {
+        height: 120rem;
+    }
 }
 
 .plan__pagination {
     font-size: 0;
     bottom: 2.5rem;
     left: 50%;
-    -webkit-transform: translate(-4rem, 0rem);
-    transform: translate(-4rem, 0rem);
-    width: 10rem;
+    -webkit-transform: translate(-50%, 10%);
+    transform: translate(-50%, 10%);
+    width: 6rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .plan__pagination .swiper-pagination-current {
@@ -2309,11 +2372,11 @@ input[type="number"] {
 }
 
 .plan__pagination .swiper-pagination-total {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
 }
 
 .plan__arrow-next.swiper-button-next {
-    right: 40%;
+    right: 41.5%;
     top: auto;
     bottom: 0;
     width: 8rem;
@@ -2331,10 +2394,10 @@ input[type="number"] {
 }
 
 .plan__arrow-prev.swiper-button-prev {
-    left: 40%;
+    left: 42%;
     top: auto;
     bottom: 0;
-    right: -9.5rem;
+    right: auto;
     width: 8rem;
     height: 8rem;
     fill: #CA342E;
@@ -2397,8 +2460,15 @@ input[type="number"] {
     height: 51.17rem;
 }
 
+@media (max-width: 48em) {
+    .plan__photo {
+        width: 52rem;
+        height: 88.2rem;
+    }
+}
+
 .report {
-    margin-bottom: 18.826rem;
+    margin-bottom: 18rem;
 }
 
 .report__subtitle {
@@ -2444,7 +2514,7 @@ input[type="number"] {
 }
 
 .report__table-value {
-    height: 4.626rem;
+    height: 4.5rem;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.4;
@@ -2477,19 +2547,21 @@ input[type="number"] {
 }
 
 .support {
-    margin-bottom: 23.7rem;
+    margin-bottom: 21.8rem;
 }
 
 .support__title {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 7rem;
+    margin-bottom: 3.5rem;
 }
 
 .support__content {
     width: 157.1rem;
     height: 83.7rem;
+    -webkit-transform: translate(-1%, 0px);
+    transform: translate(-1%, 0px);
 }
 
 .support__img {
@@ -2574,7 +2646,7 @@ input[type="number"] {
 }
 
 .format__right-block {
-    padding-top: 11.2rem;
+    padding-top: 11.5rem;
     padding-right: 1.5rem;
     width: 80rem;
     position: relative;
@@ -2635,6 +2707,10 @@ input[type="number"] {
     padding-left: 9rem;
 }
 
+.format__par-wrap {
+    margin-bottom: 2rem;
+}
+
 .format__par {
     font-size: 1.8rem;
     font-weight: 400;
@@ -2646,7 +2722,8 @@ input[type="number"] {
 }
 
 .format__link {
-    margin-left: 18rem;
+    margin-left: 0.5rem;
+    padding-top: 2rem;
 }
 
 .bussines-model__subtitle {

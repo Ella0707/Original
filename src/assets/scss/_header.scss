@@ -1,11 +1,16 @@
 .header {
 
+    position: relative;
+
     &__inner {
+        padding-top: 2.2rem;
+
+        position: absolute;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        padding-top: 2.2rem;
+        width: 150rem;
     }
 
     &__logo-img {

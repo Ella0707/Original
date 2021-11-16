@@ -1,6 +1,6 @@
 .examples {
 
-    margin-bottom: 20rem;
+    margin-bottom: 18.5rem;
 
     &__title {
         font-size: 4.5rem;
@@ -25,7 +25,7 @@
     }
 
     &__wrapper {
-        height: 52rem;
+        height: 53rem;
 
         @media (max-width: 48em) {
             height: 140rem;
@@ -81,14 +81,14 @@
         font-weight: 700;
 
         width: 42.3rem;
-        margin-bottom: 3rem;
+        margin-bottom: 3.3rem;
     }
 
     &__pagination {
         position: static;
         font-size: 0;
         width: 10rem;
-        margin-bottom: 4.4rem;
+        margin-bottom: 4.5rem;
 
         display: flex;
         align-items: center;
@@ -99,12 +99,12 @@
     } 
 
     &__pagination .swiper-pagination-current {
-        font-size: 4rem;
+        font-size: 3rem;
         margin-right: 1rem;
     }
 
     &__pagination .swiper-pagination-total {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
 
@@ -156,6 +156,8 @@
         width: 75rem;
         height: 61rem;
 
+        padding-top: 0.7rem;
+
         @media (max-width: 48em) {
             width: 69rem;
             height: 61rem;
@@ -163,7 +165,7 @@
     }
 
     &__slide-img {
-        height: 100%;
+        object-fit: cover;
 
         @media (max-width: 48em) {
             display: none;
@@ -192,7 +194,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        transform: translateY(2rem); 
+        transform: translateY(3rem); 
 
         @media (max-width: 48em) {
             flex-direction: column;
@@ -216,7 +218,7 @@
 
         & span {
             color: #ffffff;
-            margin-left: 2.6rem;
+            margin-left: 3rem;
 
             @media (max-width: 48em) {
                 margin-left: 2.8rem;
@@ -275,7 +277,7 @@
             left: auto;
             top: auto;
             bottom: 0;
-            right: -9.5rem;
+            right: -9.74rem;
             width: 9.74rem;
             height: 9.83rem;
             fill: #CA342E;
@@ -303,7 +305,7 @@
                 left: 40%;
                 top: auto;
                 bottom: 0;
-                right: -9.5rem;
+                right: -9.74rem;
                 width: 8rem;
                 height: 8rem;
                 fill: #CA342E;

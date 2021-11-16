@@ -99,7 +99,7 @@ new Swiper('.examples__slides',{
 
 new Swiper('.plan__slider', {
     slidesPerView: 4,
-    spaceBetween: 10,
+    spaceBetween: 41,
     slidesPerGroup: 4,
 
     pagination: {
@@ -121,24 +121,24 @@ new Swiper('.plan__slider', {
     },
 
     navigation: {
-        nextEl: '.swiper-button-next-plan',
-        prevEl: '.swiper-button-prev-plan',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 
-    breakpoints: {
-        375: {
-            slidesPerView: 1.2,
-            spaceBetween: 5,
-            slidesPerGroup: 1,
-        }
-    }
+    // breakpoints: {
+    //     375: {
+    //         slidesPerView: 1.2,
+    //         spaceBetween: 5,
+    //         slidesPerGroup: 1,
+    //     }
+    // }
 
 
 });
 
 new Swiper('.step__slider', {
     slidesPerView: 4,
-    spaceBetween: 10,
+    spaceBetween: 38,
     slidesPerGroup: 4,
 
     pagination: {

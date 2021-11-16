@@ -24,7 +24,7 @@
         width: 51.6rem;
 
         position: absolute;
-        bottom: 8.4rem;
+        bottom: 8rem;
         right: 9rem;
 
     }
@@ -42,8 +42,8 @@
             top: auto;
             bottom: 0;
             right: auto;
-            width: 8rem;
-            height: 8rem;
+            width: 10rem;
+            height: 10rem;
             background-color: #ECECEC;
             fill: #CA342E;
 
@@ -81,9 +81,9 @@
     }
 
     &__right-block {
-        padding-top: 11.2rem;
+        padding-top: 11.5rem;
         padding-right: 1.5rem;
-        width: 80rem;
+        width: 75rem;
 
         position: relative;
     }
@@ -93,9 +93,9 @@
             left: auto;
             right: 0;
             top: auto;
-            bottom: 9rem;
-            width: 8rem;
-            height: 8rem;
+            bottom: 8rem;
+            width: 10rem;
+            height: 10rem;
 
             background-color: #CA342E;
             fill: #ffffff;
@@ -154,6 +154,10 @@
         padding-left: 9rem;
     }
 
+    &__par-wrap {
+        margin-bottom: 7.9rem;
+    }
+
     &__par {
         font-size: 1.8rem;
         font-weight: 400;
@@ -166,6 +170,8 @@
     }
 
     &__link {
-        margin-left: 18rem;
+        margin-left: 0.5rem;
+
+        padding-top: 2rem;
     }
 }
