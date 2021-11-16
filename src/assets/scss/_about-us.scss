@@ -15,8 +15,8 @@
             @media (max-width: 48em) {
                 width: 75rem;
                 height: 61rem;
-                top: 0;
-              }
+                position: static;
+            }
     }
 
     &__wrap {
@@ -26,7 +26,6 @@
         height: 65rem;
 
         @media (max-width: 48em) {
-            margin-top: 60rem;
             height: 100%;
         }
     }

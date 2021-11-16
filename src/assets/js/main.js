@@ -107,9 +107,18 @@ new Swiper('.plan__slider', {
     },
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next-plan',
+        prevEl: '.swiper-button-prev-plan',
     },
+
+    breakpoints: {
+        375: {
+            slidesPerView: 1.2,
+            spaceBetween: 5,
+            slidesPerGroup: 1,
+        }
+    }
+
 
 });
 

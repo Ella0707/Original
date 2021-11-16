@@ -18,6 +18,39 @@
         }
     }
 
+
+    &__btn {
+        display: none;
+        @media (max-width: 48em) {
+            display: block;
+            transform: translateY(-1rem);
+        }
+    }
+
+
+    &__burger {
+        @media (max-width: 48em) {
+        display: flex;
+        width: 6rem;
+        height: 0.4rem;
+        background-color: #191C20;
+
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 4rem;
+            height: 0.4rem;
+            background-color: #191C20;
+
+            position: absolute;
+            bottom: -1rem;
+            left: 0;
+        }
+    } 
+    }
+
+
     &__nav {
         @media (max-width: 48em) {
             display: none;

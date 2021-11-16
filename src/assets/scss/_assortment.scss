@@ -7,6 +7,10 @@
         display: flex;
 
         position: relative;
+
+        @media (max-width: 48em) {
+            flex-direction: column;
+        }
     }
 
     &__left-block {
@@ -22,6 +26,11 @@
         color: #777777;
 
         margin-bottom: 1.5rem;
+
+        @media (max-width: 48em) {
+            font-size: 3rem;
+            margin-bottom: 6rem;
+        }
     }
 
     &__title {
@@ -32,6 +41,20 @@
         width: 53.6rem;
 
         margin-bottom: 4.3rem;
+
+        @media (max-width: 48em) {
+            font-size: 6rem;
+            margin-bottom: 9.4rem;
+        }
+    }
+
+    &__left-block-link-mob {
+        display: none;
+
+        @media (max-width: 48em) {
+            display: block;
+            margin-bottom: 9.4rem;
+        }
     }
 
     &__par {
@@ -42,10 +65,20 @@
         width: 69.9rem;
 
         margin-bottom: 3.8rem;
+
+        @media (max-width: 48em) {
+            font-size: 3rem;
+            margin-bottom: 4rem;
+            width: 65rem;
+        }
     }
 
     &__photo-wrapper {
         display: flex;
+
+        @media (max-width: 48em) {
+            display: none;
+        }
     }
 
     &__img-big {
@@ -56,6 +89,10 @@
     &__img-block {
         width: 43rem;
         height: 43rem;
+
+        @media (max-width: 48em) {
+            display: none;
+        }
     }
 
     &__img-block-top {
@@ -79,12 +116,17 @@
 
     &__left-block-down {
         display: flex;
+
     }
 
     &__left-down-text {
         width: 50.2rem;
-
         padding-top: 4.0rem;
+
+        @media (max-width: 48em) {
+            padding-top: 0;
+            width: 65rem;
+        }
     }
 
     &__left-down-par {
@@ -95,10 +137,31 @@
         width: 45.2rem;
 
         margin-bottom: 7.9rem;
+
+        @media (max-width: 48em) {
+            font-size: 3rem;
+            margin-bottom: 4rem;
+            width: 65rem;
+            margin-bottom: 0;
+        }
     }
+
+    &__left-block-link-mob {
+        display: none;
+
+        @media (max-width: 48em) {
+            display: block;
+        }
+    }
+
 
     &__left-block-link {
         margin-left: 1rem;
+
+
+        @media (max-width: 48em) {
+            display: none;
+        }
     }
 
     &__left-down-img-wrap {
@@ -108,6 +171,11 @@
         flex-direction: row-reverse;
 
         background-color: #ECECEC;
+
+
+        @media (max-width: 48em) {
+            display: none;
+        }
     }
 
     &__left-down-img {
@@ -193,6 +261,10 @@
 
         position: absolute;
         bottom: 0;
+
+        @media (max-width: 48em) {
+            display: none;
+        }
     }
 
     &__right-block-img-top {
@@ -231,5 +303,9 @@
         position: absolute;
         top: 9rem;
         right: 0;
+
+        @media (max-width: 48em) {
+            display: none;
+        }
     }
 }
