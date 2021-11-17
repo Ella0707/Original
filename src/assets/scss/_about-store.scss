@@ -4,6 +4,10 @@
     padding-bottom: 4.4rem;
     margin-bottom: 17.8rem;
 
+    @media (max-width: 48em) {
+       margin-bottom: 25rem;
+     }
+
 
     &__inner {
         position: relative;
@@ -20,6 +24,7 @@
 
         @media (max-width: 48em) {
             flex-direction: column-reverse;
+            transform: translate(0px, -16rem);
          }
     }
 
@@ -79,7 +84,12 @@
 
         @media (max-width: 48em) {
             position: static;
-            transform: translate(0, 0px);
+            transform: translate(0, 0);
+            background: transparent;
+            margin-left: 0;
+
+            width: 65rem;
+            height: 54rem;
         }
     }
 
@@ -101,6 +111,11 @@
             position: absolute;
             top: 0;
             left: 0;
+        }
+
+        @media (max-width: 48em) {
+            width: 30.6rem;
+            height: 27.2rem;
         }
     }
 
@@ -124,6 +139,10 @@
             left: 50%;
             transform: translate(-50%, -4.2rem);
             z-index: 2;
+
+            @media (max-width: 48em) {
+                transform: translate(-50%, -50%);
+            }
         }
 
         &::after {
@@ -135,6 +154,10 @@
             left: 50%;
             transform: translate(-50%);
             z-index: 2;
+
+            @media (max-width: 48em) {
+               display: none;
+            }
         }
 
     }
@@ -150,6 +173,11 @@
     &__presentation-img {
         width: 25.5rem;
         height: 23.5rem;
+
+        @media (max-width: 48em) {
+            width: 30.6rem;
+            height: 27.2rem;
+        }
     }
 
     &__slider-content {
@@ -174,6 +202,10 @@
         font-size: 2.5rem;
         font-weight: 400;
         line-height: 2.2rem;
+
+        @media (max-width: 48em) {
+            font-size: 4rem;
+         }
     }
 
     &__arrow-next {
@@ -193,7 +225,17 @@
             &::after {
                 content: '';
             }
+
+            @media (max-width: 48em) {
+                position: fixed;
+                border: 2px solid red;
+
+                bottom: auto;
+                top: 50%;
+                transform: translate(0px, -50%);
+            }
         }
+
     }
 
     &__arrow-prev {
@@ -214,6 +256,15 @@
             &::after {
                 content: '';
             }
+
+            @media (max-width: 48em) {
+                position: fixed;
+                border: 2px solid red;
+
+                bottom: auto;
+                top: 50%;
+                transform: translate(0%, -50%);
+            }
         }
     }
 
@@ -226,6 +277,12 @@
         transform: translate(0, -50%);
         width: 5rem;
         height: 2rem;
+
+        @media (max-width: 48em) {
+            position: fixed;
+            top: 45%;
+            border: 2px solid red;
+         }
     } 
 
     &__pagination .swiper-pagination-current {
@@ -239,6 +296,11 @@
         line-height: 1.4;
 
         width: 41.9rem;
+
+        @media (max-width: 48em) {
+            font-size: 2.6rem;
+            width: 65rem;
+        }
     }
 
 
@@ -247,6 +309,10 @@
         background: #cccccc;
         margin-bottom: 3rem;
         height: 1px;
+
+        @media (max-width: 48em) {
+           display: none;
+        }
 
     }
 
@@ -270,8 +336,9 @@
 
         @media (max-width: 48em) {
             flex-direction: column;
-           align-items: flex-start;
-         }
+            align-items: flex-start;
+            transform: translate(0px, -16rem);
+        }
     }
 
     &__advantage-wrap {
@@ -306,7 +373,7 @@
             &:not(:last-child) {
                 margin-bottom: 4rem;
             }
-         }
+        }
     }
 
     &__advantage-icon {
@@ -320,7 +387,7 @@
             width: 6rem;
             height: 6rem;
             margin-right: 3rem;
-         }
+        }
     }
 
     &__advantage-item {
@@ -329,10 +396,9 @@
         display: flex;
         flex-direction: column;
 
-         
         @media (max-width: 48em) {
             width: 44rem;
-          }
+        }
     }
 
     &__advantage-title {
@@ -343,7 +409,7 @@
         
         @media (max-width: 48em) {
            font-size: 3rem;
-         }
+        }
     }
 
 
@@ -355,7 +421,7 @@
 
         @media (max-width: 48em) {
             font-size: 4rem;
-         }
+        }
     }
 
     &__application {

@@ -1,8 +1,10 @@
 new Swiper('.about-store__right-block', {
     slidesPerView: 1,
-    spaceBetween: 10,
-    slidesPerGroup: 1,
-
+    speed: 800,
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -20,11 +22,18 @@ new Swiper('.about-store__right-block', {
         },
     },
 
-    pagination: {
-        el: '.swiper-progressbar',
-        type: "progressbar",
+    // pagination: {
+    //     el: '.swiper-progressbar',
+    //     type: "progressbar",
+    // },
+
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true
     },
-}); 
+});
+
+
 
 new Swiper('.assortment__slider', {
     slidesPerView: 1,
@@ -38,16 +47,26 @@ new Swiper('.assortment__slider', {
 });
 
 
+
+
 new Swiper('.format__slide', {
     slidesPerView: 1,
     spaceBetween: 10,
     slidesPerGroup: 1,
+    speed: 800,
 
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
 });
+
+
 
 
 
@@ -56,6 +75,11 @@ new Swiper('.examples__slides',{
     slidesPerView: 1,
     spaceBetween: 10,
     slidesPerGroup: 1,
+    speed: 800,
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
 
     pagination: {
         el: '.swiper-pagination',
@@ -80,6 +104,8 @@ new Swiper('.examples__slides',{
         prevEl: '.swiper-button-prev',
     },
 });
+
+
 
 
 
@@ -122,6 +148,9 @@ new Swiper('.plan__slider', {
 
 });
 
+
+
+
 new Swiper('.step__slider', {
     slidesPerView: 4,
     spaceBetween: 38,
@@ -156,17 +185,17 @@ new Swiper('.step__slider', {
 
 
 
-// popap
+// popup
 
 $('.popup-link').click(function (e) {
     e.preventDefault();
     $('.popup').fadeIn(800);
-    // $('html').addClass('no-scroll');
+    $('html').addClass('no-scroll');
 });
 
 $('.close-popup').click(function () {
     $('.popup').fadeOut(800);
-    // $('html').removeClass('no-scroll');
+    $('html').removeClass('no-scroll');
 });
 
 
