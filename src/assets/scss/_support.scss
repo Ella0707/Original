@@ -16,14 +16,28 @@
 
         transform: translate(-1%, 0px);
 
-
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
+        @media (max-width: 48em) {
+            width: 75rem;
+            height: 404rem;
+         }
     }
 
     &__img {
         object-fit: cover;
+
+        @media (max-width: 48em) {
+            display:none;
+         }
+    }
+
+    &__img-mob {
+        display: none;
+
+        @media (max-width: 48em) {
+           display: block;
+           object-fit: contain;
+
+        }
     }
 
     // &__num {

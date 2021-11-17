@@ -8,6 +8,10 @@
         align-items: center;
 
         margin-bottom: 8.38rem;
+
+        @media (max-width: 48em) {
+            flex-direction: column;
+        }
     }
 
     &__title {

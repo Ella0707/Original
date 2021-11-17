@@ -9,6 +9,10 @@
 
     &__img-wrap {
         position: relative;
+
+        @media (max-width: 48em) {
+            width: 75rem;
+         }
     }
 
 
@@ -17,6 +21,10 @@
         height: 74.9rem;
 
         margin-right: 21.5rem;
+
+        @media (max-width: 48em) {
+            display: none;
+         }
     }
 
     &__mini-wrap {
@@ -26,6 +34,12 @@
         position: absolute;
         bottom: 8rem;
         right: 9rem;
+
+        @media (max-width: 48em) {
+            position: static;
+            width: 75rem;
+            height: 90rem;
+         }
 
     }
 
@@ -56,12 +70,23 @@
             &::after {
                 content: '';
             }
+
+            @media (max-width: 48em) {
+                position: fixed;
+                left: 35%;
+                background-color: transparent;
+              }
         }
     }
 
     &__img-mini {
         height: 18.8rem;
         object-fit: cover;
+
+        @media (max-width: 48em) {
+            width: 75rem;
+            height: 79rem;
+         }
     }
 
     &__color-block {
@@ -71,7 +96,11 @@
         display: flex;
         align-items: flex-end;
 
-        padding: 3rem;
+        padding: 3rem; 
+
+        @media (max-width: 48em) {
+            display: none;
+         }
     }
 
     &__color-block-title {
@@ -109,6 +138,14 @@
             &::after {
                 content: '';
             }
+
+            @media (max-width: 48em) {
+               position: fixed;
+               bottom: 0;
+               right: 35%;
+               background-color: transparent;
+               fill: #CA342E;
+             }
         }
     }
 
@@ -173,5 +210,31 @@
         margin-left: 0.5rem;
 
         padding-top: 2rem;
+    }
+
+    &__pagination {
+        display: none;
+
+        @media (max-width: 48em) {
+            display: block;
+
+            font-size: 0;
+        bottom: 2.5rem;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        width: 6rem;
+
+        display: flex;
+        align-items: center;
+        }
+    }
+
+    &__pagination .swiper-pagination-current {
+        font-size: 4rem;
+        margin-right: 1rem;
+    }
+
+    &__pagination .swiper-pagination-total {
+        font-size: 1.1rem;
     }
 }

@@ -64,6 +64,24 @@ new Swiper('.format__slide', {
     fadeEffect: {
         crossFade: true
     },
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: "fraction",
+
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
 });
 
 
@@ -110,9 +128,9 @@ new Swiper('.examples__slides',{
 
 
 new Swiper('.plan__slider', {
-    slidesPerView: 4,
-    spaceBetween: 41,
-    slidesPerGroup: 4,
+    slidesPerView: 1.2,
+    spaceBetween: 35,
+    slidesPerGroup: 1,
 
     pagination: {
         el: '.swiper-pagination',
@@ -137,15 +155,14 @@ new Swiper('.plan__slider', {
         prevEl: '.swiper-button-prev',
     },
 
-    // breakpoints: {
-    //     375: {
-    //         slidesPerView: 1.2,
-    //         spaceBetween: 5,
-    //         slidesPerGroup: 1,
-    //     }
-    // }
+    breakpoints: {
 
-
+        769: {
+            slidesPerView: 4,
+            spaceBetween: 41,
+            slidesPerGroup: 4,
+        }
+    }
 });
 
 
@@ -153,7 +170,7 @@ new Swiper('.plan__slider', {
 
 new Swiper('.step__slider', {
     slidesPerView: 4,
-    spaceBetween: 38,
+    spaceBetween: 1,
     slidesPerGroup: 4,
 
     pagination: {
@@ -178,6 +195,12 @@ new Swiper('.step__slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
+    769: {
+        slidesPerView: 4,
+        spaceBetween: 41,
+        slidesPerGroup: 4,
+    }
 });
 
 

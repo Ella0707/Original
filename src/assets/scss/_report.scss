@@ -17,6 +17,12 @@
         align-items: center;
 
         margin-bottom: 7rem;
+
+        @media (max-width: 48em) {
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+        }
     }
 
     &__title {
@@ -25,11 +31,23 @@
         line-height: 1.2;
 
         width: 82.1rem;
+
+        @media (max-width: 48em) {
+        width: 65rem;
+        margin-bottom: 9.4rem;
+        }
     }
 &__table {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    display: table;
     border-collapse: collapse;
+
+    @media (max-width: 48em) {
+        overflow-x: scroll;
+        justify-content: flex-start;
+        table-layout: fixed;
+    }
 }
 
     &__table-header {
@@ -41,6 +59,10 @@
         font-weight: 700;
         line-height: 1.4;
         color: #ffffff;
+
+        @media (max-width: 48em) {
+            font-size: 3rem;
+        }
     }
 
     &__table-value {
@@ -55,8 +77,11 @@
             background-color: #ffffff;
         }
         
+        @media (max-width: 48em) {
+            font-size: 3rem;
+            width: 120rem;
+        }
     }
-   
 
     &__header-item {
 
@@ -65,10 +90,20 @@
         text-align: start;
         &:not(:first-child) {
             width: 22.7rem;
+
+            @media (max-width: 48em) {
+         
+                width: 37rem;
+            }
         }
 
         &:first-child {
             width: 60.1rem;
+
+            @media (max-width: 48em) {
+         
+                width: 30rem;
+            }
         }
 
         &:last-child {

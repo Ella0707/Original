@@ -28,6 +28,15 @@
         }
     }
 
+//     &__slide {
+//     &.swiper-slide-next{
+//         &.plan__text {
+//             color: transparent;
+//         }
+//     }
+// }
+    
+
     &__pagination {
         font-size: 0;
         bottom: 2.5rem;
@@ -114,6 +123,10 @@
             position: absolute;
             bottom: -5%;
             left: 0%;
+        }
+
+        @media (max-width: 48em) {
+            display: none;
         }
     }
 

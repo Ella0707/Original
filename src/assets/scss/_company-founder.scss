@@ -19,9 +19,18 @@
     }
     &__content {
         display: flex;
+
+        @media (max-width: 48em) {
+flex-direction: column-reverse;
+        }
     }
     &__left-block {
         margin-right: 3.857rem;
+
+        @media (max-width: 48em) {
+            display: flex;
+            align-items: center;
+        }
 
     }
 
