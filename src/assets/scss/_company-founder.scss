@@ -62,5 +62,10 @@ flex-direction: column-reverse;
     &__video {
         width: 123.493rem;
         height: 69.487rem;
+
+        @media (max-width: 48em) {
+            width: 65rem;
+            height: 35rem;
+            }
     }
 }

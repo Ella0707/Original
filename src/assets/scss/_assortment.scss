@@ -3,6 +3,8 @@
 
     margin-bottom: 17.9rem;
 
+    overflow-x: hidden;
+
     @media (max-width: 48em) {
         margin-bottom: 25rem;
     }
@@ -292,7 +294,7 @@
     }
 
     &__right-block-img-wrap {
-        width: 75.7rem;
+        width: 77.8rem;
         height: 43.2rem;
 
         position: absolute;
@@ -309,21 +311,21 @@
 
     &__right-block-img {
         width: 21.5rem;
-        height: 22rem;
+        height: 21.6rem;
     }
 
     &__right-block-img-down {
         display: flex;
         width: 43.2rem;
-        height: 21.4rem;
+        height: 21.6rem;
         background-color: #ECECEC;
 
         position: relative;
     }
 
     &__img-right {
-        width: 54.2rem;
-        height: 21.4rem;
+        width: 56.3rem;
+        height: 21.6rem;
 
         position: absolute;
         bottom: 0;

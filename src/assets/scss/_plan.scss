@@ -28,13 +28,12 @@
         }
     }
 
-//     &__slide {
-//     &.swiper-slide-next{
-//         &.plan__text {
-//             color: transparent;
-//         }
-//     }
-// }
+    &__slide {
+    &.swiper-slide-next .plan__text {
+        color: transparent;
+    }
+    }
+
     
 
     &__pagination {
@@ -164,3 +163,5 @@
         }
     }
 }
+
+
