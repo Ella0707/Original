@@ -71,6 +71,10 @@
         }
     }
 
+    &__nav .active {
+        display: block;
+    }
+
     &__nav-list {
         display: flex;
         margin-right: 8.7rem;

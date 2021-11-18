@@ -6,8 +6,8 @@ new Swiper('.about-store__right-block', {
         crossFade: true
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.about-store__arrow-next',
+        prevEl: '.about-store__arrow-prev',
     },
 
     pagination: {
@@ -41,8 +41,8 @@ new Swiper('.assortment__slider', {
     slidesPerGroup: 1,
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.assortment__arrow-next',
+        prevEl: '.assortment__arrow-prev',
     },
 });
 
@@ -56,8 +56,8 @@ new Swiper('.format__slide', {
     speed: 800,
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.format__arrow-next',
+        prevEl: '.format__arrow-prev',
     },
 
     effect: "fade",
@@ -118,8 +118,8 @@ new Swiper('.examples__slides',{
     },
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.examples__arrow-next',
+        prevEl: '.examples__arrow-prev',
     },
 });
 
@@ -151,8 +151,8 @@ new Swiper('.plan__slider', {
     },
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.plan__arrow-next',
+        prevEl: '.plan__arrow-prev',
     },
 
     breakpoints: {
@@ -192,8 +192,8 @@ new Swiper('.step__slider', {
     },
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.step__arrow-next',
+        prevEl: '.step__arrow-prev',
     },
 
     769: {
@@ -250,3 +250,10 @@ $(document).ready(function () {
     });
 });
 
+// мобильное меню
+const button = document.querySelector('.menu-mob-btn')
+const menu = document.querySelector('.header__nav')
+
+button.addEventListener("click", function(){
+ menu.classList.toggle('active')
+})

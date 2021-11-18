@@ -224,6 +224,12 @@
         }
     }
 
+    &__arrow-svg {
+        @media (max-width: 48em) {
+           width: 4.4rem;
+        }
+    }
+
     &__arrow-next {
         &.swiper-button-next {
             right: 0;
@@ -233,11 +239,13 @@
             height: 7.1rem;
             background-color: #ffffff;
             fill: #CA342E;
+            transition: 0.8s;
 
             &.swiper-button-disabled {
                 background-color: #ECECEC;
                 fill: black;
                 opacity: 1;
+                transition: 0.8s;
             }
 
             &::after {
@@ -260,11 +268,13 @@
             height: 7.1rem;
             fill: #CA342E;
             background-color: #ffffff;
+            transition: 0.8s;
 
             &.swiper-button-disabled {
                 background-color: #ECECEC;
                 fill: black;
                 opacity: 1;
+                transition: 0.8s;
             }
 
             &::after {
