@@ -290,7 +290,7 @@ input[type="number"] {
     height: 4.8rem;
     background: url(./../images/arrow-btn.svg), #CA342E;
     background-repeat: no-repeat;
-    background-size: 1.5rem;
+    background-size: 2rem;
     background-position: center;
     border-radius: 50%;
     box-shadow: 0 0 0 0.8rem rgba(202, 52, 46, 0.2);
@@ -1714,12 +1714,12 @@ input[type="number"] {
     padding-left: 2rem; }
 
 .support {
-  margin-bottom: 21.8rem; }
+  margin-bottom: 19.8rem; }
   .support__title {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 3.5rem; }
+    margin-bottom: 5.5rem; }
   .support__content {
     width: 157.1rem;
     height: 83.7rem;
@@ -1733,60 +1733,39 @@ input[type="number"] {
     @media (max-width: 48em) {
       .support__img {
         display: none; } }
-  .support__img-mob {
-    display: none; }
-    @media (max-width: 48em) {
-      .support__img-mob {
-        display: block;
-        object-fit: contain; } }
   .support__num {
     font-size: 6.0rem;
     font-weight: 500;
     line-height: 1.2;
-    border-bottom: 1px dashed #bbbbbb;
-    width: 39rem;
-    padding-bottom: 3.7rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
+    width: 38.3rem; }
+  .support__num-top-wrap {
+    display: flex; }
+  .support__box {
+    width: 38rem;
+    padding: 0.5rem;
+    border-top: 1px dashed #bbbbbb;
     position: relative; }
-    .support__num::after {
+    .support__box:nth-child(5) {
+      border-right: 1px dashed #bbbbbb; }
+    .support__box::before {
       content: "";
       width: 0.9rem;
       height: 0.9rem;
       background-color: #FC281F;
       border-radius: 50%;
       position: absolute;
-      bottom: -3%;
+      top: -1%;
       left: 0%; }
-  .support__box {
-    width: 38rem;
-    height: 41rem;
-    padding: 0.5rem; }
-    .support__box:nth-child(4) {
-      position: relative; }
-      .support__box:nth-child(4)::after {
-        content: "";
-        width: 2rem;
-        height: 42rem;
-        background-image: url(./../images/support-line.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        transform: rotate(180deg);
-        position: absolute;
-        right: -5%;
-        top: 28%; }
   .support__box-inner {
-    border-right: 1px dashed red;
     width: 35rem; }
   .support__box-img-wrap {
     width: 8rem;
     height: 8rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    margin-top: 3.2rem; }
   .support__box-img {
-    width: 8rem;
-    height: 8rem;
     object-fit: contain; }
   .support__box-title {
     font-size: 1.95rem;
@@ -1796,10 +1775,12 @@ input[type="number"] {
   .support__box-subtitle {
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 1.4; }
+    line-height: 1.4;
+    height: 13.3rem;
+    padding-bottom: 1.5rem; }
 
 .format {
-  margin-bottom: 18rem; }
+  margin-bottom: 18.4rem; }
   .format__slide-content {
     display: flex; }
     @media (max-width: 48em) {
@@ -1938,7 +1919,7 @@ input[type="number"] {
     margin-bottom: 7.5rem;
     padding-left: 9rem; }
   .format__par-wrap {
-    margin-bottom: 7.9rem; }
+    margin-bottom: 7.5rem; }
   .format__par {
     font-size: 1.8rem;
     font-weight: 400;
@@ -1946,8 +1927,7 @@ input[type="number"] {
     .format__par:not(:last-child) {
       margin-bottom: 3.7rem; }
   .format__link {
-    margin-left: 0.5rem;
-    padding-top: 2rem; }
+    margin-left: 0.5rem; }
   .format__pagination {
     display: none; }
     @media (max-width: 48em) {
@@ -2286,7 +2266,7 @@ input[type="number"] {
   background-color: rgba(31, 31, 31, 0.4);
   top: 0;
   left: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: none; }
   .popup__body {
     min-height: 100%;
