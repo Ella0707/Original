@@ -1,22 +1,29 @@
 .footer {
     height: 43rem;
     background-color: #ffffff;
-    padding: 9.0rem;
+    padding: 9rem 0;
 
     &__inner {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        height: 16.5rem;
+        height: 24rem;
 
         @media (max-width: 48em) {
           flex-direction: column;
           }
     }
 
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__left-block {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding-top: 4rem;
     }
 
     &__list-left {
@@ -43,12 +50,12 @@
 
 
     &__logo {
-        width: 9.4rem;
+        width: 16rem;
         height: 9rem;
     }
 
     &__logo-img {
-        width: 100%;
+        width: 9.4rem;
         object-fit: cover;
     }
 
@@ -56,6 +63,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding-top: 4rem;
     }
 
     &__nav-right {
@@ -75,6 +83,14 @@
     &__link-right {
         font-size: 1.6rem;
         font-weight: 500;
+    }
+
+    &__down {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4rem;
+
+        border-top: 0.15rem solid #cccccc;
     }
 
     &__social {

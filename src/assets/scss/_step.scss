@@ -1,6 +1,6 @@
 .step {
 
-    margin-bottom: 18rem;
+    margin-bottom: 16.5rem;
 
     &__title-wrap {
         display: flex;
@@ -33,7 +33,7 @@
         font-size: 0;
         bottom: 2.5rem;
             left: 50%;
-            transform: translate(-4rem, 0rem);
+            transform: translate(-50%, 20%);
             width: 10rem;
     } 
 
@@ -48,11 +48,11 @@
 
     &__arrow-next {
         &.swiper-button-next {
-            right: 40%;
+            right: 42%;
             top: auto;
             bottom: 0;
-            width: 8rem;
-            height: 8rem;
+            width: 7rem;
+            height: 7rem;
             fill: #CA342E;
 
             &.swiper-button-disabled {
@@ -68,12 +68,12 @@
 
     &__arrow-prev {
         &.swiper-button-prev {
-            left: 40%;
+            left: 42%;
             top: auto;
             bottom: 0;
             right: -9.5rem;
-            width: 8rem;
-            height: 8rem;
+            width: 7rem;
+            height: 7rem;
             fill: #CA342E;
 
             &.swiper-button-disabled {
@@ -88,14 +88,15 @@
     }
 
     &__slide-box {
-
-        width: 34.5rem;
         height: 60.4rem;
 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
 
+    &__box-wrap {
+        padding-left: 2rem;
     }
 
     &__wrap {
@@ -107,8 +108,9 @@
         font-weight: 500;
         color: #bbbbbb;
 
-        padding-bottom: 3rem;
-        margin-bottom: 5rem;
+        padding: 3.5rem 0.5rem 3.5rem 0rem;
+
+        margin-bottom: 2.6rem;
 
         position: relative;
 
@@ -128,6 +130,7 @@
     &__box-text {
         font-size: 2rem;
         font-weight: 400;
+        width: 29rem;
     }
     &__box-img {
         width: 34.5rem;

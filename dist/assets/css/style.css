@@ -373,7 +373,7 @@ input[type="number"] {
     height: 4.8rem;
     background: url(./../images/arrow-btn.svg), #CA342E;
     background-repeat: no-repeat;
-    background-size: 1.5rem;
+    background-size: 2rem;
     background-position: center;
     border-radius: 50%;
     box-shadow: 0 0 0 0.8rem rgba(202, 52, 46, 0.2);
@@ -679,28 +679,34 @@ input[type="number"] {
     }
 }
 
-.about-store__pagination {
-    font-size: 0;
-    top: 50%;
-    left: auto;
-    right: 0;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+.about-store__slide-num {
+    font-size: 2rem;
     width: 5rem;
     height: 2rem;
 }
 
 @media (max-width: 48em) {
-    .about-store__pagination {
+    .about-store__slide-num {
         position: fixed;
         top: 45%;
         border: 2px solid red;
     }
 }
 
-.about-store__pagination .swiper-pagination-current {
-    font-size: 1.6rem;
-    color: #CCCCCC;
+.about-store__progressbar {
+    top: 3rem !important;
+}
+
+.about-store__progressbar.swiper-pagination-progressbar {
+    height: 1.5px;
+    background-color: #cccccc;
+    --swiper-theme-color: #666464;
+}
+
+@media (max-width: 48em) {
+    .about-store__progressbar {
+        display: none;
+    }
 }
 
 .about-store__slider-subtitle {
@@ -715,28 +721,6 @@ input[type="number"] {
         font-size: 2.6rem;
         width: 65rem;
     }
-}
-
-.about-store__progressbar {
-    position: relative;
-    background: #cccccc;
-    margin-bottom: 3rem;
-    height: 1px;
-}
-
-@media (max-width: 48em) {
-    .about-store__progressbar {
-        display: none;
-    }
-}
-
-.about-store__progressbar .swiper-pagination-progressbar {
-    background: #cccccc;
-}
-
-.about-store__progressbar .swiper-pagination-progressbar-fill {
-    width: 100%;
-    background: #BFBEBE;
 }
 
 .about-store__down {
@@ -2753,14 +2737,14 @@ input[type="number"] {
 }
 
 .support {
-    margin-bottom: 21.8rem;
+    margin-bottom: 19.8rem;
 }
 
 .support__title {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 3.5rem;
+    margin-bottom: 5.5rem;
 }
 
 .support__content {
@@ -2789,66 +2773,42 @@ input[type="number"] {
     }
 }
 
-.support__img-mob {
-    display: none;
-}
-
-@media (max-width: 48em) {
-    .support__img-mob {
-        display: block;
-        -o-object-fit: contain;
-        object-fit: contain;
-    }
-}
-
 .support__num {
     font-size: 6.0rem;
     font-weight: 500;
     line-height: 1.2;
-    border-bottom: 1px dashed #bbbbbb;
-    width: 39rem;
-    padding-bottom: 3.7rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
+    width: 38.3rem;
+}
+
+.support__num-top-wrap {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.support__box {
+    width: 38rem;
+    padding: 0.5rem;
+    border-top: 1px dashed #bbbbbb;
     position: relative;
 }
 
-.support__num::after {
+.support__box:nth-child(5) {
+    border-right: 1px dashed #bbbbbb;
+}
+
+.support__box::before {
     content: "";
     width: 0.9rem;
     height: 0.9rem;
     background-color: #FC281F;
     border-radius: 50%;
     position: absolute;
-    bottom: -3%;
+    top: -1%;
     left: 0%;
 }
 
-.support__box {
-    width: 38rem;
-    height: 41rem;
-    padding: 0.5rem;
-}
-
-.support__box:nth-child(4) {
-    position: relative;
-}
-
-.support__box:nth-child(4)::after {
-    content: "";
-    width: 2rem;
-    height: 42rem;
-    background-image: url(./../images/support-line.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    position: absolute;
-    right: -5%;
-    top: 28%;
-}
-
 .support__box-inner {
-    border-right: 1px dashed red;
     width: 35rem;
 }
 
@@ -2857,16 +2817,11 @@ input[type="number"] {
     height: 8rem;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     margin-bottom: 3rem;
+    margin-top: 3.2rem;
 }
 
 .support__box-img {
-    width: 8rem;
-    height: 8rem;
     -o-object-fit: contain;
     object-fit: contain;
 }
@@ -2882,10 +2837,12 @@ input[type="number"] {
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.4;
+    height: 13.3rem;
+    padding-bottom: 1.5rem;
 }
 
 .format {
-    margin-bottom: 18rem;
+    margin-bottom: 18.4rem;
 }
 
 .format__slide-content {
@@ -3099,7 +3056,7 @@ input[type="number"] {
 }
 
 .format__par-wrap {
-    margin-bottom: 7.9rem;
+    margin-bottom: 7.5rem;
 }
 
 .format__par {
@@ -3114,7 +3071,6 @@ input[type="number"] {
 
 .format__link {
     margin-left: 0.5rem;
-    padding-top: 2rem;
 }
 
 .format__pagination {
@@ -3640,7 +3596,7 @@ input[type="number"] {
     background-color: rgba(31, 31, 31, 0.4);
     top: 0;
     left: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     display: none;
 }
 
@@ -3773,6 +3729,7 @@ input[type="number"] {
 
 .popup__input:last-child {
     height: 11rem;
+    padding-top: 6rem;
 }
 
 .popup__input:last-child::-webkit-input-placeholder {
@@ -3798,13 +3755,14 @@ input[type="number"] {
 .popup__select-title {
     font-size: 1.8rem;
     font-weight: 400;
+    color: #bbbbbb;
     margin-bottom: 2.7rem;
 }
 
 .popup__select {
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 9.4rem;
 }
 
 .popup__select-item {
@@ -3820,10 +3778,41 @@ input[type="number"] {
 
 .popup__select-input {
     margin-right: 1rem;
+    outline: none;
+    border: none;
+    position: relative;
+}
+
+.popup__select-input::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #BA302B;
+}
+
+.popup__select-input:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #BA302B;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    visibility: visible;
 }
 
 .popup__link {
-    margin-left: 13rem;
+    margin-left: 0rem;
 }
 
 .popup__content-wrap-right {

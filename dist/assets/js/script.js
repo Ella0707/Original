@@ -24,30 +24,25 @@ new Swiper('.about-store__right-block', {
         prevEl: '.about-store__arrow-prev',
     },
 
+    on: {
+        init: sliderNumber,
+        slideChange: sliderNumber
+    },
+
     pagination: {
-        el: '.swiper-pagination',
-        type: "fraction",
-
-        formatFractionCurrent: function (number) {
-            if (number < 10) {
-                number = "0" + number;
-            }
-            return number;
+            el: '.swiper-progressbar',
+            type: "progressbar",
         },
-    },
-
-    // pagination: {
-    //     el: '.swiper-progressbar',
-    //     type: "progressbar",
-    // },
-
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        draggable: true
-    },
 });
 
+function sliderNumber() {
+    let currentSlide = this.realIndex + 1;
+    if (currentSlide < 10) {
+        currentSlide = '0' + currentSlide
+    }
 
+    $('.slider-number').text(currentSlide);
+}
 
 new Swiper('.assortment__slider', {
     slidesPerView: 1,
@@ -59,8 +54,6 @@ new Swiper('.assortment__slider', {
         prevEl: '.assortment__arrow-prev',
     },
 });
-
-
 
 
 new Swiper('.format__slide', {
@@ -99,10 +92,6 @@ new Swiper('.format__slide', {
 });
 
 
-
-
-
-
 new Swiper('.examples__slides',{
     slidesPerView: 1,
     spaceBetween: 10,
@@ -136,9 +125,6 @@ new Swiper('.examples__slides',{
         prevEl: '.examples__arrow-prev',
     },
 });
-
-
-
 
 
 new Swiper('.plan__slider', {
@@ -180,11 +166,9 @@ new Swiper('.plan__slider', {
 });
 
 
-
-
 new Swiper('.step__slider', {
     slidesPerView: 4,
-    spaceBetween: 1,
+    spaceBetween: 41,
     slidesPerGroup: 4,
 
     pagination: {
@@ -216,8 +200,6 @@ new Swiper('.step__slider', {
         slidesPerGroup: 4,
     }
 });
-
-
 
 
 
@@ -265,11 +247,13 @@ $(document).ready(function () {
 });
 
 // мобильное меню
-const button = document.querySelector('.menu-mob-btn')
-const menu = document.querySelector('.header__nav')
-
-button.addEventListener("click", function(){
- menu.classList.toggle('active')
-})
-
+const iconMenu = document.querySelector('.menu-btn');
+if(iconMenu) {
+    const menuMob = document.querySelector('.menu-mob');
+    iconMenu.addEventListener("click", function(e) {
+        document.body.classList.toggle('lock');
+        iconMenu.classList.toggle('active');
+        menuMob.classList.toggle('active');
+    });
+}
 //# sourceMappingURL=script.js.map

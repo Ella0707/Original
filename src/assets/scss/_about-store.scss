@@ -5,8 +5,8 @@
     margin-bottom: 17.8rem;
 
     @media (max-width: 48em) {
-       margin-bottom: 25rem;
-     }
+        margin-bottom: 8rem;
+    }
 
 
     &__inner {
@@ -24,8 +24,9 @@
 
         @media (max-width: 48em) {
             flex-direction: column-reverse;
-            transform: translate(0px, -16rem);
-         }
+            transform: translate(2rem, -20.5rem);
+            margin-bottom: 0;
+        }
     }
 
     &__left-block {
@@ -45,8 +46,8 @@
 
         @media (max-width: 48em) {
             font-size: 5rem;
-            line-height: 6rem;
-            margin-bottom:5rem;
+            line-height: 6.2rem;
+            margin-bottom: 5rem;
         }
     }
 
@@ -62,6 +63,7 @@
             margin-bottom: 5rem;
 
             width: 55rem;
+            margin-bottom: 0;
         }
     }
 
@@ -72,15 +74,15 @@
 
     &__right-block {
         display: flex;
+        width: 93.7rem;
 
-        width: 90rem;
-
-        background-color: #F4F4F4;
 
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(17%, 0px);
+        transform: translate(19.5rem, 0px);
+        background-color: #F4F4F4;
+
 
         @media (max-width: 48em) {
             position: static;
@@ -89,7 +91,7 @@
             margin-left: 0;
 
             width: 65rem;
-            height: 54rem;
+            height: 64.5rem;
         }
     }
 
@@ -137,11 +139,13 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -4.2rem);
+            transform: translate(-50%, -4.5rem);
             z-index: 2;
 
             @media (max-width: 48em) {
                 transform: translate(-50%, -50%);
+                width: 6.8rem;
+                height: 6.8rem;
             }
         }
 
@@ -156,7 +160,7 @@
             z-index: 2;
 
             @media (max-width: 48em) {
-               display: none;
+                display: none;
             }
         }
 
@@ -185,6 +189,10 @@
         flex-direction: column;
 
         padding: 4.5rem 3.8rem 2rem 0;
+
+        @media (max-width: 48em) {
+            padding-top: 7rem;
+        }
     }
 
     &__slider-top {
@@ -194,7 +202,11 @@
 
         position: relative;
 
-        margin-bottom: 3rem;
+        margin-bottom: 5.5rem;
+
+        @media (max-width: 48em) {
+            margin-bottom: 4rem;
+        }
     }
 
 
@@ -205,12 +217,12 @@
 
         @media (max-width: 48em) {
             font-size: 4rem;
-         }
+        }
     }
 
     &__arrow-next {
         &.swiper-button-next {
-            right: 25%;
+            right: 18%;
             top: auto;
             bottom: 0;
             transform: translate(0px, 25%);
@@ -228,11 +240,10 @@
 
             @media (max-width: 48em) {
                 position: fixed;
-                border: 2px solid red;
 
                 bottom: auto;
-                top: 50%;
-                transform: translate(0px, -50%);
+                top: 42%;
+                right: 28%;
             }
         }
 
@@ -240,9 +251,9 @@
 
     &__arrow-prev {
         &.swiper-button-prev {
-            right: 35%;
+            right: 28%;
             bottom: 0;
-            top:auto;
+            top: auto;
             left: auto;
             transform: translate(0px, 25%);
             width: 4rem;
@@ -259,35 +270,43 @@
 
             @media (max-width: 48em) {
                 position: fixed;
-                border: 2px solid red;
 
                 bottom: auto;
-                top: 50%;
-                transform: translate(0%, -50%);
+                top: 42%;
+                right: 41%;
             }
         }
     }
 
 
-    &__pagination {
-        font-size: 0;
-        top: 50%;
-        left: auto;
-        right: 0;
-        transform: translate(0, -50%);
-        width: 5rem;
+    &__slide-num {
+        font-size: 1.5rem;
+        width: 2rem;
         height: 2rem;
+        padding-left: 1rem;
 
         @media (max-width: 48em) {
-            position: fixed;
-            top: 45%;
-            border: 2px solid red;
-         }
-    } 
+            font-size: 3.2rem;
 
-    &__pagination .swiper-pagination-current {
-        font-size: 1.6rem;
-        color: #CCCCCC;
+            position: fixed;
+            top: 23.5rem;
+            right: 2.5rem;
+        }
+    }
+
+    &__progressbar {
+        top: 5.5rem !important;
+
+        &.swiper-pagination-progressbar {
+            height: 1.5px;
+            background-color: #cccccc;
+            --swiper-theme-color: #666464;
+        }
+
+        @media (max-width: 48em) {
+            display: none;
+        }
+
     }
 
     &__slider-subtitle {
@@ -295,7 +314,8 @@
         font-weight: 400;
         line-height: 1.4;
 
-        width: 41.9rem;
+        width: 43rem;
+        padding: 0.5rem;
 
         @media (max-width: 48em) {
             font-size: 2.6rem;
@@ -303,31 +323,7 @@
         }
     }
 
-
-    &__progressbar {
-        position: relative;
-        background: #cccccc;
-        margin-bottom: 3rem;
-        height: 1px;
-
-        @media (max-width: 48em) {
-           display: none;
-        }
-
-    }
-
-    &__progressbar .swiper-pagination-progressbar {
-        background: #cccccc;
-    }
-
-    &__progressbar .swiper-pagination-progressbar-fill {
-            width: 100%;
-            background: #BFBEBE;
-        }
-
-
-
-// ABOUT-STORY__DOWN 
+    // ABOUT-STORY__DOWN 
 
     &__down {
         display: flex;
@@ -348,11 +344,13 @@
         padding-top: 4rem;
 
         @media (max-width: 48em) {
-           border-top: none;
-           flex-direction: column;
-           align-items: flex-start;
+            border-top: none;
+            flex-direction: column;
+            align-items: flex-start;
 
-           margin-bottom: 9.4rem;
+            padding-top: 0;
+            padding-left: 2.5rem;
+            margin-bottom: 10rem;
         }
     }
 
@@ -368,10 +366,10 @@
         }
 
         @media (max-width: 48em) {
-            
+
 
             &:not(:last-child) {
-                margin-bottom: 4rem;
+                margin-bottom: 3.7rem;
             }
         }
     }
@@ -382,7 +380,7 @@
 
         margin-right: 1.7rem;
 
-        
+
         @media (max-width: 48em) {
             width: 6rem;
             height: 6rem;
@@ -406,9 +404,9 @@
         font-weight: 400;
         line-height: 1.4;
 
-        
+
         @media (max-width: 48em) {
-           font-size: 3rem;
+            font-size: 3rem;
         }
     }
 
@@ -421,6 +419,7 @@
 
         @media (max-width: 48em) {
             font-size: 4rem;
+            margin-top: 1rem;
         }
     }
 
@@ -431,6 +430,11 @@
 
     &__application-link {
         margin-right: 0.5rem;
+
+        @media (max-width: 48em) {
+            margin-left: 5rem;
+            padding-left: 17rem;
+        }
     }
 
 }

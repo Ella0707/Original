@@ -1,5 +1,7 @@
 .FAQ {
 
+    margin-bottom: 18rem;
+
 
     &__title {
         font-size: 4.5rem;
@@ -11,14 +13,14 @@
     }
 
     &__wrapper-spollers {
-       width: 108.3rem;
+        width: 108.3rem;
 
-       margin: 0 auto;
+        margin: 0 auto;
 
-       @media (max-width: 48em) {
-      width: 65rem;
-    }
-       
+        @media (max-width: 48em) {
+            width: 65rem;
+        }
+
     }
 
     &__spoller-item {
@@ -31,8 +33,8 @@
 
         @media (max-width: 48em) {
             width: 60rem;
-          }
-        
+        }
+
     }
 
     &__spoller-title {
@@ -62,15 +64,15 @@
     }
 
     &__spoller-title {
-    &.active {
-        &::after {
-            background-image: url(./../images/minus.svg);
-           
-            right: 0;
-            bottom: 0;
-            transform: translate(0, 15.5rem);
+        &.active {
+            &::after {
+                background-image: url(./../images/minus.svg);
+
+                right: 0;
+                bottom: 0;
+                transform: translate(0, 15.5rem);
+            }
         }
-    }
     }
 
     &__spoller-text {
@@ -86,6 +88,6 @@
 
         @media (max-width: 48em) {
             width: 60rem;
-          }
+        }
     }
 }

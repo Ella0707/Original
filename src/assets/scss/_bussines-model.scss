@@ -47,7 +47,7 @@
                 background-position: center;
 
                 position: absolute;
-                bottom: 3.4rem;
+                bottom: 2.4rem;
                 left: 3.9rem;
             }
 
@@ -92,5 +92,17 @@
     &__box-subtitle {
         font-size: 1.8rem;
         font-weight: 400;
+        width: 19rem;
     }
+
+    // &__box {
+    //     &:last-child {
+    //         &.bussines-model__box-subtitle {
+    //             width: 30.5rem;
+    //         }
+    //     }
+    // }
+
 }
+
+

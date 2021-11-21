@@ -1,10 +1,15 @@
 .box {
+
+    @media (max-width: 48em) {
+        padding: 0 2rem;
+    }
+
     &__img {
         width: 25rem;
         height: 25rem;
 
         @media (max-width: 48em) {
-            width: 34.6rem;
+            width: 100%;
             height: 32.6rem;
         }
     }
@@ -28,11 +33,17 @@
 
             position: absolute;
             bottom: 6%;
+
+
+            @media (max-width: 48em) {
+                width: 10.5rem;
+                bottom: 11%;
+            }
         }
 
         @media (max-width: 48em) {
-            width: 32.4rem;
-            padding: 5rem 5rem 6rem 3rem;
+            width: 100%;
+            padding: 5.3rem 4rem 6rem 3rem;
         }
     }
 
@@ -44,6 +55,7 @@
 
         @media (max-width: 48em) {
             font-size: 5.6rem;
+            margin-bottom: 2.5rem;
         }
     }
 

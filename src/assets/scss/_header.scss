@@ -13,7 +13,9 @@
         width: 150rem;
 
         @media (max-width: 48em) {
-            width: 65rem;
+            width: 67rem;
+            padding-top: 4rem;
+            padding-left: 2rem;
         }
     }
 
@@ -31,54 +33,63 @@
 
     &__btn {
         display: none;
+
         @media (max-width: 48em) {
             display: block;
-            transform: translateY(-1rem);
+            background-image: url(./../images/menu-burger.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 6rem;
+            height: 2rem;
 
             position: absolute;
             right: 0;
+            z-index: 5;
+
         }
     }
 
-
-    &__burger {
-        @media (max-width: 48em) {
-        display: flex;
+    &__btn.active {
+        background-image: url(./../images/burger-close.svg);
+        background-position: center;
+        background-repeat: no-repeat;
         width: 6rem;
-        height: 0.4rem;
-        background-color: #191C20;
-
-        position: relative;
-
-        &::after {
-            content: "";
-            width: 4rem;
-            height: 0.4rem;
-            background-color: #191C20;
-
-            position: absolute;
-            z-index: 9999;
-            bottom: -1rem;
-            left: 0;
-        }
-    } 
+        height: 2rem;
     }
 
 
     &__nav {
         @media (max-width: 48em) {
-            display: none;
+            background-color: #ffffff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            transition: all 0.2s ease 0s;
+            transform: translate(-100%, 0);
+            z-index: 3;
         }
     }
 
-    &__nav .active {
-        display: block;
+    &__nav.menu-mob {
+        &.active {
+            @media (max-width: 48em) {
+                transform: translate(0, 0);
+                overflow: hidden;
+            }
+        }
     }
 
     &__nav-list {
         display: flex;
         margin-right: 8.7rem;
 
+        @media (max-width: 48em) {
+            font-size: 3.2rem;
+            flex-direction: column;
+        }
     }
 
     &__nav-item {
