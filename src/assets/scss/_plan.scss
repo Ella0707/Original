@@ -2,6 +2,10 @@
 
     margin-bottom: 16rem;
 
+    @media (max-width: 48em) {
+        margin-bottom: 12rem;
+    }
+
 
     &__title {
         font-size: 4.5rem;
@@ -9,6 +13,33 @@
         line-height: 1.2;
 
         margin-bottom: 6rem;
+
+        @media (max-width: 48em) {
+            font-size: 6rem;
+            padding-left: 2rem;
+        }
+    }
+
+    &__num-mob {
+        display: none;
+
+        @media (max-width: 48em) {
+           display: flex;
+           justify-content: space-between;
+           padding-left: 1.5rem;
+           padding-bottom: 5rem;
+           margin-bottom: 7rem;
+           width: 100%;
+
+           border-bottom: 1px dashed #bbbbbb;
+        }
+    }
+
+    &__num-num {
+        @media (max-width: 48em) {
+           font-size: 3.6rem;
+           font-weight: 500;
+        }
     }
 
     &__slider {
@@ -17,6 +48,7 @@
 
         @media (max-width: 48em) {
             height: 130rem;
+            padding-left: 2rem;
         }
     }
 
@@ -47,15 +79,30 @@
 
         display: flex;
         align-items: center;
+
+        @media (max-width: 48em) {
+            bottom: 12rem;
+            left: 29rem;
+            transform: translate(0, 0);
+         }
     }
 
     &__pagination .swiper-pagination-current {
         font-size: 4rem;
         margin-right: 1rem;
+
+
+        @media (max-width: 48em) {
+           font-size: 6rem;
+        }
     }
 
     &__pagination .swiper-pagination-total {
         font-size: 1.1rem;
+
+        @media (max-width: 48em) {
+            font-size: 2.5rem;
+         }
     }
 
     &__arrow-next {
@@ -78,7 +125,10 @@
             }
 
             @media (max-width: 48em) {
-                width: 4.4rem;
+                width: 4.5rem;
+                height: 4.5rem;
+                bottom: 13rem;
+                right: 15rem;
             }
     }
 
@@ -103,7 +153,10 @@
             }
 
             @media (max-width: 48em) {
-                width: 4.4rem;
+                width: 4.5rem;
+                height: 4.5rem;
+                bottom: 13rem;
+                left: 15rem;
             }
     }
 
@@ -158,6 +211,12 @@
 
         width: 34.7rem;
         height: 14.7rem;
+
+        @media (max-width: 48em) {
+           font-size: 3rem;
+           width: 55rem;
+           height: 16.4rem;
+        }
     }
 
     &__photo {

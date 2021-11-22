@@ -26,6 +26,7 @@
             flex-direction: column-reverse;
             transform: translate(2rem, -20.5rem);
             margin-bottom: 0;
+            width: 65rem;
         }
     }
 
@@ -34,6 +35,9 @@
         flex-direction: column;
         justify-content: flex-start;
         width: 66.5rem;
+        @media (max-width: 48em) {
+            width: 64.5rem;
+        }
     }
 
 
@@ -287,6 +291,9 @@
 
         @media (max-width: 48em) {
             font-size: 3.2rem;
+            width: 4rem;
+            height: 4rem;
+            padding-left: 0;
 
             position: fixed;
             top: 23.5rem;
@@ -351,6 +358,7 @@
             padding-top: 0;
             padding-left: 2.5rem;
             margin-bottom: 10rem;
+            width: 65rem;
         }
     }
 

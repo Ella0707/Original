@@ -3,6 +3,10 @@
     position: relative;
     margin-bottom: 14.8rem;
 
+    @media (max-width: 48em) {
+        margin-bottom: 25rem;
+    }
+
 
     &__text-block {
         display: flex;
@@ -103,6 +107,10 @@
     &__text-right {
         width: 75rem;
         padding-right: 6rem;
+
+        @media (max-width: 48em) {
+            width: 65rem;
+        }
     }
 
     &__location {
@@ -115,6 +123,7 @@
         @media (max-width: 48em) {
             font-size: 3rem;
             margin-bottom: 4rem;
+            width: 65rem;
         }
     }
 
@@ -160,8 +169,9 @@
         height: 70rem;
 
         @media (max-width: 48em) {
-            width: 70.2rem;
-            height: 63.2rem;    
+            width: 65rem;
+            height: 80.2rem;  
+            margin-bottom: 14.5rem; 
         }
     }
 
@@ -194,12 +204,17 @@
     &__shops-box {
         &:not(:last-child) {
             margin-bottom: 6.5rem;
+
+            @media (max-width: 48em) {
+                margin-bottom: 5rem;
+            }
         }
+
+
         @media (max-width: 48em) {
             display: flex;
             align-items: center;
         }
-
     }
 
     &__shops-number {
@@ -212,8 +227,7 @@
         @media (max-width: 48em) {
             font-size: 6rem;
             width: 7rem;
-            margin-right: 5.6rem;
-            margin-bottom: 0;
+            margin: 0 2.6rem 0rem 2rem;
         }
     }
 
@@ -228,6 +242,7 @@
 
         @media (max-width: 48em) {
             width: 4.8rem;
+            margin-right: 2rem;
         }
     }
 

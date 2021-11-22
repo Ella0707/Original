@@ -20,6 +20,10 @@
         width: 74.7rem;
 
         margin-bottom: 7rem;
+
+        @media (max-width: 48em) {
+            width: 65rem;
+        }
     }
 
     &__content {

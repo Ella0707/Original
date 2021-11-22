@@ -999,6 +999,7 @@ input[type="number"] {
 @media (max-width: 48em) {
     .about-us__heading {
         font-size: 6rem;
+        width: 63.6rem;
     }
 }
 
@@ -1335,6 +1336,13 @@ input[type="number"] {
     margin-bottom: 17rem;
 }
 
+@media (max-width: 48em) {
+    .numbers {
+        padding-left: 2rem;
+        margin-bottom: 24rem;
+    }
+}
+
 .numbers__subtitle {
     font-size: 1.8rem;
     font-weight: 400;
@@ -1346,7 +1354,7 @@ input[type="number"] {
 @media (max-width: 48em) {
     .numbers__subtitle {
         font-size: 3rem;
-        margin-bottom: 6rem;
+        margin-bottom: 6.5rem;
     }
 }
 
@@ -1413,11 +1421,13 @@ input[type="number"] {
     .box-numbers {
         width: 64.8rem;
         height: 26.6rem;
+        border-left: 0.3rem solid #BA302B;
+        padding: 5.5rem 3.8rem 1rem 3.5rem;
     }
 
     .box-numbers:nth-child(2n) {
         border-left: none;
-        border-right: 0.15rem solid #BA302B;
+        border-right: 0.3rem solid #BA302B;
     }
 }
 
@@ -1477,7 +1487,9 @@ input[type="number"] {
 @media (max-width: 48em) {
     .box-numbers__img-wrap {
         width: 11.6rem;
-        height: 11.6rem;
+        height: 10.6rem;
+        -ms-flex-align: end;
+        align-items: flex-end;
     }
 }
 
@@ -1501,7 +1513,8 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .assortment {
-        margin-bottom: 25rem;
+        margin-bottom: 24rem;
+        padding-left: 2rem;
     }
 }
 
@@ -1523,6 +1536,12 @@ input[type="number"] {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+
+@media (max-width: 48em) {
+    .assortment__left-block {
+        margin-bottom: 4rem;
+    }
 }
 
 .assortment__subtitle {
@@ -1728,7 +1747,7 @@ input[type="number"] {
     .assortment__slider {
         margin-left: 0;
         margin-right: 0;
-        width: 65rem;
+        width: 100%;
         height: 57.4rem;
     }
 }
@@ -1740,7 +1759,7 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .assortment__slider-wrapper {
-        width: 65rem;
+        width: 100%;
         height: 57.4rem;
     }
 }
@@ -1775,8 +1794,8 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .assortment__arrow-next.swiper-button-next {
-        -webkit-transform: translate(0, -50%);
-        transform: translate(0, -50%);
+        width: 14rem;
+        height: 14rem;
     }
 }
 
@@ -1805,8 +1824,9 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .assortment__arrow-prev.swiper-button-prev {
-        -webkit-transform: translate(0, -50%);
-        transform: translate(0, -50%);
+        width: 14rem;
+        height: 14rem;
+        right: 14rem;
     }
 }
 
@@ -1821,10 +1841,23 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .assortment__slider-img {
-        height: 57.4rem;
-        width: 100%;
-        -o-object-fit: contain;
-        object-fit: contain;
+        display: none;
+    }
+}
+
+.assortment__slider-img-mob {
+    display: none;
+}
+
+@media (max-width: 48em) {
+    .assortment__slider-img-mob {
+        display: block;
+        width: 65rem;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        -o-object-fit: cover;
+        object-fit: cover;
     }
 }
 
@@ -1906,6 +1939,8 @@ input[type="number"] {
     .geography__text-block {
         -ms-flex-direction: column;
         flex-direction: column;
+        padding-left: 2rem;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -1933,16 +1968,15 @@ input[type="number"] {
 @media (max-width: 48em) {
     .geography__subtitle-wrap {
         border-top: none;
-        -ms-flex-align: center;
-        align-items: center;
+        width: 65rem;
+        padding-top: 0;
+        margin-bottom: 5.8rem;
     }
 }
 
 .geography__subtitle-text {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
 .geography__subtitle-img {
@@ -1952,7 +1986,9 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .geography__subtitle-img {
-        width: 3.45rem;
+        width: 4.7rem;
+        height: 4.7rem;
+        margin-right: 2.34rem;
     }
 }
 
@@ -1966,6 +2002,7 @@ input[type="number"] {
 @media (max-width: 48em) {
     .geography__subtitle {
         font-size: 3rem;
+        padding-top: 1.5rem;
     }
 }
 
@@ -1978,6 +2015,7 @@ input[type="number"] {
 @media (max-width: 48em) {
     .geography__number {
         font-size: 3.9rem;
+        padding-top: 1rem;
     }
 }
 
@@ -1990,6 +2028,8 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .geography__title {
+        width: 65rem;
+        letter-spacing: 0.4px;
         font-size: 6rem;
         margin-bottom: 5rem;
     }
@@ -2093,7 +2133,6 @@ input[type="number"] {
 @media (max-width: 48em) {
     .geography__img-map-mob {
         display: block;
-        height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
     }
