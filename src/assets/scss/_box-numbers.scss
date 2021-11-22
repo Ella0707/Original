@@ -13,10 +13,14 @@
     @media (max-width: 48em) {
         width: 64.8rem;
         height: 26.6rem;
+        border-left: 0.3rem solid #BA302B;
+        padding: 5.5rem 3.8rem 1rem 3.5rem;
+
+
 
         &:nth-child(2n) {
             border-left: none;
-            border-right: 0.15rem solid #BA302B;
+            border-right: 0.3rem solid #BA302B;
         }
     }
 
@@ -70,7 +74,8 @@
 
         @media (max-width: 48em) {
             width: 11.6rem;
-            height: 11.6rem;
+            height: 10.6rem;
+            align-items: flex-end;
         }
     }
 

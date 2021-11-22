@@ -6,7 +6,8 @@
     overflow-x: hidden;
 
     @media (max-width: 48em) {
-        margin-bottom: 25rem;
+        margin-bottom: 24rem;
+        padding-left: 2rem;
     }
 
     &__inner {
@@ -22,6 +23,10 @@
     &__left-block {
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 48em) {
+          margin-bottom: 4rem;
+        }
     }
 
     &__subtitle {
@@ -209,7 +214,7 @@
         @media (max-width: 48em) {
             margin-left: 0;
             margin-right: 0;
-            width: 65rem;
+            width: 100%;
             height: 57.4rem;
         }
     }
@@ -219,14 +224,14 @@
         width: 56.8rem;
 
         @media (max-width: 48em) {
-            width: 65rem;
+            width: 100%;
             height: 57.4rem;
         }
     }
 
     &__arrow-svg {
         @media (max-width: 48em) {
-           width: 4.4rem;
+        width: 4.4rem;
         }
     }
 
@@ -253,7 +258,8 @@
             }
 
             @media (max-width: 48em) {
-                transform: translate(0, -50%);
+                width: 14rem;
+                height: 14rem;
             }
         }
     }
@@ -282,7 +288,9 @@
             }
 
             @media (max-width: 48em) {
-                transform: translate(0, -50%);
+                width: 14rem;
+                height: 14rem;
+                right: 14rem;
             }
         }
     }
@@ -297,9 +305,20 @@
         z-index: 1;
 
         @media (max-width: 48em) {
-            height: 57.4rem;
-            width: 100%;
-            object-fit: contain;
+            display: none;
+        }
+    }
+
+    &__slider-img-mob {
+       display: none;
+
+        @media (max-width: 48em) {
+            display: block;
+            width: 65rem;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            object-fit: cover;
         }
     }
 

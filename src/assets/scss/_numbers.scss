@@ -2,6 +2,11 @@
 
     margin-bottom: 17rem;
 
+    @media (max-width: 48em) {
+        padding-left: 2rem;
+        margin-bottom: 24rem;
+    }
+
     &__subtitle {
         font-size: 1.8rem;
         font-weight: 400;
@@ -12,8 +17,7 @@
 
         @media (max-width: 48em) {
             font-size: 3rem;
-
-            margin-bottom: 6rem;
+            margin-bottom: 6.5rem;
         }
     }
 
