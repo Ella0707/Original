@@ -5,6 +5,7 @@
     @media (max-width: 48em) {
         overflow-x: scroll;
         padding-left: 2rem;
+        margin-bottom: 14rem;
     }
 
     &__subtitle {
@@ -33,6 +34,7 @@
             flex-direction: column;
             justify-content: start;
             align-items: flex-start;
+            margin-bottom: 9rem;
         }
     }
 

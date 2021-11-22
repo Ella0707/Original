@@ -446,6 +446,7 @@ input[type="number"] {
         -webkit-transform: translate(2rem, -20.5rem);
         transform: translate(2rem, -20.5rem);
         margin-bottom: 0;
+        width: 65rem;
     }
 }
 
@@ -457,6 +458,12 @@ input[type="number"] {
     -ms-flex-pack: start;
     justify-content: flex-start;
     width: 66.5rem;
+}
+
+@media (max-width: 48em) {
+    .about-store__left-block {
+        width: 64.5rem;
+    }
 }
 
 .about-store__title {
@@ -718,6 +725,9 @@ input[type="number"] {
 @media (max-width: 48em) {
     .about-store__slide-num {
         font-size: 3.2rem;
+        width: 4rem;
+        height: 4rem;
+        padding-left: 0;
         position: fixed;
         top: 23.5rem;
         right: 2.5rem;
@@ -792,6 +802,7 @@ input[type="number"] {
         padding-top: 0;
         padding-left: 2.5rem;
         margin-bottom: 10rem;
+        width: 65rem;
     }
 }
 
@@ -1928,6 +1939,12 @@ input[type="number"] {
     margin-bottom: 14.8rem;
 }
 
+@media (max-width: 48em) {
+    .geography {
+        margin-bottom: 25rem;
+    }
+}
+
 .geography__text-block {
     display: -ms-flexbox;
     display: flex;
@@ -2040,6 +2057,12 @@ input[type="number"] {
     padding-right: 6rem;
 }
 
+@media (max-width: 48em) {
+    .geography__text-right {
+        width: 65rem;
+    }
+}
+
 .geography__location {
     font-size: 1.95rem;
     font-weight: 300;
@@ -2051,6 +2074,7 @@ input[type="number"] {
     .geography__location {
         font-size: 3rem;
         margin-bottom: 4rem;
+        width: 65rem;
     }
 }
 
@@ -2109,8 +2133,9 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .geography__map-wrap {
-        width: 70.2rem;
-        height: 63.2rem;
+        width: 65rem;
+        height: 80.2rem;
+        margin-bottom: 14.5rem;
     }
 }
 
@@ -2153,6 +2178,12 @@ input[type="number"] {
 }
 
 @media (max-width: 48em) {
+    .geography__shops-box:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width: 48em) {
     .geography__shops-box {
         display: -ms-flexbox;
         display: flex;
@@ -2172,8 +2203,7 @@ input[type="number"] {
     .geography__shops-number {
         font-size: 6rem;
         width: 7rem;
-        margin-right: 5.6rem;
-        margin-bottom: 0;
+        margin: 0 2.6rem 0rem 2rem;
     }
 }
 
@@ -2192,6 +2222,7 @@ input[type="number"] {
 @media (max-width: 48em) {
     .geography__shops-type-img {
         width: 4.8rem;
+        margin-right: 2rem;
     }
 }
 
@@ -2228,11 +2259,32 @@ input[type="number"] {
     margin-bottom: 18.5rem;
 }
 
+@media (max-width: 48em) {
+    .examples {
+        margin-bottom: 26rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .examples .none {
+        padding: 0;
+    }
+}
+
 .examples__title {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 7.0rem;
+}
+
+@media (max-width: 48em) {
+    .examples__title {
+        font-size: 6rem;
+        padding-left: 4rem;
+        padding-right: 1rem;
+        margin-bottom: 5rem;
+    }
 }
 
 .examples__slide {
@@ -2260,7 +2312,13 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .examples__wrapper {
-        height: 140rem;
+        height: 150rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .examples__slide {
+        height: 100%;
     }
 }
 
@@ -2279,18 +2337,24 @@ input[type="number"] {
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        padding-left: 3rem;
     }
 }
 
 @media (max-width: 48em) {
     .examples__slide-mob {
-        width: 30rem;
-        height: 15.2rem;
+        width: 29rem;
+        height: 14.2rem;
+        padding-left: 2rem;
+        margin-bottom: 5rem;
     }
 
     .examples__slide-mob:nth-child(odd) {
-        margin-bottom: 3rem;
-        margin-right: 3rem;
+        margin-right: 6rem;
+    }
+
+    .examples__slide-mob:nth-child(-n + 2) {
+        margin-bottom: 7rem;
     }
 }
 
@@ -2300,6 +2364,7 @@ input[type="number"] {
         font-weight: 500;
         line-height: 1.4;
         color: #CA342E;
+        width: 30rem;
     }
 }
 
@@ -2308,6 +2373,7 @@ input[type="number"] {
         font-size: 3rem;
         font-weight: 400;
         line-height: 1.4;
+        width: 25rem;
     }
 }
 
@@ -2316,6 +2382,15 @@ input[type="number"] {
     font-weight: 700;
     width: 42.3rem;
     margin-bottom: 3.3rem;
+}
+
+@media (max-width: 48em) {
+    .examples__slide-title {
+        padding-left: 5rem;
+        padding-right: 1rem;
+        letter-spacing: -0.25px;
+        margin-bottom: 5rem;
+    }
 }
 
 .examples__pagination {
@@ -2332,22 +2407,20 @@ input[type="number"] {
 @media (max-width: 48em) {
     .examples__pagination {
         position: fixed;
-        bottom: -12%;
-        left: 50%;
+        bottom: -1.5rem;
+        left: 43%;
         margin-bottom: 0;
         width: 5rem;
-        -webkit-transform: translate(-50%);
-        transform: translate(-50%);
     }
 }
 
 .examples__pagination .swiper-pagination-current {
-    font-size: 3rem;
+    font-size: 6rem;
     margin-right: 1rem;
 }
 
 .examples__pagination .swiper-pagination-total {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
 }
 
 .examples__slide-list {
@@ -2418,7 +2491,8 @@ input[type="number"] {
         display: block;
         -o-object-fit: cover;
         object-fit: cover;
-        height: 100%;
+        width: 100vw;
+        height: 66rem;
     }
 }
 
@@ -2446,9 +2520,8 @@ input[type="number"] {
         align-items: flex-start;
         width: 75rem;
         height: 22rem;
-        padding: 3rem;
-        -webkit-transform: translateY(50%);
-        transform: translateY(50%);
+        padding: 5rem;
+        bottom: 11.5rem;
     }
 }
 
@@ -2530,8 +2603,8 @@ input[type="number"] {
 @media (max-width: 48em) {
     .examples__arrow-next {
         position: fixed;
-        right: 35%;
-        bottom: -35%;
+        right: 15rem;
+        bottom: -11.5rem;
         background-color: transparent;
     }
 }
@@ -2568,8 +2641,8 @@ input[type="number"] {
 @media (max-width: 48em) {
     .examples__arrow-prev {
         position: fixed;
-        left: 35%;
-        bottom: -35%;
+        left: 15rem;
+        bottom: -11.5rem;
         background-color: transparent;
     }
 }
@@ -2578,11 +2651,49 @@ input[type="number"] {
     margin-bottom: 16rem;
 }
 
+@media (max-width: 48em) {
+    .plan {
+        margin-bottom: 12rem;
+    }
+}
+
 .plan__title {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 6rem;
+}
+
+@media (max-width: 48em) {
+    .plan__title {
+        font-size: 6rem;
+        padding-left: 2rem;
+    }
+}
+
+.plan__num-mob {
+    display: none;
+}
+
+@media (max-width: 48em) {
+    .plan__num-mob {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-left: 1.5rem;
+        padding-bottom: 5rem;
+        margin-bottom: 7rem;
+        width: 100%;
+        border-bottom: 1px dashed #bbbbbb;
+    }
+}
+
+@media (max-width: 48em) {
+    .plan__num-num {
+        font-size: 3.6rem;
+        font-weight: 500;
+    }
 }
 
 .plan__slider {
@@ -2593,6 +2704,7 @@ input[type="number"] {
 @media (max-width: 48em) {
     .plan__slider {
         height: 130rem;
+        padding-left: 2rem;
     }
 }
 
@@ -2625,13 +2737,34 @@ input[type="number"] {
     align-items: center;
 }
 
+@media (max-width: 48em) {
+    .plan__pagination {
+        bottom: 12rem;
+        left: 29rem;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
 .plan__pagination .swiper-pagination-current {
     font-size: 4rem;
     margin-right: 1rem;
 }
 
+@media (max-width: 48em) {
+    .plan__pagination .swiper-pagination-current {
+        font-size: 6rem;
+    }
+}
+
 .plan__pagination .swiper-pagination-total {
     font-size: 1.1rem;
+}
+
+@media (max-width: 48em) {
+    .plan__pagination .swiper-pagination-total {
+        font-size: 2.5rem;
+    }
 }
 
 .plan__arrow-next {
@@ -2656,7 +2789,10 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .plan__arrow-next {
-        width: 4.4rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        bottom: 13rem;
+        right: 15rem;
     }
 }
 
@@ -2683,7 +2819,10 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .plan__arrow-prev {
-        width: 4.4rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        bottom: 13rem;
+        left: 15rem;
     }
 }
 
@@ -2736,6 +2875,14 @@ input[type="number"] {
     height: 14.7rem;
 }
 
+@media (max-width: 48em) {
+    .plan__text {
+        font-size: 3rem;
+        width: 55rem;
+        height: 16.4rem;
+    }
+}
+
 .plan__photo {
     width: 34.5rem;
     height: 51.17rem;
@@ -2752,6 +2899,13 @@ input[type="number"] {
     margin-bottom: 18rem;
 }
 
+@media (max-width: 48em) {
+    .report {
+        overflow-x: scroll;
+        padding-left: 2rem;
+    }
+}
+
 .report__subtitle {
     font-size: 1.8rem;
     font-weight: 400;
@@ -2759,6 +2913,13 @@ input[type="number"] {
     color: #777777;
     text-transform: uppercase;
     margin-bottom: 1.7rem;
+}
+
+@media (max-width: 48em) {
+    .report__subtitle {
+        font-size: 3rem;
+        margin-bottom: 6.5rem;
+    }
 }
 
 .report__title-wrap {
@@ -2791,6 +2952,7 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .report__title {
+        font-size: 6rem;
         width: 65rem;
         margin-bottom: 9.4rem;
     }
@@ -2803,7 +2965,6 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .report__table {
-        overflow-x: scroll;
         -ms-flex-pack: start;
         justify-content: flex-start;
         table-layout: fixed;
@@ -2904,7 +3065,7 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .support__content {
-        width: 75rem;
+        width: 65rem;
     }
 }
 
@@ -2925,6 +3086,12 @@ input[type="number"] {
     line-height: 1.2;
     margin-bottom: 3rem;
     width: 38.3rem;
+}
+
+@media (max-width: 48em) {
+    .support__num {
+        width: 16rem;
+    }
 }
 
 .support__num-top-wrap {
@@ -3262,6 +3429,12 @@ input[type="number"] {
     line-height: 1.2;
     width: 74.7rem;
     margin-bottom: 7rem;
+}
+
+@media (max-width: 48em) {
+    .bussines-model__title {
+        width: 65rem;
+    }
 }
 
 .bussines-model__content {

@@ -80,9 +80,11 @@
 
             @media (max-width: 48em) {
                 position: fixed;
-                left: 35%;
+                left: 24%;
+                bottom: 2rem;
                 background-color: transparent;
                 width: 4.4rem;
+                height: 5rem;
             }
         }
     }
@@ -133,6 +135,11 @@
         width: 75rem;
 
         position: relative;
+
+        
+        @media (max-width: 48em) {
+            padding-top: 0;
+        }
     }
 
     &__arrow-next {
@@ -159,11 +166,12 @@
 
         @media (max-width: 48em) {
             position: fixed;
-            bottom: 0;
-            right: 35%;
+            bottom: 2rem;
+            right: 24%;
             background-color: transparent;
             fill: #CA342E;
             width: 4.4rem;
+            height: 5rem;
             transition: 0.8s;
         }
     }
@@ -193,6 +201,16 @@
             position: absolute;
             top: 25%;
             left: 0;
+
+            @media (max-width: 48em) {
+                width: 20rem;
+            }
+        }
+
+        @media (max-width: 48em) {
+            font-size: 3rem;
+            padding-left: 22rem;
+            margin-bottom: 6.5rem;
         }
     }
 
@@ -203,15 +221,31 @@
         width: 44.2rem;
 
         margin-bottom: 4.5rem;
+
+        @media (max-width: 48em) {
+            font-size: 6rem;
+            padding-left: 5rem;
+            width: 57rem;
+            margin-bottom: 8.5rem;
+        }
     }
 
     &__text-wrap {
         margin-bottom: 7.5rem;
         padding-left: 9rem;
+
+        @media (max-width: 48em) {
+            padding-left: 5rem;
+            margin-bottom: 5.5rem;
+        }
     }
 
     &__par-wrap {
         margin-bottom: 7.5rem;
+
+        @media (max-width: 48em) {
+           margin-bottom: 0;
+        }
     }
 
     &__par {
@@ -223,10 +257,30 @@
         &:not(:last-child) {
             margin-bottom: 3.7rem;
         }
+
+        @media (max-width: 48em) {
+            font-size: 3rem;
+            width: 65rem;
+            line-height: 1.4;
+        }
     }
 
     &__link {
         margin-left: 0.5rem;
+
+        @media (max-width: 48em) {
+           display: none;
+        }
+    }
+
+    &__link.mob {
+       display: none;
+
+        @media (max-width: 48em) {
+           display: block;
+           margin-left: 6rem;
+           margin-bottom: 10rem;
+        }
     }
 
     &__pagination {
@@ -236,9 +290,8 @@
             display: block;
 
             font-size: 0;
-            bottom: 2.5rem;
-            left: 50%;
-            transform: translate(-50%, 10%);
+            bottom: 1rem;
+            left: 43%;
             width: 6rem;
 
             display: flex;
@@ -249,9 +302,17 @@
     &__pagination .swiper-pagination-current {
         font-size: 4rem;
         margin-right: 1rem;
+
+        @media (max-width: 48em) {
+            font-size: 6rem;
+        }
     }
 
     &__pagination .swiper-pagination-total {
         font-size: 1.1rem;
+
+        @media (max-width: 48em) {
+            font-size: 2.1rem;
+        }
     }
 }

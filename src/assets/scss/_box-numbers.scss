@@ -75,7 +75,10 @@
         @media (max-width: 48em) {
             width: 11.6rem;
             height: 10.6rem;
-            align-items: flex-end;
+            align-items: center;
+            align-self: center;
+            padding-bottom: 0rem;
+            margin-bottom: 5rem;
         }
     }
 

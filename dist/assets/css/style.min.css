@@ -285,13 +285,25 @@ input[type="number"] {
     margin-right: 8.7rem; }
     @media (max-width: 48em) {
       .header__nav-list {
-        font-size: 3.2rem;
-        flex-direction: column; } }
+        flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-right: 0; } }
   .header__nav-item {
     font-size: 1.6rem;
     font-weight: 500; }
     .header__nav-item:not(:last-child) {
       margin-right: 4.5rem; }
+      @media (max-width: 48em) {
+        .header__nav-item:not(:last-child) {
+          margin-right: 0; } }
+    @media (max-width: 48em) {
+      .header__nav-item {
+        font-size: 3.2rem;
+        margin-bottom: 5rem;
+        align-self: center; } }
 
 .btn {
   font-size: 1.6rem;
@@ -974,7 +986,10 @@ input[type="number"] {
       .box-numbers__img-wrap {
         width: 11.6rem;
         height: 10.6rem;
-        align-items: flex-end; } }
+        align-items: center;
+        align-self: center;
+        padding-bottom: 0rem;
+        margin-bottom: 5rem; } }
   .box-numbers__img {
     width: 3rem;
     height: 3rem; }
@@ -1091,7 +1106,8 @@ input[type="number"] {
     display: none; }
     @media (max-width: 48em) {
       .assortment__left-block-link-mob {
-        display: block; } }
+        display: block;
+        margin-left: 4rem; } }
   .assortment__left-block-link {
     margin-left: 1rem; }
     @media (max-width: 48em) {
@@ -1820,7 +1836,8 @@ input[type="number"] {
   @media (max-width: 48em) {
     .report {
       overflow-x: scroll;
-      padding-left: 2rem; } }
+      padding-left: 2rem;
+      margin-bottom: 14rem; } }
   .report__subtitle {
     font-size: 1.8rem;
     font-weight: 400;
@@ -1841,7 +1858,8 @@ input[type="number"] {
       .report__title-wrap {
         flex-direction: column;
         justify-content: start;
-        align-items: flex-start; } }
+        align-items: flex-start;
+        margin-bottom: 9rem; } }
   .report__title {
     font-size: 4.5rem;
     font-weight: 700;
@@ -1906,11 +1924,18 @@ input[type="number"] {
 
 .support {
   margin-bottom: 19.8rem; }
+  @media (max-width: 48em) {
+    .support {
+      padding-left: 2rem;
+      margin-bottom: 16.3rem; } }
   .support__title {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 5.5rem; }
+    @media (max-width: 48em) {
+      .support__title {
+        font-size: 6rem; } }
   .support__content {
     width: 157.1rem;
     height: 83.7rem;
@@ -1918,7 +1943,8 @@ input[type="number"] {
     flex-wrap: wrap; }
     @media (max-width: 48em) {
       .support__content {
-        width: 65rem; } }
+        width: 65rem;
+        height: 100%; } }
   .support__img {
     object-fit: cover; }
     @media (max-width: 48em) {
@@ -1933,8 +1959,14 @@ input[type="number"] {
     @media (max-width: 48em) {
       .support__num {
         width: 16rem; } }
+  @media (max-width: 48em) {
+    .support__num.desc {
+      display: none; } }
   .support__num-top-wrap {
     display: flex; }
+    @media (max-width: 48em) {
+      .support__num-top-wrap {
+        display: none; } }
   .support__box {
     width: 38rem;
     padding: 0.5rem;
@@ -1942,6 +1974,9 @@ input[type="number"] {
     position: relative; }
     .support__box:nth-child(5) {
       border-right: 1px dashed #bbbbbb; }
+      @media (max-width: 48em) {
+        .support__box:nth-child(5) {
+          border-right: none; } }
     .support__box::before {
       content: "";
       width: 0.9rem;
@@ -1951,14 +1986,32 @@ input[type="number"] {
       position: absolute;
       top: -1%;
       left: 0%; }
-  .support__box-inner {
-    width: 35rem; }
+    @media (max-width: 48em) {
+      .support__box {
+        width: 62.2rem;
+        height: 49rem;
+        border-top: none;
+        display: flex;
+        flex-direction: column; }
+        .support__box:nth-child(2n+1) {
+          align-items: flex-end;
+          border-right: 1px dashed #bbbbbb;
+          padding-right: 2rem; }
+        .support__box:nth-child(2n) {
+          border-left: 1px dashed #bbbbbb;
+          padding-left: 2rem; }
+        .support__box:not(:last-child) {
+          border-bottom: 1px dashed #bbbbbb; } }
   .support__box-img-wrap {
     width: 8rem;
     height: 8rem;
     display: flex;
     margin-bottom: 3rem;
     margin-top: 3.2rem; }
+    @media (max-width: 48em) {
+      .support__box-img-wrap {
+        width: 12rem;
+        height: 12rem; } }
   .support__box-img {
     object-fit: contain; }
   .support__box-title {
@@ -1966,12 +2019,18 @@ input[type="number"] {
     font-weight: 400;
     line-height: 1.4;
     margin-bottom: 1.7rem; }
+    @media (max-width: 48em) {
+      .support__box-title {
+        font-size: 3.4rem; } }
   .support__box-subtitle {
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.4;
     height: 13.3rem;
     padding-bottom: 1.5rem; }
+    @media (max-width: 48em) {
+      .support__box-subtitle {
+        font-size: 3rem; } }
 
 .format {
   margin-bottom: 18.4rem; }
@@ -2026,9 +2085,11 @@ input[type="number"] {
     @media (max-width: 48em) {
       .format__arrow-prev.swiper-button-prev {
         position: fixed;
-        left: 35%;
+        left: 24%;
+        bottom: 2rem;
         background-color: transparent;
-        width: 4.4rem; } }
+        width: 4.4rem;
+        height: 5rem; } }
   .format__img-mini-desc {
     height: 18.8rem;
     object-fit: cover; }
@@ -2060,6 +2121,9 @@ input[type="number"] {
     padding-right: 1.5rem;
     width: 75rem;
     position: relative; }
+    @media (max-width: 48em) {
+      .format__right-block {
+        padding-top: 0; } }
   .format__arrow-next {
     left: auto;
     right: 0;
@@ -2079,11 +2143,12 @@ input[type="number"] {
     @media (max-width: 48em) {
       .format__arrow-next {
         position: fixed;
-        bottom: 0;
-        right: 35%;
+        bottom: 2rem;
+        right: 24%;
         background-color: transparent;
         fill: #CA342E;
         width: 4.4rem;
+        height: 5rem;
         transition: 0.8s; } }
   .format__subtitle {
     font-size: 1.8rem;
@@ -2104,41 +2169,82 @@ input[type="number"] {
       position: absolute;
       top: 25%;
       left: 0; }
+      @media (max-width: 48em) {
+        .format__subtitle::before {
+          width: 20rem; } }
+    @media (max-width: 48em) {
+      .format__subtitle {
+        font-size: 3rem;
+        padding-left: 22rem;
+        margin-bottom: 6.5rem; } }
   .format__title {
     font-size: 4.5rem;
     font-weight: 700;
     width: 44.2rem;
     margin-bottom: 4.5rem; }
+    @media (max-width: 48em) {
+      .format__title {
+        font-size: 6rem;
+        padding-left: 5rem;
+        width: 57rem;
+        margin-bottom: 8.5rem; } }
   .format__text-wrap {
     margin-bottom: 7.5rem;
     padding-left: 9rem; }
+    @media (max-width: 48em) {
+      .format__text-wrap {
+        padding-left: 5rem;
+        margin-bottom: 5.5rem; } }
   .format__par-wrap {
     margin-bottom: 7.5rem; }
+    @media (max-width: 48em) {
+      .format__par-wrap {
+        margin-bottom: 0; } }
   .format__par {
     font-size: 1.8rem;
     font-weight: 400;
     width: 46.8rem; }
     .format__par:not(:last-child) {
       margin-bottom: 3.7rem; }
+    @media (max-width: 48em) {
+      .format__par {
+        font-size: 3rem;
+        width: 65rem;
+        line-height: 1.4; } }
   .format__link {
     margin-left: 0.5rem; }
+    @media (max-width: 48em) {
+      .format__link {
+        display: none; } }
+  .format__link.mob {
+    display: none; }
+    @media (max-width: 48em) {
+      .format__link.mob {
+        display: block;
+        margin-left: 6rem;
+        margin-bottom: 10rem; } }
   .format__pagination {
     display: none; }
     @media (max-width: 48em) {
       .format__pagination {
         display: block;
         font-size: 0;
-        bottom: 2.5rem;
-        left: 50%;
-        transform: translate(-50%, 10%);
+        bottom: 1rem;
+        left: 43%;
         width: 6rem;
         display: flex;
         align-items: center; } }
   .format__pagination .swiper-pagination-current {
     font-size: 4rem;
     margin-right: 1rem; }
+    @media (max-width: 48em) {
+      .format__pagination .swiper-pagination-current {
+        font-size: 6rem; } }
   .format__pagination .swiper-pagination-total {
     font-size: 1.1rem; }
+    @media (max-width: 48em) {
+      .format__pagination .swiper-pagination-total {
+        font-size: 2.1rem; } }
 
 .bussines-model__subtitle {
   font-size: 1.8rem;
