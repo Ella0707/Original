@@ -3,7 +3,7 @@
     position: relative;
 
     @media (max-width: 48em) {
-        margin-bottom: 29rem;
+        margin-bottom: 28.5rem;
     }
 
     &__left-img {
@@ -75,7 +75,8 @@
 
         @media (max-width: 48em) {
             font-size: 6rem;
-            width: 63.6rem;
+            width: 100%;
+            margin-bottom: 4.5rem;
         }
     }
 
@@ -85,7 +86,7 @@
         margin-bottom: 6.5rem;
 
         @media (max-width: 48em) {
-            margin-bottom: 7rem;
+            margin-bottom: 8rem;
         }
     }
 
@@ -98,8 +99,8 @@
 
             
         @media (max-width: 48em) {
-            margin-bottom: 4.5rem;
-            line-height: 4.3rem;
+            margin-bottom: 4rem;
+            line-height: 1.4;
         }
         }
 
@@ -108,7 +109,6 @@
 
             @media (max-width: 48em) {
                 margin-bottom: 4rem;
-                line-height: 4.4rem;
             }
         }
         
@@ -116,7 +116,6 @@
             width: 49.9rem;
             padding-bottom: 2rem;
             padding-right: 1rem;
-            line-height: 4.3rem;
         }
 
         @media (max-width: 48em) {
@@ -127,6 +126,7 @@
                 width: 50.4rem;
                 padding-bottom: 2rem;
                 padding-right: 1rem;
+                line-height: 1.4;
             }
         }
     }

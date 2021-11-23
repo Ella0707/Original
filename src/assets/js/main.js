@@ -117,6 +117,7 @@ new Swiper('.plan__slider', {
     slidesPerView: 1.2,
     spaceBetween: 35,
     slidesPerGroup: 1,
+    initialSlide: 2,
 
     pagination: {
         el: '.swiper-pagination',
@@ -153,9 +154,9 @@ new Swiper('.plan__slider', {
 
 
 new Swiper('.step__slider', {
-    slidesPerView: 4,
-    spaceBetween: 41,
-    slidesPerGroup: 4,
+    slidesPerView: 1.25,
+    spaceBetween: 25,
+    slidesPerGroup: 1,
 
     pagination: {
         el: '.swiper-pagination',
@@ -180,10 +181,13 @@ new Swiper('.step__slider', {
         prevEl: '.step__arrow-prev',
     },
 
-    769: {
-        slidesPerView: 4,
-        spaceBetween: 41,
-        slidesPerGroup: 4,
+    breakpoints: {
+
+        769: {
+            slidesPerView: 4,
+            spaceBetween: 41,
+            slidesPerGroup: 4,
+        }
     }
 });
 
@@ -195,19 +199,16 @@ new Swiper('.step__slider', {
 $('.popup-link').click(function (e) {
     e.preventDefault();
     $('.popup').fadeIn(800);
-    $('html').addClass('no-scroll');
 });
 
 $('.close-popup').click(function () {
     $('.popup').fadeOut(800);
-    $('html').removeClass('no-scroll');
 });
 
 
 // закрытие основного попапа в случае отправки заявки 
 $('.popup-accepted').click(function () {
     $('.popup').fadeOut(800);
-    // $('html').removeClass('no-scroll');
 });
 
 
@@ -215,12 +216,10 @@ $('.popup-accepted').click(function () {
 $('.popup-accepted').click(function (e) {
     e.preventDefault();
     $('.accepted').fadeIn(800);
-    // $('html').addClass('no-scroll');
 });
 
 $('.close-popup').click(function () {
     $('.accepted').fadeOut(800);
-    // $('html').removeClass('no-scroll');
 });
 
 

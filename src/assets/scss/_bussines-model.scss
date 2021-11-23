@@ -2,6 +2,10 @@
     
     // margin-bottom: 18.1rem;
 
+    // @media (max-width: 48em) {
+    //     margin-bottom: 20rem;
+    //  }
+
     
     &__subtitle {
         font-size: 1.8rem;
@@ -10,6 +14,12 @@
         text-transform: uppercase;
 
         margin-bottom: 1.5rem;
+
+        @media (max-width: 48em) {
+           font-size: 3.6rem;
+           padding-left: 2rem;
+           margin-bottom: 5.5rem;
+        }
     }
 
     &__title {
@@ -22,14 +32,22 @@
         margin-bottom: 7rem;
 
         @media (max-width: 48em) {
-            width: 65rem;
+            width: 100%;
+            font-size: 6rem;
+            padding-left: 2rem;
+            margin-bottom: 5rem;
         }
     }
 
     &__content {
         display: flex;
         flex-wrap: wrap;
+
         margin-bottom: 18.1rem;
+
+        @media (max-width: 48em) {
+            margin-bottom: 20rem;
+         }
     }
 
     &__box {
@@ -53,13 +71,18 @@
                 position: absolute;
                 bottom: 2.4rem;
                 left: 3.9rem;
+
+                @media (max-width: 48em) {
+                    width: 25rem;
+                    bottom: 6.4rem;
+                    left: 5.9rem;
+                }
             }
 
             @media (max-width: 48em) {
-                width: 65rem;
+                width: 100%;
                 height: 39.2rem;
-
-                margin-bottom: 4rem;
+                padding: 6.5rem 2.8rem 3.5rem 5.5rem;
             }
         }
 
@@ -73,7 +96,7 @@
                 width: 65rem;
                 height: 61.6rem;
 
-                padding: 6.6rem 6.6rem 3.5rem 6.6rem;
+                padding: 7rem 6.6rem 3.5rem 5.6rem;
             }
         }
 
@@ -84,6 +107,10 @@
         &:first-child {
             border-left: 1px solid #C4C4C4;
         }
+
+        @media (max-width: 48em) {
+            margin: 0 2rem 4rem 2rem;
+        }
     }
 
     &__box-title {
@@ -91,21 +118,31 @@
         font-weight: 600;
 
         margin-bottom: 1.5rem;
+
+        @media (max-width: 48em) {
+           font-size: 6rem;
+           margin-bottom: 5rem;
+        }
     }
 
     &__box-subtitle {
         font-size: 1.8rem;
         font-weight: 400;
         width: 19rem;
+
+        @media (max-width: 48em) {
+            font-size: 3rem;
+            width: 100%;
+         }
     }
 
-    // &__box {
-    //     &:last-child {
-    //         &.bussines-model__box-subtitle {
-    //             width: 30.5rem;
-    //         }
-    //     }
-    // }
+    &__box-subtitle.box--width {
+        width: 30rem;
+
+        @media (max-width: 48em) {
+            width: 100%;
+         }
+    }
 
 }
 

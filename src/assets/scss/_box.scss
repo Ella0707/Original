@@ -9,7 +9,7 @@
         height: 25rem;
 
         @media (max-width: 48em) {
-            width: 100%;
+            width: 50%;
             height: 32.6rem;
         }
     }
@@ -37,12 +37,12 @@
 
             @media (max-width: 48em) {
                 width: 10.5rem;
-                bottom: 11%;
+                bottom: 13%;
             }
         }
 
         @media (max-width: 48em) {
-            width: 100%;
+            width: 50%;
             padding: 5.3rem 4rem 6rem 3rem;
         }
     }
@@ -55,7 +55,7 @@
 
         @media (max-width: 48em) {
             font-size: 5.6rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
         }
     }
 

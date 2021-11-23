@@ -8,6 +8,7 @@
     left: 0;
 
     display: none;
+    overflow-y: auto;
 
     &__body {
         position: absolute;
@@ -32,6 +33,10 @@
 
         position: relative;
 
+        @media (max-width: 48em) {
+            height: 54rem;
+        }
+
     }
 
     &__close {
@@ -48,6 +53,10 @@
         right: 0;
         top: 0;
         transform: translate(50%, -50%);
+
+        @media (max-width: 48em) {
+            right: 50%;
+        }
     }
 
     &__close-img {
@@ -60,6 +69,11 @@
         height: 7.56rem;
 
         margin-bottom: 5.64rem;
+
+        @media (max-width: 48em) {
+            width: 15.8rem;
+            height: 15.2rem;
+        }
     }
 
     &__logo-img {
@@ -73,12 +87,18 @@
 
         margin-bottom: 2rem;
 
+        @media (max-width: 48em) {
+            font-size: 4rem;
+        }
+
     }
 
     &__subtitle {
         font-size: 2.5rem;
         font-weight: 400;
 
-
+        @media (max-width: 48em) {
+            font-size: 3rem;
+        }
     }
 }

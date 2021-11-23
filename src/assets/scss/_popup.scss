@@ -18,14 +18,23 @@
         justify-content: center;
 
         padding: 6rem;
+
+        @media (max-width: 48em) {
+            padding: 20rem 0 6rem 0;
+        }
     }
 
     &__content {
         background-color: #ffffff;
-        max-width: 166.4rem;
-        max-height: 94.3rem;
+        width: 166.4rem;
+        height: 94.3rem;
 
         position: relative;
+
+        @media (max-width: 48em) {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__close {
@@ -42,6 +51,10 @@
         right: 0;
         top: 0;
         transform: translate(50%, -50%);
+
+        @media (max-width: 48em) {
+            right: 10rem;
+        }
     }
 
     &__close-img {
@@ -53,6 +66,7 @@
 
     &__content-wrap {
         display: flex;
+        justify-content: space-between;
     }
 
     &__content-wrap-left {
@@ -61,6 +75,11 @@
 
         padding: 5.25rem 13.0rem 10rem 8.2rem;
 
+        @media (max-width: 48em) {
+            padding: 10rem 13.0rem 10rem 8.2rem;
+
+        }
+
     }
 
     &__logo {
@@ -68,6 +87,12 @@
         height: 7.56rem;
 
         margin-bottom: 5.44rem;
+
+        @media (max-width: 48em) {
+            width: 15.8rem;
+            height: 15.2rem;
+            margin-bottom: 7.7rem;
+        }
     }
 
     &__logo-img {
@@ -109,6 +134,10 @@
                 font-size: 1.8rem;
                 font-weight: 400;
                 color: #bbbbbb;
+
+                @media (max-width: 48em) {
+                   font-size: 3rem;
+                }
         }
 
         &:last-child {
@@ -128,12 +157,20 @@
         color: #bbbbbb;
 
         margin-bottom: 2.7rem;
+
+        @media (max-width: 48em) {
+         font-size: 3rem;
+        }
     }
 
     &__select {
         display: flex;
 
         margin-bottom: 9.4rem;
+
+        @media (max-width: 48em) {
+            flex-direction: column;
+        }
     }
 
     &__select-item {
@@ -143,6 +180,10 @@
 
         &:not(:last-child) {
             margin-right: 9.4rem;
+
+            @media (max-width: 48em) {
+                margin-bottom: 3.2rem;
+            }
         }
     }
 
@@ -164,6 +205,11 @@
             transform: translate(-50%, -50%);
             background-color: white;
             border: 2px solid #BA302B;
+
+            @media (max-width: 48em) {
+                width: 3rem;
+                height: 3rem;
+            }
           }
           
           &:checked::after {
@@ -177,7 +223,20 @@
             background-color: #BA302B;
             transform: translate(-50%, -50%);
             visibility: visible;
+
+            @media (max-width: 48em) {
+                width: 2rem;
+                height: 2rem;
+            }
           }
+    }
+
+    &__select-label {
+        font-size: 1.8rem;
+
+        @media (max-width: 48em) {
+            font-size: 3rem;
+        }
     }
 
     &__link {
@@ -185,8 +244,12 @@
     }
 
     &__content-wrap-right {
-        width: 82.8rem;
+        width: 50%;
         height: 94.3rem;
+
+        @media (max-width: 48em) {
+            display: none;
+        }
     }
 
     &__img {
@@ -195,8 +258,4 @@
     }
 }
 
-
-.no-scroll {
-    overflow-y: hidden;
-}
 
