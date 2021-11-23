@@ -73,7 +73,7 @@
         }
     }
 
-    &__nav.menu-mob {
+    &__nav {
         &.active {
             @media (max-width: 48em) {
                 transform: translate(0, 0);

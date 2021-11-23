@@ -4,14 +4,19 @@
     padding-bottom: 4.4rem;
     margin-bottom: 17.8rem;
 
+    position: relative;
+
     @media (max-width: 48em) {
-        margin-bottom: 8rem;
+        margin-bottom: 0rem;
     }
 
 
     &__inner {
-        position: relative;
         padding-top: 3.2rem;
+
+        @media (max-width: 48em) {
+           padding-bottom: 8rem;
+        }
     }
 
 
@@ -50,7 +55,7 @@
 
         @media (max-width: 48em) {
             font-size: 5rem;
-            line-height: 6rem;
+            line-height: 6.1rem;
             margin-bottom: 5rem;
         }
     }
@@ -78,13 +83,12 @@
 
     &__right-block {
         display: flex;
-        width: 93.7rem;
+        width: 95.7rem;
 
 
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(19.5rem, 0px);
         background-color: #F4F4F4;
 
 
@@ -206,7 +210,7 @@
 
         position: relative;
 
-        margin-bottom: 5.5rem;
+        margin-bottom: 5rem;
 
         @media (max-width: 48em) {
             margin-bottom: 4rem;
@@ -297,7 +301,7 @@
 
             position: fixed;
             top: 23.5rem;
-            right: 2.5rem;
+            right: -0.3rem;
         }
     }
 
@@ -327,6 +331,7 @@
         @media (max-width: 48em) {
             font-size: 2.6rem;
             width: 65rem;
+            padding-left: 0;
         }
     }
 

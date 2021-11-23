@@ -80,8 +80,12 @@ flex-direction: column-reverse;
     }
 
     &__about-wrap {
-        width: 32rem;
+        width: 21rem;
         margin-bottom: 2rem;
+
+        @media (max-width: 48em) {
+           width: 32rem;
+            }
     }
 
     &__founder-name {

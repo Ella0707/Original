@@ -53,6 +53,12 @@
     &__link {
         @media (max-width: 48em) {
             margin-right: 16rem;
+
+            &.btn {
+                &::before {
+                    left: -2rem;
+                }
+            }
         }
     }
 

@@ -26,6 +26,21 @@
             transform: translateY(-50%);
         }
 
+        // &::after {
+        //     content: "";
+
+        //     width: 14rem;
+        //     height: 14rem;
+        //     border-radius: 50%;
+        //     background-position: center;
+        //     background-color: transparent;
+
+        //     position: absolute;
+        //     top: 50%;
+        //     left: -7%;
+        //     transform: translateY(-50%);
+        // }
+
         @media (max-width: 48em) {
             font-size: 3.2rem;
 

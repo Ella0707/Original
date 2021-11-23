@@ -1,12 +1,5 @@
 .bussines-model {
     
-    // margin-bottom: 18.1rem;
-
-    // @media (max-width: 48em) {
-    //     margin-bottom: 20rem;
-    //  }
-
-    
     &__subtitle {
         font-size: 1.8rem;
         font-weight: 400;
@@ -18,7 +11,7 @@
         @media (max-width: 48em) {
            font-size: 3.6rem;
            padding-left: 2rem;
-           margin-bottom: 5.5rem;
+           margin-bottom: 6.5rem;
         }
     }
 
@@ -110,6 +103,8 @@
 
         @media (max-width: 48em) {
             margin: 0 2rem 4rem 2rem;
+            border-left: 1px solid #C4C4C4;
+
         }
     }
 
@@ -120,8 +115,8 @@
         margin-bottom: 1.5rem;
 
         @media (max-width: 48em) {
-           font-size: 6rem;
-           margin-bottom: 5rem;
+        font-size: 6rem;
+        margin-bottom: 5rem;
         }
     }
 
@@ -132,12 +127,12 @@
 
         @media (max-width: 48em) {
             font-size: 3rem;
-            width: 100%;
+            width: 52rem;
          }
     }
 
     &__box-subtitle.box--width {
-        width: 30rem;
+        width: 31rem;
 
         @media (max-width: 48em) {
             width: 100%;

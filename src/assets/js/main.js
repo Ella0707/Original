@@ -234,7 +234,7 @@ $(document).ready(function () {
 // мобильное меню
 const iconMenu = document.querySelector('.menu-btn');
 if(iconMenu) {
-    const menuMob = document.querySelector('.menu-mob');
+    const menuMob = document.querySelector('.header__nav');
     iconMenu.addEventListener("click", function(e) {
         document.body.classList.toggle('lock');
         iconMenu.classList.toggle('active');
