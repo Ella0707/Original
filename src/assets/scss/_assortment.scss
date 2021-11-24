@@ -3,7 +3,7 @@
 
     margin-bottom: 17.9rem;
 
-    overflow-x: hidden;
+    overflow: hidden;
 
     @media (max-width: 48em) {
         margin-bottom: 24rem;
@@ -51,7 +51,7 @@
 
         width: 53.6rem;
 
-        margin-bottom: 4.3rem;
+        margin-bottom: 4.2rem;
 
         @media (max-width: 48em) {
             font-size: 6rem;
@@ -380,7 +380,7 @@
         background-color: #ffffff;
 
         position: absolute;
-        top: 9rem;
+        top: 8.9rem;
         right: 0;
 
         @media (max-width: 48em) {

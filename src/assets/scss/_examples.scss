@@ -1,6 +1,6 @@
 .examples {
 
-    margin-bottom: 18.5rem;
+    margin-bottom: 18.3rem;
 
     @media (max-width: 48em) {
        margin-bottom: 26rem;
@@ -114,13 +114,14 @@
         font-weight: 700;
 
         width: 42.3rem;
-        margin-bottom: 3.3rem;
+        margin-bottom: 3rem;
 
         @media (max-width: 48em) {
            padding-left: 5rem;
            padding-right: 1rem;
            letter-spacing: -0.25px;
-           margin-bottom: 5rem;
+           margin-bottom: 5.5rem;
+           line-height: 1.1;
         }
     }
 
@@ -232,7 +233,7 @@
         width: 87.5rem;
         height: 10rem;
 
-        padding: 3.8rem 2rem 3.7rem 7.7rem;
+        padding: 3rem 2rem 3.7rem 7.7rem;
 
         position: absolute;
         left: 0;

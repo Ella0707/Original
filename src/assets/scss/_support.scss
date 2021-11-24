@@ -55,6 +55,10 @@
         }
     }
 
+    &__num.down {
+        margin-bottom: 1.3rem;
+    }
+
     &__num.desc {
         @media (max-width: 48em) {
             display: none;
@@ -79,7 +83,7 @@
     }
 
     &__box {
-        width: 38rem;
+        width: 38.5rem;
         padding: 0.5rem;
         border-top: 1px dashed #bbbbbb;
         position: relative;
@@ -121,7 +125,7 @@
 
             &:nth-child(2n) {
                 border-left: 1px dashed #bbbbbb;
-                padding-left: 2rem;
+                padding-left: 5rem;
             }
 
             &:not(:last-child) {
@@ -132,21 +136,73 @@
 
 
     &__box-img-wrap {
-        width: 8rem;
-        height: 8rem;
+        width: 9rem;
+        height: 9rem;
         display: flex;
 
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
         margin-top: 3.2rem;
 
         @media (max-width: 48em) {
-            width: 12rem;
-            height: 12rem;
+            width: 15rem;
+            height: 15rem;
+
+            margin-top: 0;
+            margin-bottom: 0;
         }
     }
 
     &__box-img {
         object-fit: contain;
+    }
+
+    &__box-img.img1 {
+        width: 4.5rem;
+
+        @media (max-width: 48em) {
+            width: 8rem;
+            height: 14rem;
+        }
+    }
+
+    &__box-img.img2 {
+        width: 7rem;
+
+        @media (max-width: 48em) {
+            width: 14rem;
+            height: 12rem;
+        }
+    }
+
+    &__box-img.img3 {
+        width: 8.5rem;
+        height: 10rem;
+    padding-top: 1rem;
+
+    @media (max-width: 48em) {
+        padding-top: 0rem;
+ 
+        width: 12.5rem;
+        height: 14rem;
+    }
+    }
+
+    &__box-img.img4 {
+        height: 10rem;
+
+        @media (max-width: 48em) {
+            width: 14rem;
+            height: 14rem;
+        }
+    }
+
+    &__box-img.img6 {
+        width: 8rem;
+
+        @media (max-width: 48em) {
+            width: 14rem;
+            height: 14rem;
+        }
     }
 
     &__box-title {
@@ -167,12 +223,15 @@
         font-weight: 300;
         line-height: 1.4;
 
+        width: 32rem;
+
         height: 13.3rem;
         padding-bottom: 1.5rem;
 
 
         @media (max-width: 48em) {
             font-size: 3rem;
+            width: 60rem;
         }
     }
 
@@ -227,11 +286,11 @@
         font-size: 12rem;
 
         position: absolute;
-        right: 0;
+        right: 0rem;
 
         &.left {
             right: auto;
-            left: 0;
+            left: 4rem;
         }
     }
 

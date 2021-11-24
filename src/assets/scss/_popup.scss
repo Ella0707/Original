@@ -233,6 +233,9 @@
 
     &__select-label {
         font-size: 1.8rem;
+        display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 
         @media (max-width: 48em) {
             font-size: 3rem;
