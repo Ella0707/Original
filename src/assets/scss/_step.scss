@@ -64,18 +64,15 @@
 
     &__pagination {
         font-size: 0;
-        bottom: -2.5rem;
+        bottom: 1.3rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #F8F8F8;
-        height: 13rem;
-
 
         @media (max-width: 48em) {
-            bottom: -4rem;
-            height: 15rem;
-            
+            bottom: 0;
+            padding-right: 2rem;
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -160,7 +157,7 @@
 
 
         @media (max-width: 48em) {
-            height: 100%;
+            height: 109rem;
         }
     }
 
@@ -179,7 +176,7 @@
 
         padding: 3.5rem 0.5rem 3.5rem 0rem;
 
-        margin-bottom: 2.6rem;
+        margin-bottom: 2.8rem;
 
         position: relative;
 
@@ -204,7 +201,7 @@
         @media (max-width: 48em) {
             flex-direction: column;
             font-size: 14rem;
-            padding: 5rem 0.5rem 7rem 2rem;
+            padding: 5rem 0.5rem 6.5rem 2rem;
             margin-bottom: 5.6rem;
         }
     }

@@ -41,7 +41,6 @@
             width: 100%;
             margin: 0 auto 2.5rem;
             padding-top: 3rem;
-            // margin-bottom: 2.5rem;
             padding-bottom: 1rem;
         }
 
@@ -63,13 +62,12 @@
             background-image: url(./../images/plus.svg);
             background-repeat: no-repeat;
             background-position: center;
-            width: 1.6rem;
-            height: 1.6rem;
+            width: 2.1rem;
+            height: 4.9rem;
 
             position: absolute;
             right: 0;
-            top: 50%;
-            transform: translate(0, -50%);
+            top: 20%;
 
             @media (max-width: 48em) {
                 width: 2.2rem;
@@ -84,6 +82,7 @@
             font-size: 3.6rem;
             margin-bottom: 1.3rem;
             width: 64rem;
+            padding-bottom: 0.3rem;
         }
     }
 
@@ -94,7 +93,7 @@
 
                 right: 0;
                 bottom: 0;
-                transform: translate(0, 15.5rem);
+                transform: translate(0, 16rem);
 
                 @media (max-width: 48em) {
                     bottom: auto;

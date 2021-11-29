@@ -127,7 +127,7 @@ body {
   margin: 0;
   padding: 0;
   color: #191C20;
-  background-color: #F8F8F8; }
+  background-color: #F4F4F4; }
 
 body.lock {
   overflow: hidden; }
@@ -373,7 +373,7 @@ input[type="number"] {
     @media (max-width: 48em) {
       .about-store__title {
         font-size: 5rem;
-        line-height: 6rem;
+        line-height: 1.2;
         margin-bottom: 5rem; } }
   .about-store__subtitle {
     font-size: 1.9rem;
@@ -526,14 +526,12 @@ input[type="number"] {
   .about-store__slide-num {
     font-size: 1.5rem;
     width: 2rem;
-    height: 2rem;
-    padding-left: 1rem; }
+    height: 2rem; }
     @media (max-width: 48em) {
       .about-store__slide-num {
         font-size: 3.2rem;
         width: 4rem;
         height: 4rem;
-        padding-left: 0;
         position: fixed;
         top: 23.5rem;
         right: -0.3rem; } }
@@ -716,13 +714,13 @@ input[type="number"] {
     font-size: 1.8rem;
     font-weight: 400; }
     .about-us__par:not(:last-child) {
-      margin-bottom: 2.3rem; }
+      margin-bottom: 2.5rem; }
       @media (max-width: 48em) {
         .about-us__par:not(:last-child) {
           margin-bottom: 4rem;
           line-height: 1.4; } }
     .about-us__par:nth-child(2) {
-      margin-bottom: 3.4rem; }
+      margin-bottom: 3.7rem; }
       @media (max-width: 48em) {
         .about-us__par:nth-child(2) {
           margin-bottom: 4rem; } }
@@ -901,7 +899,7 @@ input[type="number"] {
       font-size: 3rem; } }
 
 .numbers {
-  margin-bottom: 16.8rem; }
+  margin-bottom: 17rem; }
   @media (max-width: 48em) {
     .numbers {
       padding-left: 2rem;
@@ -1158,9 +1156,11 @@ input[type="number"] {
       .assortment__slider-wrapper {
         width: 100%;
         height: 57.4rem; } }
-  @media (max-width: 48em) {
-    .assortment__arrow-svg {
-      width: 4.4rem; } }
+  .assortment__arrow-svg {
+    width: 1.6rem; }
+    @media (max-width: 48em) {
+      .assortment__arrow-svg {
+        width: 4.4rem; } }
   .assortment__arrow-next.swiper-button-next {
     right: 0;
     top: auto;
@@ -1267,7 +1267,7 @@ input[type="number"] {
   margin-bottom: 14.8rem; }
   @media (max-width: 48em) {
     .geography {
-      margin-bottom: 24.6rem; } }
+      margin-bottom: 24.3rem; } }
   .geography .container.none {
     padding: 0; }
   .geography__text-block {
@@ -1279,12 +1279,13 @@ input[type="number"] {
         padding-left: 5rem;
         margin-bottom: 0.5rem; } }
   .geography__text-left {
-    width: 55.9rem;
+    width: 61rem;
     margin-bottom: 3.2rem; }
     @media (max-width: 48em) {
       .geography__text-left {
         margin-bottom: 0rem; } }
   .geography__subtitle-wrap {
+    width: 55.9rem;
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #BBBBBB;
@@ -1380,8 +1381,8 @@ input[type="number"] {
     @media (max-width: 48em) {
       .geography__map-wrap {
         width: 100%;
-        height: 80.2rem;
-        margin-bottom: 13.5rem; } }
+        height: 100%;
+        margin-bottom: 6.5rem; } }
   .geography__img-map {
     height: 100%;
     object-fit: cover; }
@@ -1523,7 +1524,7 @@ input[type="number"] {
     font-size: 4.1rem;
     font-weight: 700;
     width: 42.3rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 3.3rem; }
     @media (max-width: 48em) {
       .examples__slide-title {
         padding-left: 5rem;
@@ -1642,6 +1643,8 @@ input[type="number"] {
       @media (max-width: 48em) {
         .examples__sity-place:not(:first-child) {
           padding-left: 0; } }
+  .examples__arrow-svg {
+    width: 2.4rem; }
   .examples__arrow-next {
     right: -19rem;
     top: auto;
@@ -1766,15 +1769,19 @@ input[type="number"] {
       .plan__pagination {
         bottom: 0; } }
   .plan__pagination .swiper-pagination-current {
-    font-size: 4rem; }
+    font-size: 4rem;
+    margin-right: 0.5rem; }
     @media (max-width: 48em) {
       .plan__pagination .swiper-pagination-current {
         font-size: 6rem; } }
   .plan__pagination .swiper-pagination-total {
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    padding-top: 1.2rem; }
     @media (max-width: 48em) {
       .plan__pagination .swiper-pagination-total {
         font-size: 2.5rem; } }
+  .plan__arrow-svg {
+    width: 3.2rem; }
   .plan__arrow-next {
     right: 41.5%;
     top: auto;
@@ -1863,14 +1870,14 @@ input[type="number"] {
     margin-top: auto; }
     @media (max-width: 48em) {
       .plan__photo {
-        width: 100%;
+        width: 53rem;
         height: 89rem;
         object-fit: cover; } }
   .plan__photo-link:hover {
     position: relative; }
     .plan__photo-link:hover::after {
       content: "";
-      width: 100%;
+      width: 53rem;
       height: 100%;
       background: rgba(21, 27, 35, 0.43);
       position: absolute;
@@ -1896,7 +1903,7 @@ input[type="number"] {
           background-size: 20rem; } }
 
 .report {
-  margin-bottom: 18rem; }
+  margin-bottom: 18.5rem; }
   @media (max-width: 48em) {
     .report {
       overflow-x: scroll;
@@ -2182,10 +2189,10 @@ input[type="number"] {
       left: 4rem; } }
 
 .format {
-  margin-bottom: 18.4rem; }
+  margin-bottom: 18rem; }
   @media (max-width: 48em) {
     .format {
-      margin-bottom: 23rem; } }
+      margin-bottom: 23.5rem; } }
   .format__slide-content {
     display: flex; }
     @media (max-width: 48em) {
@@ -2427,12 +2434,12 @@ input[type="number"] {
       width: 100%;
       font-size: 6rem;
       padding-left: 2rem;
-      margin-bottom: 5rem; } }
+      margin-bottom: 4.8rem; } }
 
 .bussines-model__content {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 18.1rem; }
+  margin-bottom: 18.5rem; }
   @media (max-width: 48em) {
     .bussines-model__content {
       margin-bottom: 20rem; } }
@@ -2485,7 +2492,7 @@ input[type="number"] {
 .bussines-model__box-title {
   font-size: 4rem;
   font-weight: 600;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 2rem; }
   @media (max-width: 48em) {
     .bussines-model__box-title {
       font-size: 6rem;
@@ -2509,7 +2516,7 @@ input[type="number"] {
       line-height: 1.4; } }
 
 .company-founder {
-  margin-bottom: 18.5rem; }
+  margin-bottom: 18rem; }
   @media (max-width: 48em) {
     .company-founder {
       padding-left: 2rem;
@@ -2641,16 +2648,14 @@ input[type="number"] {
         height: 100%; } }
   .step__pagination {
     font-size: 0;
-    bottom: -2.5rem;
+    bottom: 1.3rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #F8F8F8;
-    height: 13rem; }
+    justify-content: center; }
     @media (max-width: 48em) {
       .step__pagination {
-        bottom: -4rem;
-        height: 15rem;
+        bottom: 0;
+        padding-right: 2rem;
         display: flex;
         align-items: center;
         justify-content: center; } }
@@ -2706,7 +2711,7 @@ input[type="number"] {
     background-color: #FFFFFF; }
     @media (max-width: 48em) {
       .step__slide-box {
-        height: 100%; } }
+        height: 109rem; } }
   .step__box-wrap {
     padding-left: 2rem; }
   .step__wrap {
@@ -2716,7 +2721,7 @@ input[type="number"] {
     font-weight: 500;
     color: #bbbbbb;
     padding: 3.5rem 0.5rem 3.5rem 0rem;
-    margin-bottom: 2.6rem;
+    margin-bottom: 2.8rem;
     position: relative; }
     .step__box-num::after {
       content: "";
@@ -2736,7 +2741,7 @@ input[type="number"] {
       .step__box-num {
         flex-direction: column;
         font-size: 14rem;
-        padding: 5rem 0.5rem 7rem 2rem;
+        padding: 5rem 0.5rem 6.5rem 2rem;
         margin-bottom: 5.6rem; } }
   .step__box-text {
     font-size: 2rem;
@@ -2800,12 +2805,11 @@ input[type="number"] {
       background-image: url(./../images/plus.svg);
       background-repeat: no-repeat;
       background-position: center;
-      width: 1.6rem;
-      height: 1.6rem;
+      width: 2.1rem;
+      height: 4.9rem;
       position: absolute;
       right: 0;
-      top: 50%;
-      transform: translate(0, -50%); }
+      top: 20%; }
       @media (max-width: 48em) {
         .FAQ__spoller-title::after {
           width: 2.2rem;
@@ -2817,12 +2821,13 @@ input[type="number"] {
       .FAQ__spoller-title {
         font-size: 3.6rem;
         margin-bottom: 1.3rem;
-        width: 64rem; } }
+        width: 64rem;
+        padding-bottom: 0.3rem; } }
   .FAQ__spoller-title.active::after {
     background-image: url(./../images/minus.svg);
     right: 0;
     bottom: 0;
-    transform: translate(0, 15.5rem); }
+    transform: translate(0, 16rem); }
     @media (max-width: 48em) {
       .FAQ__spoller-title.active::after {
         bottom: auto;

@@ -55,7 +55,7 @@
 
         @media (max-width: 48em) {
             font-size: 5rem;
-            line-height: 6rem;
+            line-height: 1.2;
             margin-bottom: 5rem;
         }
     }
@@ -291,13 +291,11 @@
         font-size: 1.5rem;
         width: 2rem;
         height: 2rem;
-        padding-left: 1rem;
 
         @media (max-width: 48em) {
             font-size: 3.2rem;
             width: 4rem;
             height: 4rem;
-            padding-left: 0;
 
             position: fixed;
             top: 23.5rem;
