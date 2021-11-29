@@ -2534,7 +2534,6 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .examples__slide-right-block {
-        width: 69rem;
         height: 61rem;
     }
 }
@@ -2554,7 +2553,7 @@ input[type="number"] {
         display: block;
         -o-object-fit: cover;
         object-fit: cover;
-        width: 100vw;
+        width: 100%;
         height: 66rem;
     }
 }
@@ -2981,26 +2980,26 @@ input[type="number"] {
 }
 
 .plan__photo {
-    width: 34.5rem;
+    width: 100%;
     margin-top: auto;
 }
 
 @media (max-width: 48em) {
     .plan__photo {
-        width: 53rem;
+        width: 100%;
         height: 89rem;
         -o-object-fit: cover;
         object-fit: cover;
     }
 }
 
-.plan__photo-link:hover {
+.plan__photo-link.downl:hover {
     position: relative;
 }
 
-.plan__photo-link:hover::after {
+.plan__photo-link.downl:hover::after {
     content: "";
-    width: 53rem;
+    width: 100%;
     height: 100%;
     background: rgba(21, 27, 35, 0.43);
     position: absolute;
@@ -3008,7 +3007,7 @@ input[type="number"] {
     left: 0;
 }
 
-.plan__photo-link:hover::before {
+.plan__photo-link.downl:hover::before {
     content: "";
     width: 14rem;
     height: 14rem;
@@ -3025,7 +3024,7 @@ input[type="number"] {
 }
 
 @media (max-width: 48em) {
-    .plan__photo-link:hover::before {
+    .plan__photo-link.downl:hover::before {
         width: 20rem;
         height: 20rem;
         background-size: 20rem;
@@ -3196,7 +3195,7 @@ input[type="number"] {
 @media (max-width: 48em) {
     .support {
         padding-left: 2rem;
-        margin-bottom: 17rem;
+        margin-bottom: 24rem;
     }
 }
 
@@ -3316,7 +3315,7 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .support__box {
-        width: 62.2rem;
+        width: 65.2rem;
         height: 49rem;
         border-top: none;
         display: -ms-flexbox;
@@ -3356,7 +3355,7 @@ input[type="number"] {
         width: 15rem;
         height: 15rem;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 3rem;
     }
 }
 
@@ -3492,13 +3491,57 @@ input[type="number"] {
     .support__num {
         font-size: 12rem;
         position: absolute;
-        right: 0rem;
+        right: 0.5rem;
+        top: 3.5rem;
     }
 
     .support__num.left {
         right: auto;
         left: 4rem;
     }
+}
+
+@media (max-width: 48em) {
+    .support__num.one {
+        top: -2.5rem;
+    }
+}
+
+.support__box.one {
+    height: 42rem;
+}
+
+.support__box.two {
+    height: 46rem;
+    padding-top: 3rem;
+}
+
+.support__box.three {
+    height: 47rem;
+    padding-top: 5rem;
+}
+
+.support__box.four {
+    height: 52rem;
+    padding-top: 6rem;
+}
+
+.support__box.five {
+    height: 52rem;
+    padding-top: 9rem;
+}
+
+.support__box.six {
+    height: 53rem;
+    padding-top: 7rem;
+}
+
+.support__box.seven {
+    height: 53rem;
+}
+
+.support__box.eight {
+    height: 43rem;
 }
 
 .format {
@@ -3813,7 +3856,7 @@ input[type="number"] {
     .format__link.mob {
         display: block;
         margin-left: 9rem;
-        margin-bottom: 9rem;
+        margin-bottom: 10rem;
     }
 
     .format__link.mob.btn::before {
@@ -3872,7 +3915,7 @@ input[type="number"] {
     .bussines-model__subtitle {
         font-size: 3.6rem;
         padding-left: 2rem;
-        margin-bottom: 6.5rem;
+        margin-bottom: 5.5rem;
     }
 }
 
@@ -4338,20 +4381,11 @@ input[type="number"] {
 }
 
 .step__slide-box {
-    height: 60.4rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     background-color: #FFFFFF;
-}
-
-@media (max-width: 48em) {
-    .step__slide-box {
-        height: 109rem;
-    }
 }
 
 .step__box-wrap {
@@ -4404,6 +4438,7 @@ input[type="number"] {
     font-size: 2rem;
     font-weight: 400;
     width: 28rem;
+    margin-bottom: auto;
     height: 17rem;
 }
 
@@ -4420,7 +4455,7 @@ input[type="number"] {
 
 .step__box-img {
     width: 100%;
-    height: 25.5rem;
+    margin-top: auto;
 }
 
 @media (max-width: 48em) {
@@ -4437,14 +4472,14 @@ input[type="number"] {
 .FAQ__title {
     font-size: 4.5rem;
     font-weight: 700;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
 @media (max-width: 48em) {
     .FAQ__title {
         font-size: 6rem;
-        margin-bottom: 2.2rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -4456,13 +4491,11 @@ input[type="number"] {
 @media (max-width: 48em) {
     .FAQ__wrapper-spollers {
         width: 100%;
-        padding-left: 1rem;
+        padding-left: 2rem;
     }
 }
 
 .FAQ__spoller-item {
-    margin: 0 auto 3.6rem;
-    padding-left: 1rem;
     width: 108.8rem;
     border-bottom: 1px solid #cccccc;
 }
@@ -4470,9 +4503,6 @@ input[type="number"] {
 @media (max-width: 48em) {
     .FAQ__spoller-item {
         width: 100%;
-        margin: 0 auto 2.5rem;
-        padding-top: 3rem;
-        padding-bottom: 1rem;
     }
 }
 
@@ -4480,7 +4510,11 @@ input[type="number"] {
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.4;
-    padding-bottom: 3.3rem;
+    height: 9.9rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
     cursor: pointer;
     position: relative;
 }
@@ -4501,8 +4535,8 @@ input[type="number"] {
     .FAQ__spoller-title::after {
         width: 2.2rem;
         height: 2.2rem;
-        right: -0.8rem;
-        top: 1.5rem;
+        right: -1rem;
+        top: 5.5rem;
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
     }
@@ -4511,9 +4545,8 @@ input[type="number"] {
 @media (max-width: 48em) {
     .FAQ__spoller-title {
         font-size: 3.6rem;
-        margin-bottom: 1.3rem;
         width: 64rem;
-        padding-bottom: 0.3rem;
+        height: 12.5rem;
     }
 }
 
@@ -4528,7 +4561,7 @@ input[type="number"] {
 @media (max-width: 48em) {
     .FAQ__spoller-title.active::after {
         bottom: auto;
-        top: 1.7rem;
+        top: 5.5rem;
         right: -0.8rem;
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
@@ -4870,7 +4903,7 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .popup__close {
-        right: 10rem;
+        right: 6rem;
     }
 }
 
@@ -4931,7 +4964,13 @@ input[type="number"] {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 5.1rem;
+    margin-bottom: 3.5rem;
+}
+
+@media (max-width: 48em) {
+    .popup__title {
+        margin-bottom: 8.5rem;
+    }
 }
 
 .popup__input-wrap {
@@ -4939,7 +4978,13 @@ input[type="number"] {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 4.7rem;
+    margin-bottom: 3.5rem;
+}
+
+@media (max-width: 48em) {
+    .popup__input-wrap {
+        margin-bottom: 6.5rem;
+    }
 }
 
 .popup__input {
@@ -5003,9 +5048,15 @@ input[type="number"] {
     }
 }
 
+@media (max-width: 48em) {
+    .popup__input {
+        height: 7rem;
+    }
+}
+
 .popup__input:last-child {
     height: 11rem;
-    padding-top: 6rem;
+    padding-top: 2rem;
 }
 
 .popup__input:last-child::-webkit-input-placeholder {
@@ -5028,6 +5079,23 @@ input[type="number"] {
     padding-top: 2rem;
 }
 
+@media (max-width: 48em) {
+    .popup__input:last-child {
+        height: 17rem;
+        padding-top: 7rem;
+    }
+}
+
+.popup__input:not(:last-child) {
+    margin-bottom: 2.4rem;
+}
+
+@media (max-width: 48em) {
+    .popup__input:not(:last-child) {
+        margin-bottom: 7rem;
+    }
+}
+
 .popup__select-title {
     font-size: 1.8rem;
     font-weight: 400;
@@ -5038,13 +5106,15 @@ input[type="number"] {
 @media (max-width: 48em) {
     .popup__select-title {
         font-size: 3rem;
+        margin-bottom: 5.5rem;
     }
 }
 
 .popup__select {
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 9.4rem;
+    margin-bottom: 10rem;
+    padding-left: 0.5rem;
 }
 
 @media (max-width: 48em) {
@@ -5062,12 +5132,12 @@ input[type="number"] {
 }
 
 .popup__select-item:not(:last-child) {
-    margin-right: 9.4rem;
+    margin-right: 10rem;
 }
 
 @media (max-width: 48em) {
     .popup__select-item:not(:last-child) {
-        margin-bottom: 3.2rem;
+        margin-bottom: 4.2rem;
     }
 }
 
@@ -5094,8 +5164,8 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .popup__select-input::before {
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
     }
 }
 
@@ -5115,8 +5185,14 @@ input[type="number"] {
 
 @media (max-width: 48em) {
     .popup__select-input:checked::after {
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .popup__select-input {
+        margin-right: 3rem;
     }
 }
 
@@ -5136,8 +5212,18 @@ input[type="number"] {
     }
 }
 
+.popup__select-label:hover {
+    cursor: pointer;
+}
+
 .popup__link {
     margin-left: 0rem;
+}
+
+@media (max-width: 48em) {
+    .popup__link {
+        margin-left: 10rem;
+    }
 }
 
 .popup__content-wrap-right {

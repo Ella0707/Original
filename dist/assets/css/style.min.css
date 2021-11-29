@@ -1865,24 +1865,24 @@ input[type="number"] {
         width: 55rem;
         padding-top: 2rem; } }
   .plan__photo {
-    width: 34.5rem;
+    width: 100%;
     margin-top: auto; }
     @media (max-width: 48em) {
       .plan__photo {
-        width: 53rem;
+        width: 100%;
         height: 89rem;
         object-fit: cover; } }
-  .plan__photo-link:hover {
+  .plan__photo-link.downl:hover {
     position: relative; }
-    .plan__photo-link:hover::after {
+    .plan__photo-link.downl:hover::after {
       content: "";
-      width: 53rem;
+      width: 100%;
       height: 100%;
       background: rgba(21, 27, 35, 0.43);
       position: absolute;
       top: 0;
       left: 0; }
-    .plan__photo-link:hover::before {
+    .plan__photo-link.downl:hover::before {
       content: "";
       width: 14rem;
       height: 14rem;
@@ -1896,7 +1896,7 @@ input[type="number"] {
       transform: translate(-50%, -50%);
       z-index: 2; }
       @media (max-width: 48em) {
-        .plan__photo-link:hover::before {
+        .plan__photo-link.downl:hover::before {
           width: 20rem;
           height: 20rem;
           background-size: 20rem; } }
