@@ -4,7 +4,7 @@
 
     @media (max-width: 48em) {
         padding-left: 2rem;
-        margin-bottom: 17rem;
+        margin-bottom: 24rem;
     }
 
     &__title {
@@ -110,7 +110,7 @@
 
 
         @media (max-width: 48em) {
-            width: 62.2rem;
+            width: 65.2rem;
             height: 49rem;
             border-top: none;
 
@@ -148,7 +148,7 @@
             height: 15rem;
 
             margin-top: 0;
-            margin-bottom: 0;
+            margin-bottom: 3rem;
         }
     }
 
@@ -286,7 +286,8 @@
         font-size: 12rem;
 
         position: absolute;
-        right: 0rem;
+        right: 0.5rem;
+        top: 3.5rem;
 
         &.left {
             right: auto;
@@ -294,4 +295,49 @@
         }
     }
 
+}
+
+
+.support__num.one {
+    @media (max-width: 48em) {
+        top: -2.5rem;
+    }
+}
+
+
+.support__box.one {
+    height: 42rem;
+}
+
+.support__box.two{
+    height: 46rem;
+    padding-top: 3rem;
+}
+
+.support__box.three{
+    height: 47rem;
+    padding-top: 5rem;
+}
+
+.support__box.four{
+    height: 52rem;
+    padding-top: 6rem;
+}
+
+.support__box.five{
+    height: 52rem;
+    padding-top: 9rem;
+}
+
+.support__box.six{
+    height: 53rem;
+    padding-top: 7rem;
+}
+
+.support__box.seven{
+    height: 53rem;
+}
+
+.support__box.eight{
+    height: 43rem;
 }

@@ -148,17 +148,15 @@
     }
 
     &__slide-box {
-        height: 60.4rem;
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         background-color: #FFFFFF;
 
 
-        @media (max-width: 48em) {
-            height: 109rem;
-        }
+        // @media (max-width: 48em) {
+        //     // height: 109rem;
+        // }
     }
 
     &__box-wrap {
@@ -210,6 +208,7 @@
         font-size: 2rem;
         font-weight: 400;
         width: 28rem;
+        margin-bottom: auto;
         height: 17rem;
 
         @media (max-width: 48em) {
@@ -224,7 +223,7 @@
 
     &__box-img {
         width: 100%;
-        height: 25.5rem;
+        margin-top: auto;
 
         @media (max-width: 48em) {
             width: 100%;

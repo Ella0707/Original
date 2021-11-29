@@ -1584,7 +1584,6 @@ input[type="number"] {
     padding-top: 0.7rem; }
     @media (max-width: 48em) {
       .examples__slide-right-block {
-        width: 69rem;
         height: 61rem; } }
   @media (max-width: 48em) {
     .examples__slide-img {
@@ -1595,7 +1594,7 @@ input[type="number"] {
       .examples__slide-img-mob {
         display: block;
         object-fit: cover;
-        width: 100vw;
+        width: 100%;
         height: 66rem; } }
   .examples__slide-down {
     display: flex;
@@ -2002,7 +2001,7 @@ input[type="number"] {
   @media (max-width: 48em) {
     .support {
       padding-left: 2rem;
-      margin-bottom: 17rem; } }
+      margin-bottom: 24rem; } }
   .support__title {
     font-size: 4.5rem;
     font-weight: 700;
@@ -2071,7 +2070,7 @@ input[type="number"] {
       left: 0%; }
     @media (max-width: 48em) {
       .support__box {
-        width: 62.2rem;
+        width: 65.2rem;
         height: 49rem;
         border-top: none;
         display: flex;
@@ -2096,7 +2095,7 @@ input[type="number"] {
         width: 15rem;
         height: 15rem;
         margin-top: 0;
-        margin-bottom: 0; } }
+        margin-bottom: 3rem; } }
   .support__box-img {
     object-fit: contain; }
   .support__box-img.img1 {
@@ -2183,10 +2182,44 @@ input[type="number"] {
   .support__num {
     font-size: 12rem;
     position: absolute;
-    right: 0rem; }
+    right: 0.5rem;
+    top: 3.5rem; }
     .support__num.left {
       right: auto;
       left: 4rem; } }
+
+@media (max-width: 48em) {
+  .support__num.one {
+    top: -2.5rem; } }
+
+.support__box.one {
+  height: 42rem; }
+
+.support__box.two {
+  height: 46rem;
+  padding-top: 3rem; }
+
+.support__box.three {
+  height: 47rem;
+  padding-top: 5rem; }
+
+.support__box.four {
+  height: 52rem;
+  padding-top: 6rem; }
+
+.support__box.five {
+  height: 52rem;
+  padding-top: 9rem; }
+
+.support__box.six {
+  height: 53rem;
+  padding-top: 7rem; }
+
+.support__box.seven {
+  height: 53rem; }
+
+.support__box.eight {
+  height: 43rem; }
 
 .format {
   margin-bottom: 18rem; }
@@ -2385,7 +2418,7 @@ input[type="number"] {
       .format__link.mob {
         display: block;
         margin-left: 9rem;
-        margin-bottom: 9rem; }
+        margin-bottom: 10rem; }
         .format__link.mob.btn::before {
           left: -2rem; } }
   .format__pagination {
@@ -2421,7 +2454,7 @@ input[type="number"] {
     .bussines-model__subtitle {
       font-size: 3.6rem;
       padding-left: 2rem;
-      margin-bottom: 6.5rem; } }
+      margin-bottom: 5.5rem; } }
 
 .bussines-model__title {
   font-size: 4.5rem;
@@ -2704,14 +2737,9 @@ input[type="number"] {
       .step__arrow-prev.swiper-button-prev {
         left: 18%; } }
   .step__slide-box {
-    height: 60.4rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: #FFFFFF; }
-    @media (max-width: 48em) {
-      .step__slide-box {
-        height: 109rem; } }
   .step__box-wrap {
     padding-left: 2rem; }
   .step__wrap {
@@ -2747,6 +2775,7 @@ input[type="number"] {
     font-size: 2rem;
     font-weight: 400;
     width: 28rem;
+    margin-bottom: auto;
     height: 17rem; }
     @media (max-width: 48em) {
       .step__box-text {
@@ -2758,7 +2787,7 @@ input[type="number"] {
         height: 24.5rem; } }
   .step__box-img {
     width: 100%;
-    height: 25.5rem; }
+    margin-top: auto; }
     @media (max-width: 48em) {
       .step__box-img {
         width: 100%;
@@ -2769,35 +2798,32 @@ input[type="number"] {
   .FAQ__title {
     font-size: 4.5rem;
     font-weight: 700;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
     text-align: center; }
     @media (max-width: 48em) {
       .FAQ__title {
         font-size: 6rem;
-        margin-bottom: 2.2rem; } }
+        margin-bottom: 1.5rem; } }
   .FAQ__wrapper-spollers {
     width: 108.3rem;
     margin: 0 auto; }
     @media (max-width: 48em) {
       .FAQ__wrapper-spollers {
         width: 100%;
-        padding-left: 1rem; } }
+        padding-left: 2rem; } }
   .FAQ__spoller-item {
-    margin: 0 auto 3.6rem;
-    padding-left: 1rem;
     width: 108.8rem;
     border-bottom: 1px solid #cccccc; }
     @media (max-width: 48em) {
       .FAQ__spoller-item {
-        width: 100%;
-        margin: 0 auto 2.5rem;
-        padding-top: 3rem;
-        padding-bottom: 1rem; } }
+        width: 100%; } }
   .FAQ__spoller-title {
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.4;
-    padding-bottom: 3.3rem;
+    height: 9.9rem;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     position: relative; }
     .FAQ__spoller-title::after {
@@ -2814,15 +2840,14 @@ input[type="number"] {
         .FAQ__spoller-title::after {
           width: 2.2rem;
           height: 2.2rem;
-          right: -0.8rem;
-          top: 1.5rem;
+          right: -1rem;
+          top: 5.5rem;
           transform: translate(0, 0); } }
     @media (max-width: 48em) {
       .FAQ__spoller-title {
         font-size: 3.6rem;
-        margin-bottom: 1.3rem;
         width: 64rem;
-        padding-bottom: 0.3rem; } }
+        height: 12.5rem; } }
   .FAQ__spoller-title.active::after {
     background-image: url(./../images/minus.svg);
     right: 0;
@@ -2831,7 +2856,7 @@ input[type="number"] {
     @media (max-width: 48em) {
       .FAQ__spoller-title.active::after {
         bottom: auto;
-        top: 1.7rem;
+        top: 5.5rem;
         right: -0.8rem;
         transform: translate(0, 0); } }
   .FAQ__spoller-text {
@@ -3024,7 +3049,7 @@ input[type="number"] {
     transform: translate(50%, -50%); }
     @media (max-width: 48em) {
       .popup__close {
-        right: 10rem; } }
+        right: 6rem; } }
   .popup__close-img {
     width: 2.2rem;
     height: 2.2rem; }
@@ -3057,11 +3082,17 @@ input[type="number"] {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 5.1rem; }
+    margin-bottom: 3.5rem; }
+    @media (max-width: 48em) {
+      .popup__title {
+        margin-bottom: 8.5rem; } }
   .popup__input-wrap {
     display: flex;
     flex-direction: column;
-    margin-bottom: 4.7rem; }
+    margin-bottom: 3.5rem; }
+    @media (max-width: 48em) {
+      .popup__input-wrap {
+        margin-bottom: 6.5rem; } }
   .popup__input {
     font-size: 2.5rem;
     font-weight: 400;
@@ -3076,11 +3107,23 @@ input[type="number"] {
       @media (max-width: 48em) {
         .popup__input::placeholder {
           font-size: 3rem; } }
+    @media (max-width: 48em) {
+      .popup__input {
+        height: 7rem; } }
     .popup__input:last-child {
       height: 11rem;
-      padding-top: 6rem; }
+      padding-top: 2rem; }
       .popup__input:last-child::placeholder {
         padding-top: 2rem; }
+      @media (max-width: 48em) {
+        .popup__input:last-child {
+          height: 17rem;
+          padding-top: 7rem; } }
+    .popup__input:not(:last-child) {
+      margin-bottom: 2.4rem; }
+      @media (max-width: 48em) {
+        .popup__input:not(:last-child) {
+          margin-bottom: 7rem; } }
   .popup__select-title {
     font-size: 1.8rem;
     font-weight: 400;
@@ -3088,10 +3131,12 @@ input[type="number"] {
     margin-bottom: 2.7rem; }
     @media (max-width: 48em) {
       .popup__select-title {
-        font-size: 3rem; } }
+        font-size: 3rem;
+        margin-bottom: 5.5rem; } }
   .popup__select {
     display: flex;
-    margin-bottom: 9.4rem; }
+    margin-bottom: 10rem;
+    padding-left: 0.5rem; }
     @media (max-width: 48em) {
       .popup__select {
         flex-direction: column; } }
@@ -3099,10 +3144,10 @@ input[type="number"] {
     display: flex;
     align-items: center; }
     .popup__select-item:not(:last-child) {
-      margin-right: 9.4rem; }
+      margin-right: 10rem; }
       @media (max-width: 48em) {
         .popup__select-item:not(:last-child) {
-          margin-bottom: 3.2rem; } }
+          margin-bottom: 4.2rem; } }
   .popup__select-input {
     margin-right: 1rem;
     outline: none;
@@ -3121,8 +3166,8 @@ input[type="number"] {
       border: 2px solid #BA302B; }
       @media (max-width: 48em) {
         .popup__select-input::before {
-          width: 3rem;
-          height: 3rem; } }
+          width: 4rem;
+          height: 4rem; } }
     .popup__select-input:checked::after {
       content: '';
       position: absolute;
@@ -3136,8 +3181,11 @@ input[type="number"] {
       visibility: visible; }
       @media (max-width: 48em) {
         .popup__select-input:checked::after {
-          width: 2rem;
-          height: 2rem; } }
+          width: 3rem;
+          height: 3rem; } }
+    @media (max-width: 48em) {
+      .popup__select-input {
+        margin-right: 3rem; } }
   .popup__select-label {
     font-size: 1.8rem;
     display: flex;
@@ -3146,8 +3194,13 @@ input[type="number"] {
     @media (max-width: 48em) {
       .popup__select-label {
         font-size: 3rem; } }
+  .popup__select-label:hover {
+    cursor: pointer; }
   .popup__link {
     margin-left: 0rem; }
+    @media (max-width: 48em) {
+      .popup__link {
+        margin-left: 10rem; } }
   .popup__content-wrap-right {
     width: 50%;
     height: 94.3rem; }

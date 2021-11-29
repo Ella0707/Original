@@ -213,10 +213,12 @@ new Swiper('.step__slider', {
 $('.popup-link').click(function (e) {
     e.preventDefault();
     $('.popup').fadeIn(800);
+    $('body').toggleClass('lock');
 });
 
 $('.close-popup').click(function () {
     $('.popup').fadeOut(800);
+    $('body').toggleClass('lock');
 });
 
 
