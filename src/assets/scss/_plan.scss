@@ -129,6 +129,10 @@
 
     &__arrow-svg {
         width: 3.2rem;
+ 
+        @media (max-width: 48em) {
+            width: 4.4rem;
+         }
     }
 
     &__arrow-next {

@@ -1,6 +1,6 @@
 .format {
 
-    margin-bottom: 18rem;
+    margin-bottom: 18.5rem;
 
     @media (max-width: 48em) {
         margin-bottom: 23.5rem;
@@ -58,6 +58,13 @@
         position: relative;
     }
 
+    &__arrow-svg {
+        width: 3.2rem;
+ 
+        @media (max-width: 48em) {
+            width: 4.4rem;
+         }
+    }
 
     &__arrow-prev {
         &.swiper-button-prev {
@@ -245,7 +252,7 @@
     }
 
     &__par-wrap {
-        margin-bottom: 7rem;
+        margin-bottom: 6.5rem;
 
         @media (max-width: 48em) {
            margin-bottom: 0;

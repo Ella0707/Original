@@ -228,6 +228,14 @@
         }
     }
 
+    &__arrow-svg {
+        width: 2.4rem;
+
+        @media (max-width: 48em) {
+           width: 3.2rem;
+        }
+    }
+
     &__arrow-next {
         &.swiper-button-next {
             right: 18%;
