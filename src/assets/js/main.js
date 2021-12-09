@@ -243,3 +243,17 @@ if(iconMenu) {
         menuMob.classList.toggle('active');
     });
 }
+
+
+
+// video
+
+vid = document.getElementById('video');
+
+vid.addEventListener('mouseenter', function() {
+    vid.play();
+});
+
+vid.addEventListener('mouseleave', function() {
+    vid.pause();
+})
