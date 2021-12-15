@@ -2321,6 +2321,26 @@ input[type="number"] {
     height: 21.4rem;
 }
 
+.point-link {
+    cursor: pointer;
+}
+
+.point-link__point {
+    fill: #CA342E;
+}
+
+.point-link__point:hover {
+    fill: black;
+}
+
+.point-link__point-item {
+    fill: #FC281F;
+}
+
+.point-link__point-item:hover {
+    fill: black;
+}
+
 .examples {
     margin-bottom: 18.3rem;
 }
