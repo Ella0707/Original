@@ -2321,24 +2321,40 @@ input[type="number"] {
     height: 21.4rem;
 }
 
-.point-link {
+.point {
     cursor: pointer;
+    width: 3.4rem;
+    height: 3.4rem;
 }
 
-.point-link__point {
-    fill: #CA342E;
+.point__item-big:hover {
+    fill: #929292;
 }
 
-.point-link__point:hover {
-    fill: black;
+.point__item-small:hover {
+    fill: #304981;
 }
 
-.point-link__point-item {
-    fill: #FC281F;
+.description {
+    display: none;
+    width: 24.7rem;
+    padding: 1.7rem 2.5rem 2.5rem 2.5rem;
+    background: #B11D17;
+    font-size: 2rem;
+    color: #ffffff;
+    position: absolute;
 }
 
-.point-link__point-item:hover {
-    fill: black;
+.description::before {
+    content: "";
+    border-top: 1rem solid #B11D17;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    bottom: 2rem;
+    margin-left: -1rem;
+    position: absolute;
+    left: 50%;
+    margin-bottom: -3rem;
 }
 
 .examples {

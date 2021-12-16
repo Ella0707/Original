@@ -262,97 +262,49 @@ vid.addEventListener('mouseleave', function() {
 
 // map
 
-$('.point-link').hover (
-    function() {
-        $('.description').html($(this).attr('description-data'));
-        $('.description').fadeIn(50);
-        $('.description').style.top = (e.y);
-        $('.description').style.left = (e.x);
+// let point = document.querySelectorAll('.point');
 
-        let coords = target.getBoundingClientRect();
+// let description = document.querySelector('.description');
 
-        let left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2;
-        if (left < 0) left = 0; // не заезжать за левый край окна
-  
-        let top = coords.top - tooltipElem.offsetHeight - 5;
-        if (top < 0) { // если подсказка не помещается сверху, то отображать её снизу
-          top = coords.top + target.offsetHeight + 5;
-        }
-  
-        tooltipElem.style.left = left + 'px';
-        tooltipElem.style.top = top + 'px';
+// point.forEach((item) => {
+//     item.addEventListener('hover', function() {
+//         popup__title.textContent = this.getAttribute('data-title');
+//         popup__photo.setAttribute('src', this.getAttribute('data-photo'));
+//         popup__text.textContent = this.getAttribute('data-text');
+//         popupBg.classList.add('active');
+//     });
 
-    },
-    function() {
-        $('.description').fadeOut(50);
-    }
-)
+//     item.addEventListener('mouseenter', function() {
+//        description.textContent = item.getAttribute('description-data');
+//         description.style.display = 'block';
+//     });
 
-// const description = document.querySelector('.description');
-// const point = document.querySelector('.point-link');
+//     item.addEventListener('mouseleave', function() {
+//         description.textContent = item.getAttribute('data-title');
+//         description.style.display = 'none';
+//     });
 
-// point.forEach(point => {
-//     point.addEventListener('mosemove', function(e) {
-//         description.innerText = this.dataset.title;
-//         point.style.top = (e.y + 20) + 'px';
-//         point.style.top = (e.x + 20) + 'px';
+//     item.addEventListener('mousemove', function(e) {
+//         description.style.top = (e.y - 20) + 'px';
+//         description.style.left = (e.x - 80) + 'px';
 //     });
 // });
 
 
-//  let tooltipElem;
-
-//     document.onmouseover = function(event) {
-//       let target = event.target;
-
-//       // если у нас есть подсказка...
-//       let tooltipHtml = target.dataset.tooltip;
-//       if (!tooltipHtml) return;
-
-//       // ...создадим элемент для подсказки
-
-//       tooltipElem = document.createElement('div');
-//       tooltipElem.className = 'tooltip';
-//       tooltipElem.innerHTML = tooltipHtml;
-//       document.body.append(tooltipElem);
-
-//       // спозиционируем его сверху от аннотируемого элемента (top-center)
-//       let coords = target.getBoundingClientRect();
-
-//       let left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2;
-//       if (left < 0) left = 0; // не заезжать за левый край окна
-
-//       let top = coords.top - tooltipElem.offsetHeight - 5;
-//       if (top < 0) { // если подсказка не помещается сверху, то отображать её снизу
-//         top = coords.top + target.offsetHeight + 5;
-//       }
-
-//       tooltipElem.style.left = left + 'px';
-//       tooltipElem.style.top = top + 'px';
-//     };
-
-//     document.onmouseout = function(e) {
-
-//       if (tooltipElem) {
-//         tooltipElem.remove();
-//         tooltipElem = null;
-//       }
-
-//     };
 
 
+$(".point").hover(
+    function() {
+        $(this).addClass('active');
+        $(".description").addClass('active');
 
-
-
-		$(document).ready(function(){//страница загрузилась
-			$('.point-link').hover(function(){	//при наведении на элемент:
-				var helptext = $(this).attr('description-data') 	//текст подсказки
-				$('.description').html(helptext).show();	//размещаем текст подсказки в блок тултипа и делаем его видимым
-				//далее устанавливаем тултипу значения позиции с помощью абсолютного позиционирования:
-				$('.description').offset({top:$(this).offset(0).top+$(this).height(0),left:$(this).offset(0).left});
-			},function(){
-				$('.description').hide();	//скрываем тултип 
-			});
-		});
-		//в итоге подсказка окажется ровно под элементом наведения
-	
+    }, 
+    function() {
+        $( this ).removeClass('active');
+        $(".description").removeClass('active');
+    }
+);
+$( "point" ).click(function(){
+        $(this).toggleClass('active');
+        $(".description").toggleClass('active');
+});
