@@ -2190,6 +2190,7 @@ input[type="number"] {
 .geography__map-wrap {
     width: 99.5rem;
     height: 70rem;
+    position: relative;
 }
 
 @media (max-width: 48em) {
@@ -2204,25 +2205,7 @@ input[type="number"] {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-}
-
-@media (max-width: 48em) {
-    .geography__img-map {
-        display: none;
-    }
-}
-
-.geography__img-map-mob {
-    display: none;
-}
-
-@media (max-width: 48em) {
-    .geography__img-map-mob {
-        display: block;
-        -o-object-fit: cover;
-        object-fit: cover;
-        height: 88rem;
-    }
+    z-index: 1;
 }
 
 .geography__shops {
@@ -2322,39 +2305,274 @@ input[type="number"] {
 }
 
 .point {
-    cursor: pointer;
     width: 3.4rem;
     height: 3.4rem;
+    border-radius: 50%;
+    background: rgba(201, 51, 46, 0.1);
+    position: relative;
+    cursor: pointer;
 }
 
-.point__item-big:hover {
-    fill: #929292;
+@media (max-width: 48em) {
+    .point {
+        width: 4rem;
+        height: 4rem;
+    }
 }
 
-.point__item-small:hover {
-    fill: #304981;
+.point span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 1rem;
+    height: 1rem;
+    background: #FC281F;
+    border: 0.2rem solid #ffffff;
+    border-radius: inherit;
+    z-index: 1;
+}
+
+@media (max-width: 48em) {
+    .point span {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+.point:hover {
+    background: rgba(146, 146, 146, 0.1);
+}
+
+.point:hover span {
+    background: #304981;
 }
 
 .description {
-    display: none;
-    width: 24.7rem;
+    width: 25rem;
     padding: 1.7rem 2.5rem 2.5rem 2.5rem;
-    background: #B11D17;
-    font-size: 2rem;
+    background: #ca342e;
     color: #ffffff;
-    position: absolute;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 48em) {
+    .description {
+        padding: 1rem;
+    }
 }
 
 .description::before {
     content: "";
-    border-top: 1rem solid #B11D17;
+    border-top: 1rem solid #ca342e;
     border-left: 1rem solid transparent;
     border-right: 1rem solid transparent;
-    bottom: 2rem;
+    bottom: 2.1rem;
     margin-left: -1rem;
     position: absolute;
     left: 50%;
     margin-bottom: -3rem;
+}
+
+.description__inner {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.description__location {
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: #b11d17;
+    border-radius: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 1.5rem;
+}
+
+.description__location.location--white {
+    background-color: #e0e0e0;
+}
+
+.description__location-img {
+    width: 1.5rem;
+    height: 1.7rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.description__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+@media (max-width: 48em) {
+    .description__title {
+        font-size: 2rem;
+    }
+}
+
+.description__item {
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+.description__item:not(:last-child) {
+    margin-bottom: 0.4rem;
+}
+
+@media (max-width: 48em) {
+    .description__item {
+        font-size: 1.6rem;
+    }
+}
+
+.description.active {
+    display: block;
+    z-index: 10;
+}
+
+.point-wrap {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+}
+
+.point-wrap-1 {
+    bottom: 30%;
+    left: 6%;
+}
+
+.point-wrap-1__description-1 {
+    display: none;
+    right: calc(100% + 6.8rem);
+    bottom: 25rem;
+}
+
+@media (max-width: 48em) {
+    .point-wrap-1__description-1 {
+        right: 100%;
+    }
+}
+
+.point-wrap-2 {
+    bottom: 20.5%;
+    left: 6%;
+}
+
+.point-wrap-2__description-2 {
+    display: none;
+    right: calc(100% + 6.8rem);
+    bottom: 24rem;
+    background: #ffffff;
+    color: #1a2e59;
+}
+
+.point-wrap-2__description-2::before {
+    content: "";
+    border-top: 1rem solid #ffffff;
+}
+
+@media (max-width: 48em) {
+    .point-wrap-2__description-2 {
+        right: 100%;
+    }
+}
+
+.point-wrap-3 {
+    bottom: 38.7%;
+    left: 11.5%;
+}
+
+.point-wrap-3__description-3 {
+    display: none;
+    right: calc(100% + 6.8rem);
+    bottom: 24rem;
+}
+
+.point-wrap-4 {
+    bottom: 24%;
+    left: 16%;
+}
+
+.point-wrap-4__description-4 {
+    display: none;
+    right: calc(100% + 6.8rem);
+    bottom: 24rem;
+}
+
+.point-wrap-5 {
+    bottom: 29.7%;
+    left: 23.5%;
+}
+
+.point-wrap-5__description-5 {
+    display: none;
+    right: calc(100% + 6.8rem);
+    bottom: 24rem;
+}
+
+.point-wrap-6 {
+    bottom: 49.7%;
+    left: 26.6%;
+}
+
+.point-wrap-6__description-6 {
+    display: none;
+    right: calc(100% + 6.5rem);
+    bottom: 24rem;
+}
+
+.point-wrap-7 {
+    bottom: 36%;
+    left: 33.3%;
+}
+
+.point-wrap-7__description-7 {
+    display: none;
+    right: calc(100% + 6.8rem);
+    bottom: 24rem;
+}
+
+.point-wrap-8 {
+    bottom: 39%;
+    left: 40.2%;
+}
+
+.point-wrap-8__description-8 {
+    display: none;
+    right: calc(100% + 6.8rem);
+    bottom: 24rem;
+}
+
+.point-wrap-9 {
+    bottom: 17.5%;
+    left: 39%;
+}
+
+.point-wrap-9__description-9 {
+    display: none;
+    right: calc(100% + 6.8rem);
+    bottom: 24rem;
+}
+
+.point-wrap-10 {
+    bottom: 24%;
+    left: 47.2%;
+}
+
+.point-wrap-10__description-10 {
+    display: none;
+    right: calc(100% + 6.8rem);
+    bottom: 24rem;
 }
 
 .examples {

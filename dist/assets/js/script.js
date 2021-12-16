@@ -260,57 +260,6 @@ if(iconMenu) {
 
 
 
-<<<<<<< HEAD
-
-let point = document.querySelectorAll('.point');
-
-let description = document.querySelector('.description');
-
-point.forEach((item) => {
-    item.addEventListener('hover', function() {
-        popup__title.textContent = this.getAttribute('data-title');
-        popup__photo.setAttribute('src', this.getAttribute('data-photo'));
-        popup__text.textContent = this.getAttribute('data-text');
-        popupBg.classList.add('active');
-    });
-
-    item.addEventListener('mouseenter', function() {
-       description.textContent = item.getAttribute('description-data');
-        description.style.display = 'block';
-    });
-
-    item.addEventListener('mouseleave', function() {
-        description.textContent = item.getAttribute('data-title');
-        description.style.display = 'none';
-    });
-
-    item.addEventListener('mousemove', function(e) {
-        description.style.top = (e.y - 20) + 'px';
-        description.style.left = (e.x - 80) + 'px';
-    });
-
-    // item.addEventListener('hover', function(e) {
-    //     description.style.top = (e.y + 20) + 'px';
-    //     description.style.left =  (e.x + 20) + 'px';
-    // });
-
-    // $(".point").hover(function() {
-    //     var height = $(this).find('.description').height();
-    //     var top = $(this).offset().top;
-    //     if(height > top){
-    //      $(this).find('.description').css("top","10").css("bottom","inherit");
-    //     } else if(height < top) {
-    //       $(this).find('.description').css("bottom","10").css("top","inherit");
-    //    }
-    //  });
-});
-
-// document.addEventListener('click', (e) => {
-//     if(e.target === popupBg) {
-//         popupBg.classList.remove('active');
-//     }
-// });
-=======
 // video
 
 vid = document.getElementById('video');
@@ -326,52 +275,43 @@ vid.addEventListener('mouseleave', function() {
 
 
 // map
-
-// let point = document.querySelectorAll('.point');
-
-// let description = document.querySelector('.description');
-
-// point.forEach((item) => {
-//     item.addEventListener('hover', function() {
-//         popup__title.textContent = this.getAttribute('data-title');
-//         popup__photo.setAttribute('src', this.getAttribute('data-photo'));
-//         popup__text.textContent = this.getAttribute('data-text');
-//         popupBg.classList.add('active');
-//     });
-
-//     item.addEventListener('mouseenter', function() {
-//        description.textContent = item.getAttribute('description-data');
-//         description.style.display = 'block';
-//     });
-
-//     item.addEventListener('mouseleave', function() {
-//         description.textContent = item.getAttribute('data-title');
-//         description.style.display = 'none';
-//     });
-
-//     item.addEventListener('mousemove', function(e) {
-//         description.style.top = (e.y - 20) + 'px';
-//         description.style.left = (e.x - 80) + 'px';
-//     });
-// });
-
-
-
-
 $(".point").hover(
     function() {
-        $(this).addClass('active');
-        $(".description").addClass('active');
-
+        $(this).addClass('active').next().addClass('active');
     }, 
     function() {
-        $( this ).removeClass('active');
-        $(".description").removeClass('active');
+        $(this).removeClass('active').next().removeClass('active');
     }
 );
-$( "point" ).click(function(){
-        $(this).toggleClass('active');
-        $(".description").toggleClass('active');
-});
->>>>>>> b37ee29104c0f2d64fb39d55ecefb52f4bf617af
+
+
+
+// if ($(window).width() >= 769) {
+  
+
+//     $('.possibilities-content__circle').mouseover(function () {
+//       $(this).addClass('active').next().addClass('active');
+//     });
+
+//     $('.possibilities-content__circle').mouseleave(function () {
+//       $(this).removeClass('active').next().removeClass('active');
+//     });
+//   }
+
+//   if ($(window).width() <= 768) {
+//     $('.possibilities-content__group-1 .possibilities-content__circle').addClass('active');
+    
+//     $('.possibilities-content__circle').click(function () {
+//       $('.possibilities-content__circle').not(this).removeClass('active');
+//       $(this).toggleClass('active');
+//       var data = $(this).data('possibilities');
+//       // $('.possibilities-content__item').removeClass('active');
+//       $('.possibilities-content__item[data-possibilities!=' + data + ']').removeClass('active');
+//       $('.possibilities-content__item[data-possibilities=' + data + ']').toggleClass('active');
+//     });
+//   }
+
+
+
+
 //# sourceMappingURL=script.js.map

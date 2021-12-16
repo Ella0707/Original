@@ -261,20 +261,41 @@ vid.addEventListener('mouseleave', function() {
 
 
 // map
-
 $(".point").hover(
     function() {
-        $(this).addClass('active');
-        $(".description").addClass('active');
-
+        $(this).addClass('active').next().addClass('active');
     }, 
     function() {
-        $( this ).removeClass('active');
-        $(".description").removeClass('active');
+        $(this).removeClass('active').next().removeClass('active');
     }
 );
-$( "point" ).click(function(){
-        $(this).toggleClass('active');
-        $(".description").toggleClass('active');
-});
+
+
+
+// if ($(window).width() >= 769) {
+  
+
+//     $('.possibilities-content__circle').mouseover(function () {
+//       $(this).addClass('active').next().addClass('active');
+//     });
+
+//     $('.possibilities-content__circle').mouseleave(function () {
+//       $(this).removeClass('active').next().removeClass('active');
+//     });
+//   }
+
+//   if ($(window).width() <= 768) {
+//     $('.possibilities-content__group-1 .possibilities-content__circle').addClass('active');
+    
+//     $('.possibilities-content__circle').click(function () {
+//       $('.possibilities-content__circle').not(this).removeClass('active');
+//       $(this).toggleClass('active');
+//       var data = $(this).data('possibilities');
+//       // $('.possibilities-content__item').removeClass('active');
+//       $('.possibilities-content__item[data-possibilities!=' + data + ']').removeClass('active');
+//       $('.possibilities-content__item[data-possibilities=' + data + ']').toggleClass('active');
+//     });
+//   }
+
+
 
