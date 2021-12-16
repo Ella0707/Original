@@ -284,3 +284,28 @@
         height: 21.4rem;
     }
 }
+
+
+.point {
+    cursor: pointer;
+    width: 3.4rem;
+    height: 3.4rem;
+
+    &__item-big:hover{
+        fill: #929292;
+
+    }
+
+    &__item-small:hover {
+        fill: #304981;
+    }
+}
+
+
+.description {
+    width: 24.7rem;
+    padding: 1.7rem 2.5rem 2.5rem 2.5rem;
+    background: #B11D17;
+
+    position: absolute;
+}
