@@ -246,52 +246,35 @@ if(iconMenu) {
 
 
 
+// video
 
-let point = document.querySelectorAll('.point');
+vid = document.getElementById('video');
 
-let description = document.querySelector('.description');
-
-point.forEach((item) => {
-    item.addEventListener('hover', function() {
-        popup__title.textContent = this.getAttribute('data-title');
-        popup__photo.setAttribute('src', this.getAttribute('data-photo'));
-        popup__text.textContent = this.getAttribute('data-text');
-        popupBg.classList.add('active');
-    });
-
-    item.addEventListener('mouseenter', function() {
-       description.textContent = item.getAttribute('description-data');
-        description.style.display = 'block';
-    });
-
-    item.addEventListener('mouseleave', function() {
-        description.textContent = item.getAttribute('data-title');
-        description.style.display = 'none';
-    });
-
-    item.addEventListener('mousemove', function(e) {
-        description.style.top = (e.y - 20) + 'px';
-        description.style.left = (e.x - 80) + 'px';
-    });
-
-    // item.addEventListener('hover', function(e) {
-    //     description.style.top = (e.y + 20) + 'px';
-    //     description.style.left =  (e.x + 20) + 'px';
-    // });
-
-    // $(".point").hover(function() {
-    //     var height = $(this).find('.description').height();
-    //     var top = $(this).offset().top;
-    //     if(height > top){
-    //      $(this).find('.description').css("top","10").css("bottom","inherit");
-    //     } else if(height < top) {
-    //       $(this).find('.description').css("bottom","10").css("top","inherit");
-    //    }
-    //  });
+vid.addEventListener('mouseenter', function() {
+    vid.play();
 });
 
-// document.addEventListener('click', (e) => {
-//     if(e.target === popupBg) {
-//         popupBg.classList.remove('active');
-//     }
-// });
+vid.addEventListener('mouseleave', function() {
+    vid.pause();
+})
+
+
+
+// map
+
+$(".point").hover(
+    function() {
+        $(this).addClass('active');
+        $(".description").addClass('active');
+
+    }, 
+    function() {
+        $( this ).removeClass('active');
+        $(".description").removeClass('active');
+    }
+);
+$( "point" ).click(function(){
+        $(this).toggleClass('active');
+        $(".description").toggleClass('active');
+});
+

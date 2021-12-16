@@ -1382,7 +1382,12 @@ input[type="number"] {
         flex-direction: column; } }
   .geography__map-wrap {
     width: 99.5rem;
+<<<<<<< HEAD
     height: 70rem; }
+=======
+    height: 70rem;
+    position: relative; }
+>>>>>>> b37ee29104c0f2d64fb39d55ecefb52f4bf617af
     @media (max-width: 48em) {
       .geography__map-wrap {
         width: 100%;
@@ -1390,7 +1395,12 @@ input[type="number"] {
         margin-bottom: 6.5rem; } }
   .geography__img-map {
     height: 100%;
+<<<<<<< HEAD
     object-fit: cover; }
+=======
+    object-fit: cover;
+    z-index: 1; }
+>>>>>>> b37ee29104c0f2d64fb39d55ecefb52f4bf617af
     @media (max-width: 48em) {
       .geography__img-map {
         display: none; } }
@@ -1456,6 +1466,7 @@ input[type="number"] {
     height: 21.4rem; }
 
 .point {
+<<<<<<< HEAD
   cursor: pointer;
   width: 3.4rem;
   height: 3.4rem; }
@@ -1463,12 +1474,63 @@ input[type="number"] {
     fill: #929292; }
   .point__item-small:hover {
     fill: #304981; }
+=======
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  background: rgba(201, 51, 46, 0.7);
+  position: relative;
+  cursor: pointer; }
+  .point span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1rem;
+    height: 1rem;
+    background: #FC281F;
+    border: 0.2rem solid #ffffff;
+    border-radius: inherit;
+    z-index: 1; }
+>>>>>>> b37ee29104c0f2d64fb39d55ecefb52f4bf617af
 
 .description {
   width: 24.7rem;
   padding: 1.7rem 2.5rem 2.5rem 2.5rem;
   background: #B11D17;
+<<<<<<< HEAD
   position: absolute; }
+=======
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  right: calc(100% + 4rem);
+  border-radius: 3.5rem;
+  z-index: 1; }
+  .description::before {
+    content: "";
+    border-top: 1rem solid #B11D17;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    bottom: 2rem;
+    margin-left: -1rem;
+    position: absolute;
+    left: 50%;
+    margin-bottom: -3rem; }
+
+.point-wrap {
+  position: absolute;
+  width: 4rem;
+  height: 4rem; }
+
+.point-wrap-1 {
+  bottom: 5rem;
+  left: 7rem; }
+
+.description-1 {
+  right: calc(100% + 6.5rem);
+  bottom: 41rem; }
+>>>>>>> b37ee29104c0f2d64fb39d55ecefb52f4bf617af
 
 .examples {
   margin-bottom: 18.3rem; }

@@ -260,6 +260,7 @@ if(iconMenu) {
 
 
 
+<<<<<<< HEAD
 
 let point = document.querySelectorAll('.point');
 
@@ -309,4 +310,68 @@ point.forEach((item) => {
 //         popupBg.classList.remove('active');
 //     }
 // });
+=======
+// video
+
+vid = document.getElementById('video');
+
+vid.addEventListener('mouseenter', function() {
+    vid.play();
+});
+
+vid.addEventListener('mouseleave', function() {
+    vid.pause();
+})
+
+
+
+// map
+
+// let point = document.querySelectorAll('.point');
+
+// let description = document.querySelector('.description');
+
+// point.forEach((item) => {
+//     item.addEventListener('hover', function() {
+//         popup__title.textContent = this.getAttribute('data-title');
+//         popup__photo.setAttribute('src', this.getAttribute('data-photo'));
+//         popup__text.textContent = this.getAttribute('data-text');
+//         popupBg.classList.add('active');
+//     });
+
+//     item.addEventListener('mouseenter', function() {
+//        description.textContent = item.getAttribute('description-data');
+//         description.style.display = 'block';
+//     });
+
+//     item.addEventListener('mouseleave', function() {
+//         description.textContent = item.getAttribute('data-title');
+//         description.style.display = 'none';
+//     });
+
+//     item.addEventListener('mousemove', function(e) {
+//         description.style.top = (e.y - 20) + 'px';
+//         description.style.left = (e.x - 80) + 'px';
+//     });
+// });
+
+
+
+
+$(".point").hover(
+    function() {
+        $(this).addClass('active');
+        $(".description").addClass('active');
+
+    }, 
+    function() {
+        $( this ).removeClass('active');
+        $(".description").removeClass('active');
+    }
+);
+$( "point" ).click(function(){
+        $(this).toggleClass('active');
+        $(".description").toggleClass('active');
+});
+>>>>>>> b37ee29104c0f2d64fb39d55ecefb52f4bf617af
 //# sourceMappingURL=script.js.map
