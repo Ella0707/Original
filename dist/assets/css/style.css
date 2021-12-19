@@ -2556,8 +2556,8 @@ input[type="number"] {
 
 .point-wrap-1__description-1 {
     display: none;
-    right: calc(100% + 6.8rem);
-    bottom: 17rem;
+    right: calc(100% + 8rem);
+    bottom: 19rem;
 }
 
 @media (max-width: 48em) {
@@ -2587,7 +2587,7 @@ input[type="number"] {
 
 .point-wrap-2__description-2 {
     display: none;
-    right: calc(100% + 6.8rem);
+    right: calc(100% + 8rem);
     bottom: 17rem;
 }
 
@@ -2618,7 +2618,7 @@ input[type="number"] {
 
 .point-wrap-3__description-3 {
     display: none;
-    right: calc(100% + 6.8rem);
+    right: calc(100% + 8rem);
     bottom: 17rem;
 }
 
@@ -2649,7 +2649,7 @@ input[type="number"] {
 
 .point-wrap-4__description-4 {
     display: none;
-    right: calc(100% + 6.8rem);
+    right: calc(100% + 8rem);
     bottom: 17rem;
 }
 
@@ -2680,7 +2680,7 @@ input[type="number"] {
 
 .point-wrap-5__description-5 {
     display: none;
-    right: calc(100% + 6.8rem);
+    right: calc(100% + 8rem);
     bottom: 17rem;
 }
 
@@ -2708,8 +2708,8 @@ input[type="number"] {
 
 .point-wrap-6__description-6 {
     display: none;
-    right: calc(100% + 6.8rem);
-    bottom: 29rem;
+    right: calc(100% + 8rem);
+    bottom: 32rem;
 }
 
 @media (max-width: 48em) {
@@ -2736,7 +2736,7 @@ input[type="number"] {
 
 .point-wrap-7__description-7 {
     display: none;
-    right: calc(100% + 6.8rem);
+    right: calc(100% + 8rem);
     bottom: 15rem;
 }
 
@@ -2764,7 +2764,7 @@ input[type="number"] {
 
 .point-wrap-8__description-8 {
     display: none;
-    right: calc(100% + 6.8rem);
+    right: calc(100% + 8rem);
     bottom: 15rem;
 }
 
@@ -2792,7 +2792,7 @@ input[type="number"] {
 
 .point-wrap-9__description-9 {
     display: none;
-    right: calc(100% + 6.8rem);
+    right: calc(100% + 8rem);
     bottom: 15rem;
 }
 
@@ -2820,7 +2820,7 @@ input[type="number"] {
 
 .point-wrap-10__description-10 {
     display: none;
-    right: calc(100% + 6.8rem);
+    right: calc(100% + 8rem);
     bottom: 15rem;
 }
 
