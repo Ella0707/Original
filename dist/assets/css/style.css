@@ -1800,14 +1800,14 @@ input[type="number"] {
     }
 }
 
-.assortment__slider {
+.assortment__video-wrap {
     height: 50.5rem;
     width: 56.8rem;
     position: relative;
 }
 
 @media (max-width: 48em) {
-    .assortment__slider {
+    .assortment__video-wrap {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
@@ -1815,85 +1815,17 @@ input[type="number"] {
     }
 }
 
-.assortment__slider-wrapper {
+.assortment__video {
     height: 43.4rem;
-    width: 56.8rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 48em) {
-    .assortment__slider-wrapper {
+    .assortment__video {
         width: 100%;
         height: 57.4rem;
-    }
-}
-
-.assortment__arrow-svg {
-    width: 1.6rem;
-}
-
-@media (max-width: 48em) {
-    .assortment__arrow-svg {
-        width: 4.4rem;
-    }
-}
-
-.assortment__arrow-next.swiper-button-next {
-    right: 0;
-    top: auto;
-    bottom: 0;
-    width: 7.1rem;
-    height: 7.1rem;
-    background-color: #ffffff;
-    fill: #CA342E;
-    transition: 0.8s;
-}
-
-.assortment__arrow-next.swiper-button-next.swiper-button-disabled {
-    background-color: #ECECEC;
-    fill: black;
-    opacity: 1;
-    transition: 0.8s;
-}
-
-.assortment__arrow-next.swiper-button-next::after {
-    content: '';
-}
-
-@media (max-width: 48em) {
-    .assortment__arrow-next.swiper-button-next {
-        width: 14rem;
-        height: 14rem;
-    }
-}
-
-.assortment__arrow-prev.swiper-button-prev {
-    left: auto;
-    top: auto;
-    bottom: 0;
-    right: 7.1rem;
-    width: 7.1rem;
-    height: 7.1rem;
-    fill: #CA342E;
-    background-color: #ffffff;
-    transition: 0.8s;
-}
-
-.assortment__arrow-prev.swiper-button-prev.swiper-button-disabled {
-    background-color: #ECECEC;
-    fill: black;
-    opacity: 1;
-    transition: 0.8s;
-}
-
-.assortment__arrow-prev.swiper-button-prev::after {
-    content: '';
-}
-
-@media (max-width: 48em) {
-    .assortment__arrow-prev.swiper-button-prev {
-        width: 14rem;
-        height: 14rem;
-        right: 14rem;
     }
 }
 

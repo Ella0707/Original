@@ -30,18 +30,6 @@ function sliderNumber() {
     $('.slider-number').text(currentSlide);
 }
 
-new Swiper('.assortment__slider', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    slidesPerGroup: 1,
-
-    navigation: {
-        nextEl: '.assortment__arrow-next',
-        prevEl: '.assortment__arrow-prev',
-    },
-});
-
-
 new Swiper('.format__slide', {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -233,16 +221,53 @@ $(document).ready(function () {
     });
 });
 
+
+
+
+
+
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.header__nav');
+let menuMob = document.querySelector('.header__nav-list');
+
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})
+
+menuMob.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})
+
+
+
+
 // мобильное меню
-const iconMenu = document.querySelector('.menu-btn');
-if(iconMenu) {
-    const menuMob = document.querySelector('.header__nav');
-    iconMenu.addEventListener("click", function(e) {
-        document.body.classList.toggle('lock');
-        iconMenu.classList.toggle('active');
-        menuMob.classList.toggle('active');
-    });
-}
+// const iconMenu = document.querySelector('.menu-btn');
+
+// const menuItem = document.querySelectorAll('a[href*="#"]');
+// const menuMob = document.querySelector('.header__nav');
+
+
+
+// if(iconMenu) {
+//     // const menuMob = document.querySelector('.header__nav');
+
+//     iconMenu.addEventListener("click", function(e) {
+//         document.body.classList.toggle('lock');
+//         iconMenu.classList.toggle('active');
+//         menuMob.classList.toggle('active');
+//     });
+// }
+
+// if(menuItem) {
+//     menuItem.addEventListener("click", function(e) {
+//         document.body.classList.toggle('lock');
+//         iconMenu.classList.toggle('active');
+//         menuMob.classList.toggle('active');
+//     });
+// }
 
 
 
@@ -256,6 +281,19 @@ vid.addEventListener('mouseenter', function() {
 
 vid.addEventListener('mouseleave', function() {
     vid.pause();
+})
+
+
+// video_assortment
+
+vidAssortment = document.getElementById('video_assortment');
+
+vidAssortment.addEventListener('mouseenter', function() {
+    vidAssortment.play();
+});
+
+vidAssortment.addEventListener('mouseleave', function() {
+    vidAssortment.pause();
 })
 
 

@@ -213,7 +213,7 @@
     }
 
 
-    &__slider {
+    &__video-wrap {
         height: 50.5rem;
         width: 56.8rem;
         position: relative;
@@ -226,83 +226,17 @@
         }
     }
 
-    &__slider-wrapper {
+    &__video {
         height: 43.4rem;
-        width: 56.8rem;
+        width: 100%;
+        position: relative;
+        z-index: 1;
 
         @media (max-width: 48em) {
-            width: 100%;
-            height: 57.4rem;
-        }
+                    width: 100%;
+                    height: 57.4rem;
+         }
     }
-
-    &__arrow-svg {
-        width: 1.6rem;
-        @media (max-width: 48em) {
-        width: 4.4rem;
-        }
-    }
-
-    &__arrow-next {
-        &.swiper-button-next {
-            right: 0;
-            top: auto;
-            bottom: 0;
-            width: 7.1rem;
-            height: 7.1rem;
-            background-color: #ffffff;
-            fill: #CA342E;
-            transition: 0.8s;
-
-            &.swiper-button-disabled {
-                background-color: #ECECEC;
-                fill: black;
-                opacity: 1;
-                transition: 0.8s;
-            }
-
-            &::after {
-                content: '';
-            }
-
-            @media (max-width: 48em) {
-                width: 14rem;
-                height: 14rem;
-            }
-        }
-    }
-
-    &__arrow-prev {
-        &.swiper-button-prev {
-            left: auto;
-            top: auto;
-            bottom: 0;
-            right: 7.1rem;
-            width: 7.1rem;
-            height: 7.1rem;
-            fill: #CA342E;
-            background-color: #ffffff;
-            transition: 0.8s;
-
-            &.swiper-button-disabled {
-                background-color: #ECECEC;
-                fill: black;
-                opacity: 1;
-                transition: 0.8s;
-            }
-
-            &::after {
-                content: '';
-            }
-
-            @media (max-width: 48em) {
-                width: 14rem;
-                height: 14rem;
-                right: 14rem;
-            }
-        }
-    }
-
 
     &__slider-img {
         width: 56.8rem;
